@@ -1,0 +1,373 @@
+.uuh-header {
+  position: relative;
+  z-index: 80;
+  border-bottom: 1px solid var(--up-color-border);
+  background: var(--up-color-surface-2);
+  color: var(--up-color-primary-100);
+  font-family: var(--up-font-sans);
+}
+
+.uuh-shell {
+  width: min(100%, var(--up-media-width));
+  margin-inline: auto;
+  min-height: var(--up-header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem var(--up-page-gutter);
+}
+
+.uuh-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+  text-decoration: none;
+  flex: none;
+}
+
+.uuh-brand-mark {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: block;
+  background: url("/brand/logo-mark.png") center / contain no-repeat;
+}
+
+html[data-theme="light"] .uuh-brand-mark {
+  background-image: url("/brand/logo-mark-black.png");
+}
+
+.uuh-brand-label {
+  font-size: var(--up-type-nav-size);
+  line-height: var(--up-type-nav-line);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.uuh-nav {
+  display: none;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 0;
+}
+
+.uuh-nav-link {
+  color: var(--up-color-primary-60);
+  text-decoration: none;
+  font-size: var(--up-type-nav-size);
+  line-height: var(--up-type-nav-line);
+  letter-spacing: var(--up-type-nav-track);
+  font-weight: var(--up-type-nav-weight);
+  white-space: nowrap;
+  padding: 0.34rem 0.52rem;
+  border-radius: 999px;
+}
+
+.uuh-nav-link:hover,
+.uuh-nav-link:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.uuh-nav-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.uuh-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: auto;
+}
+
+.uuh-open-chat {
+  min-height: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(245, 245, 240, 0.18);
+  color: var(--up-color-primary-100);
+  text-decoration: none;
+  font-size: var(--up-type-nav-size);
+  line-height: var(--up-type-nav-line);
+  letter-spacing: var(--up-type-nav-track);
+  font-weight: var(--up-type-nav-weight);
+  white-space: nowrap;
+}
+
+.uuh-open-chat:hover,
+.uuh-open-chat:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.uuh-open-chat:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.uuh-app-tile:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 1px;
+}
+
+.uuh-launcher {
+  position: relative;
+}
+
+.uuh-launcher-trigger {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--up-color-primary-100);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uuh-launcher-trigger:hover,
+.uuh-launcher-trigger[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.uuh-launcher-trigger:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.uuh-launcher-dots {
+  width: 0.94rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.12rem;
+}
+
+.uuh-launcher-dot {
+  width: 0.19rem;
+  height: 0.19rem;
+  border-radius: 999px;
+  background: currentColor;
+  display: block;
+}
+
+.uuh-launcher-panel {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  right: 0;
+  width: min(23rem, calc(100vw - 1rem));
+  max-height: min(620px, calc(100vh - 96px));
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.75rem;
+  background: #050505;
+  background-image: none;
+  backdrop-filter: none;
+  padding: 1.2rem;
+  box-shadow: 0 1.6rem 3.8rem rgba(0, 0, 0, 0.6);
+  z-index: 95;
+  scrollbar-width: thin;
+}
+
+.uuh-launcher-panel-title {
+  margin: 0 0 0.85rem;
+  color: var(--up-color-primary-60);
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.uuh-launcher-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.uuh-app-tile {
+  display: grid;
+  justify-items: center;
+  gap: 0.48rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.86);
+  min-height: 5.8rem;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.uuh-app-tile:hover,
+.uuh-app-tile:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.uuh-app-tile[data-active="true"] {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.uuh-app-tile-icon-wrap {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.uuh-app-tile-icon {
+  width: 2.35rem;
+  height: 2.35rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.uuh-app-tile-label {
+  text-align: center;
+  font-size: 0.84375rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.uuh-launcher-panel::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+.uuh-launcher-panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: 54rem) {
+  .uuh-nav {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 40rem) {
+  .uuh-open-chat {
+    display: none;
+  }
+
+  .uuh-launcher-panel {
+    width: min(23rem, calc(100vw - 0.75rem));
+    right: -0.25rem;
+    border-radius: 1.3rem;
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uuh-header *,
+  .uuh-header *::before,
+  .uuh-header *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .uuh-app-tile:hover {
+    transform: none;
+  }
+}
+
+html[data-theme="light"] .uuh-header {
+  background: #ffffff;
+  color: #101010;
+  border-bottom-color: rgba(16, 16, 16, 0.12);
+}
+
+html[data-theme="light"] .uuh-nav-link {
+  color: #5f6368;
+}
+
+html[data-theme="light"] .uuh-nav-link:focus-visible {
+  outline-color: #101010;
+}
+
+html[data-theme="light"] .uuh-nav-link:hover,
+html[data-theme="light"] .uuh-nav-link:focus-visible {
+  color: #101010;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .uuh-open-chat {
+  color: #101010;
+  border-color: rgba(16, 16, 16, 0.18);
+}
+
+html[data-theme="light"] .uuh-open-chat:hover,
+html[data-theme="light"] .uuh-open-chat:focus-visible {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme="light"] .uuh-launcher-trigger {
+  background: rgba(0, 0, 0, 0.06);
+  color: #101010;
+}
+
+html[data-theme="light"] .uuh-launcher-trigger:hover,
+html[data-theme="light"] .uuh-launcher-trigger[aria-expanded="true"] {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="light"] .uuh-launcher-panel {
+  background: #ffffff;
+  border-color: rgba(16, 16, 16, 0.12);
+  box-shadow: 0 1.6rem 3.8rem rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="light"] .uuh-app-tile {
+  color: rgba(16, 16, 16, 0.86);
+}
+
+html[data-theme="light"] .uuh-app-tile:hover,
+html[data-theme="light"] .uuh-app-tile:focus-visible {
+  color: #101010;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .uuh-app-tile[data-active="true"] {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] .uuh-app-tile-icon {
+  filter: none;
+}
+
+html[data-theme="light"] .uuh-app-tile-label {
+  color: rgba(16, 16, 16, 0.86);
+}
+
+html[data-theme="light"] .uuh-open-chat:focus-visible {
+  outline-color: #101010;
+}
+
+html[data-theme="light"] .uuh-launcher-trigger:focus-visible {
+  outline-color: #101010;
+}
+
+html[data-theme="light"] .uuh-app-tile:focus-visible {
+  outline-color: #101010;
+}

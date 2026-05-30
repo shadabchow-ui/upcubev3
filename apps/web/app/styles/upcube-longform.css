@@ -1,0 +1,387 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.uc-longform-page {
+  min-height: 100svh;
+}
+
+.uc-longform-page .uc-longform-hero {
+  border-top: 0;
+  padding-block: clamp(4rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.uc-longform-page .uc-longform-body {
+  border-top: 1px solid var(--uc-border-soft);
+}
+
+.uc-longform-cover-row {
+  margin-top: clamp(2rem, 5vw, 4rem);
+  margin-bottom: clamp(2rem, 4.8vw, 4rem);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.uc-longform-cover-image {
+  width: 100%;
+  height: clamp(18rem, 42vw, 34rem);
+  object-fit: cover;
+  display: block;
+}
+
+.uc-longform-page .uc-longform-hero-copy {
+  display: grid;
+  gap: 1.25rem;
+  width: min(100%, 44rem);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.uc-longform-page .uc-longform-hero-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 580;
+  text-wrap: balance;
+}
+
+.uc-longform-page .uc-longform-hero-subtitle {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  line-height: 1.4;
+  color: var(--up-color-primary-80);
+  font-weight: 500;
+}
+
+.uc-longform-page .uc-longform-hero-desc {
+  margin: 0;
+  color: var(--up-color-primary-60);
+  font-size: var(--up-type-p1-size);
+  line-height: 1.65;
+  max-width: 40rem;
+}
+
+.uc-longform-page .uc-longform-body {
+  width: min(100%, 44rem);
+  margin-inline: auto;
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  font-family: var(--up-font-editorial);
+}
+
+.uc-longform-body h1 {
+  margin: 3.25rem 0 1rem;
+  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 580;
+  color: var(--uc-text);
+  text-wrap: balance;
+}
+
+.uc-longform-body h2 {
+  margin: 3rem 0 0.9rem;
+  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  font-weight: 580;
+  color: var(--uc-text);
+  text-wrap: balance;
+}
+
+.uc-longform-body h3 {
+  margin: 2rem 0 0.65rem;
+  font-size: clamp(1.12rem, 1.45vw, 1.35rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  font-weight: 560;
+  color: var(--up-color-primary-80);
+  text-wrap: balance;
+}
+
+.uc-longform-body h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.32;
+  letter-spacing: -0.005em;
+  font-weight: 580;
+  color: var(--uc-text);
+  text-wrap: balance;
+}
+
+.uc-longform-body p {
+  margin: 0 0 1.5rem;
+  color: var(--up-color-primary-60);
+  font-size: var(--up-type-p1-size);
+  line-height: 1.8;
+  letter-spacing: var(--up-type-p1-track);
+}
+
+.uc-longform-body p:first-child {
+  margin-top: 0;
+}
+
+.uc-longform-body p:last-child {
+  margin-bottom: 0;
+}
+
+.uc-longform-body ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.uc-longform-body ul li {
+  position: relative;
+  padding-left: 0.6rem;
+  color: var(--up-color-primary-60);
+  font-size: var(--up-type-p1-size);
+  line-height: 1.7;
+  letter-spacing: var(--up-type-p1-track);
+}
+
+.uc-longform-body ul li::before {
+  content: "–";
+  position: absolute;
+  left: -1rem;
+  color: var(--uc-text-muted);
+}
+
+.uc-longform-body hr {
+  margin: 3rem 0;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--uc-border-soft) 20%,
+    var(--uc-border-soft) 80%,
+    transparent
+  );
+}
+
+.uc-longform-body h1:first-child {
+  margin-top: 0;
+}
+
+.uc-longform-body h2:first-child,
+.uc-longform-body h3:first-child,
+.uc-longform-body h4:first-child {
+  margin-top: 0;
+}
+
+.uc-longform__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 2.5rem 0 3rem;
+  color: var(--up-color-primary-60);
+  text-decoration: none;
+  font-size: var(--up-type-nav-size);
+  line-height: var(--up-type-nav-line);
+  letter-spacing: var(--up-type-nav-track);
+  font-weight: var(--up-type-nav-weight);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--uc-border-soft);
+  border-radius: 999px;
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.uc-longform__back:hover,
+.uc-longform__back:focus-visible {
+  color: var(--uc-text);
+  border-color: var(--uc-border);
+  background: color-mix(in srgb, var(--uc-surface) 60%, transparent);
+}
+
+.uc-longform-index {
+  min-height: 100svh;
+}
+
+.uc-longform-index-hero {
+  padding-block: clamp(4rem, 8vw, 6rem);
+  border-top: 0;
+}
+
+.uc-longform-index-hero-copy {
+  width: min(100%, 48rem);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.uc-longform-index-hero-title {
+  font-size: var(--up-type-xl-size);
+  line-height: var(--up-type-xl-line);
+  letter-spacing: var(--up-type-xl-track);
+  font-weight: var(--up-type-xl-weight);
+  text-wrap: balance;
+  margin: 0;
+  max-width: 14ch;
+}
+
+.uc-longform-index-hero-desc {
+  margin: 0;
+  color: var(--up-color-primary-60);
+  font-size: var(--up-type-p1-size);
+  line-height: var(--up-type-p1-line);
+  letter-spacing: var(--up-type-p1-track);
+  max-width: 48rem;
+}
+
+.uc-longform-index-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.uc-longform-index-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 0.75rem;
+}
+
+.uc-longform-index-highlight {
+  border: 1px solid var(--uc-border-soft);
+  border-radius: var(--up-radius-md);
+  padding: 0.65rem 1rem;
+  background: #070707;
+  font-size: var(--up-type-p2-size);
+  line-height: 1.45;
+  color: var(--up-color-primary-80);
+  backdrop-filter: blur(6px);
+}
+
+.uc-longform-index-grid-label {
+  margin-bottom: 1.5rem;
+}
+
+.uc-longform-index-section {
+  padding-block: var(--up-section-y);
+  border-top: 1px solid var(--uc-border-soft);
+}
+
+.uc-longform-index-grid {
+  display: grid;
+  gap: 1.15rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+}
+
+.uc-longform-index-card {
+  display: grid;
+  gap: 0.65rem;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid var(--uc-border-soft);
+  border-radius: var(--uc-radius);
+  background: #070707;
+  box-shadow: var(--uc-shadow);
+  text-decoration: none;
+  color: var(--uc-text);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.uc-longform-index-card:hover,
+.uc-longform-index-card:focus-visible {
+  border-color: var(--uc-border);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.uc-longform-index-card-order {
+  margin: 0;
+  color: var(--up-color-primary-50);
+  font-size: 0.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.uc-longform-index-card-title {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  font-weight: 550;
+}
+
+.uc-longform-index-card-desc {
+  margin: 0;
+  color: var(--up-color-primary-60);
+  font-size: var(--up-type-p2-size);
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .uc-longform-page .uc-longform-hero {
+    padding-block: clamp(2.5rem, 9vw, 3.5rem);
+    padding-bottom: clamp(2rem, 6vw, 3rem);
+  }
+
+  .uc-longform-page .uc-longform-hero-title {
+    font-size: clamp(1.75rem, 6vw, 2.2rem);
+  }
+
+  .uc-longform-page .uc-longform-body {
+    width: 100%;
+    padding-top: clamp(1rem, 3vw, 1.5rem);
+    padding-bottom: clamp(2rem, 6vw, 3rem);
+  }
+
+  .uc-longform-cover-row {
+    border-radius: 18px;
+  }
+
+  .uc-longform-cover-image {
+    height: clamp(14rem, 58vw, 22rem);
+  }
+
+  .uc-longform-index-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uc-longform-body h1 {
+    margin: 2.25rem 0 0.9rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .uc-longform-body h2 {
+    margin: 2rem 0 0.8rem;
+    font-size: clamp(1.3rem, 4vw, 1.65rem);
+  }
+
+  .uc-longform-body h3 {
+    margin: 1.5rem 0 0.6rem;
+    font-size: clamp(1.05rem, 3vw, 1.25rem);
+  }
+
+  .uc-longform-body h4 {
+    margin: 1.25rem 0 0.45rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  }
+
+  .uc-longform-body p {
+    margin: 0 0 1.2rem;
+  }
+}
