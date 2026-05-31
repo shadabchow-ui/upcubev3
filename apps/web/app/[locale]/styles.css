@@ -80,3 +80,4 @@ pre {
   content: attr(title);
   @apply inline-block text-muted-foreground text-right mb-6 text-sm;
 }
+

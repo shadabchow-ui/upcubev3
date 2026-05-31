@@ -79,7 +79,7 @@ function LanguageSelector() {
         className="uc-footer-bottom-lang"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
-        aria-label="Language — English (US). Translation UI is conceptual only."
+        aria-label="Language - English (US)"
         onClick={() => setIsOpen((v) => !v)}
       >
         {currentLang.label}
@@ -142,16 +142,6 @@ function LanguageSelector() {
               {lang.label}
             </button>
           ))}
-          <p
-            style={{
-              margin: "0.4rem 0.65rem 0",
-              fontSize: "0.6875rem",
-              lineHeight: "1.3",
-              color: "var(--up-color-primary-50)",
-            }}
-          >
-            Translation UI is conceptual. Full i18n is not implemented.
-          </p>
         </div>
       ) : null}
     </div>
@@ -167,7 +157,7 @@ export function PortalFooter() {
             <div
               className="uc-footer-brand-mark"
               role="img"
-              aria-label="UpcubeAI"
+              aria-label="Upcube"
             />
             <div>
               <p className="uc-footer-brand-tagline">One AI cloud console.</p>
@@ -224,7 +214,7 @@ export function PortalFooter() {
             ))}
           </div>
           <div className="uc-footer-bottom-center">
-            <p className="uc-footer-bottom-copy">UpCube inc &copy; 2026</p>
+            <p className="uc-footer-bottom-copy">Upcube, Inc. &copy; 2026</p>
             <span className="uc-footer-bottom-sep" aria-hidden="true">
               &middot;
             </span>

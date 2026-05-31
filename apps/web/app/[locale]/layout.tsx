@@ -13,10 +13,13 @@ interface RootLayoutProperties {
   }>;
 }
 
-const RootLayout = async ({ children }: RootLayoutProperties) => (
+const RootLayout = async ({ children, params }: RootLayoutProperties) => {
+  const { locale } = await params;
+
+  return (
   <html
     className={cn(fonts, "scroll-smooth")}
-    lang="en"
+    lang={locale}
     suppressHydrationWarning
   >
     <body>
@@ -28,6 +31,7 @@ const RootLayout = async ({ children }: RootLayoutProperties) => (
       </AnalyticsProvider>
     </body>
   </html>
-);
+  );
+};
 
 export default RootLayout;

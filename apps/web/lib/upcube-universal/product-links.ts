@@ -331,7 +331,7 @@ export const upcubeLauncherApps = [
     id: "chat" as const,
     label: "Ethen",
     href: UPCUBE_CHAT_URL,
-    iconSrc: "/upcube-app-icons/message.png",
+    iconSrc: "/upcube-app-icons/console.png",
   },
   {
     id: "globe" as const,
@@ -343,7 +343,7 @@ export const upcubeLauncherApps = [
     id: "news" as const,
     label: "News",
     href: UPCUBE_NEWS_URL,
-    iconSrc: "/upcube-app-icons/book.png",
+    iconSrc: "/upcube-app-icons/message.png",
   },
   {
     id: "books" as const,
@@ -373,7 +373,7 @@ export const upcubeLauncherApps = [
     id: "quantum" as const,
     label: "Quantum",
     href: UPCUBE_QUANTUM_URL,
-    iconSrc: "/upcube-app-icons/console.png",
+    iconSrc: "/upcube-app-icons/cloud.png",
   },
   {
     id: "shopping" as const,
@@ -391,13 +391,13 @@ export const upcubeLauncherApps = [
     id: "os" as const,
     label: "OS",
     href: "/products/upcube-os",
-    iconSrc: "/upcube-app-icons/console.png",
+    iconSrc: "/upcube-app-icons/book.png",
   },
   {
     id: "mobile-os" as const,
     label: "Mobile OS",
     href: "/products/upcube-mobile-os",
-    iconSrc: "/upcube-app-icons/console.png",
+    iconSrc: "/upcube-app-icons/voice.png",
   },
   {
     id: "voice" as const,
@@ -415,7 +415,7 @@ export const upcubeLauncherApps = [
     id: "research" as const,
     label: "Research",
     href: UPCUBE_RESEARCH_URL,
-    iconSrc: "/upcube-app-icons/console.png",
+    iconSrc: "/upcube-app-icons/education.png",
   },
   {
     id: "avatar" as const,

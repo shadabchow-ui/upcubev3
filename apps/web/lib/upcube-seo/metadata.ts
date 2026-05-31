@@ -11,7 +11,7 @@ export const DEFAULT_SITE_DESCRIPTION =
 export const DEFAULT_OG_IMAGE = "/opengraph-image";
 
 export const canonicalBaseUrl = CANONICAL_BASE_URL;
-export const upcubeSiteName = "UpcubeAI";
+export const upcubeSiteName = "Upcube";
 
 type PageMetadataInput = {
   title?: string;
@@ -113,7 +113,7 @@ export function createNewsIndexMetadata(): Metadata {
   return createBasicPageMetadata({
     title: `Upcube News | ${upcubeSiteName}`,
     description:
-      "Launch stories and product previews across UpcubeAI, Robotics, Voice, Education, Commerce, Books, Earth, Games, Jobs, Cloud, OS, and Mobile OS.",
+      "Launch stories and product previews across Upcube, Robotics, Voice, Education, Commerce, Books, Earth, Games, Jobs, Cloud, OS, and Mobile OS.",
     path: "/news",
   });
 }

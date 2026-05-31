@@ -9,6 +9,16 @@ let nextConfig: NextConfig = withToolbar(withLogging(config));
 if (process.env.NODE_ENV === "production") {
   const redirects: NextConfig["redirects"] = async () => [
     {
+      source: "/signin",
+      destination: "/sign-in",
+      permanent: false,
+    },
+    {
+      source: "/signup",
+      destination: "/sign-up",
+      permanent: false,
+    },
+    {
       source: "/legal",
       destination: "/legal/privacy",
       statusCode: 301,

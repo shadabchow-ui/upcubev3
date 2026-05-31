@@ -1748,49 +1748,29 @@ export const legalDraftNotice =
   "Reviewed legal copy, legal entity details, effective dates, and policy contacts are not provided in this repo.";
 
 export const privacyPolicySections: PortalTextSection[] = [
-  {
-    id: "draft",
-    title: "Draft privacy policy status",
-    paragraphs: [
-      legalDraftNotice,
-      "This page provides structure only and should not be interpreted as final legal policy text.",
-    ],
-  },
-  {
-    id: "categories",
-    title: "Policy sections pending source text",
-    bullets: [
-      "Data collection categories and purposes.",
-      "Retention and deletion handling.",
-      "Data subject requests and contact process.",
-      "Third-party processors and transfer disclosures.",
-    ],
-    paragraphs: ["None of these sections are finalized in the current repo."],
-  },
+  { id: "information-we-collect", title: "What information we collect", paragraphs: ["Effective date: 2026-01-01. [Company Name] may collect account data such as your name, email address, login details, and workspace profile information, along with usage data about how you use https://upcube.ai and device data such as browser type, IP address, operating system, and general diagnostics."] },
+  { id: "how-we-use-information", title: "How we use your information", paragraphs: ["We use your information to provide and operate the service, authenticate accounts, support product features, improve performance and reliability, respond to support requests, and send service-related or legal communications."] },
+  { id: "how-we-share-information", title: "How we share your information", paragraphs: ["We may share information with service providers that help us host, secure, analyze, or support the service, and when required by law or to protect rights, safety, or the service. [Company Name] does not sell your personal data."] },
+  { id: "data-retention", title: "Data retention", paragraphs: ["We keep personal information for as long as your account is active, as needed to provide the service, resolve disputes, enforce agreements, and meet legal, tax, security, or compliance obligations."] },
+  { id: "your-rights", title: "Your rights", paragraphs: ["You may request access to, correction of, or deletion of your personal information by contacting legal@upcube.ai. We will review and respond in line with applicable law and our operational requirements."] },
+  { id: "cookies-and-tracking", title: "Cookies and tracking", paragraphs: ["We use essential cookies and similar technologies to keep the service working, remember preferences, and help us understand site performance. Analytics tools may collect usage information, and you can limit some tracking through your browser settings or available opt-out tools."] },
+  { id: "security", title: "Security", paragraphs: ["[Company Name] uses industry-standard administrative, technical, and physical safeguards designed to protect personal information. No method of storage, transmission, or security control can guarantee absolute security."] },
+  { id: "childrens-privacy", title: "Children's privacy", paragraphs: ["The service is not directed to children under 13, and we do not knowingly collect personal information from children under 13 through https://upcube.ai. If you believe a child provided personal information, contact legal@upcube.ai."] },
+  { id: "changes-to-policy", title: "Changes to this policy", paragraphs: ["We may update this Privacy Policy from time to time. If we make material changes, we may provide notice through the website, by email, or through the service before the updated policy takes effect."] },
+  { id: "privacy-contact", title: "Contact", paragraphs: ["For privacy questions or requests, contact legal@upcube.ai or write to [Company Name] at [Registered Address]."] },
 ];
 
 export const termsSections: PortalTextSection[] = [
-  {
-    id: "draft",
-    title: "Draft terms status",
-    paragraphs: [
-      legalDraftNotice,
-      "This page is a non-binding placeholder route for future reviewed terms-of-service content.",
-    ],
-  },
-  {
-    id: "topics",
-    title: "Terms topics pending legal review",
-    bullets: [
-      "Eligibility and acceptable use.",
-      "Service availability and modifications.",
-      "Liability limits and dispute process.",
-      "Termination and account controls.",
-    ],
-    paragraphs: [
-      "Final wording and jurisdictional terms are not provided in this repository.",
-    ],
-  },
+  { id: "acceptance-of-terms", title: "Acceptance of terms", paragraphs: ["By accessing or using https://upcube.ai or any related Upcube service, you agree to these Terms of Service. If you do not agree, do not use the service."] },
+  { id: "description-of-service", title: "Description of service", paragraphs: ["[Company Name] provides an AI platform and related products, tools, and experiences through https://upcube.ai. Features may change, improve, be limited, or be discontinued over time."] },
+  { id: "account-registration", title: "Account registration", paragraphs: ["If you create an account, you must provide accurate and current information and keep it updated. You are responsible for maintaining the confidentiality of your credentials and for activity that occurs under your account."] },
+  { id: "acceptable-use", title: "Acceptable use", paragraphs: ["You may not use the service for illegal activity, to interfere with or abuse the platform, or to scrape, copy, or extract data from the service without written permission. You must also respect the rights, privacy, and security of others."] },
+  { id: "intellectual-property", title: "Intellectual property", paragraphs: ["[Company Name] and its licensors own the platform, software, branding, and related intellectual property in the service. You retain rights in content you submit, but you grant us the rights needed to host, process, and provide the service."] },
+  { id: "disclaimer-of-warranties", title: "Disclaimer of warranties", paragraphs: ["The service is provided on an as-is and as-available basis. To the maximum extent permitted by law, [Company Name] disclaims warranties of merchantability, fitness for a particular purpose, non-infringement, and uninterrupted or error-free operation."] },
+  { id: "limitation-of-liability", title: "Limitation of liability", paragraphs: ["To the extent permitted by law, [Company Name] will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, revenues, data, or business opportunities arising from your use of the service."] },
+  { id: "termination", title: "Termination", paragraphs: ["We may suspend or terminate your access if you violate these Terms, create risk for the service or others, or if we stop offering the service. You may stop using the service at any time."] },
+  { id: "governing-law", title: "Governing law", paragraphs: ["These Terms are governed by the laws of [Jurisdiction], without regard to conflict-of-law principles, except where applicable law requires otherwise."] },
+  { id: "terms-contact", title: "Contact", paragraphs: ["If you have questions about these Terms, contact legal@upcube.ai."] },
 ];
 
 export const pricingSections: PortalTextSection[] = [
