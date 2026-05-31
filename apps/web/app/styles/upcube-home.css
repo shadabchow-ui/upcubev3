@@ -100,7 +100,7 @@ body:has(.uc-home) .commerce-navbar {
   width: min(100%, 52rem);
   display: grid;
   justify-items: center;
-  gap: 0.4rem;
+  gap: 0.6rem;
   text-align: center;
 }
 
@@ -130,8 +130,8 @@ body:has(.uc-home) .commerce-navbar {
 .uc-home__chat-panel {
   width: min(100%, 52rem);
   display: grid;
-  gap: 0.65rem;
-  margin: 0.65rem auto 0;
+  gap: 0.75rem;
+  margin: 0.8rem auto 0;
 }
 
 .uc-home__chat-composer {
@@ -142,7 +142,7 @@ body:has(.uc-home) .commerce-navbar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.9rem 0.9rem 0.9rem 1.5rem;
+  padding: 0.95rem 0.95rem 0.95rem 1.25rem;
   border-radius: 1.5rem;
   background: var(--uc-surface);
   border: 1px solid rgba(245, 245, 240, 0.1);
@@ -156,7 +156,7 @@ body:has(.uc-home) .commerce-navbar {
 
 .uc-home__chat-composer textarea {
   flex: 1;
-  min-height: 2rem;
+  min-height: 2.25rem;
   border: 0;
   resize: none;
   outline: 0;
@@ -179,8 +179,8 @@ body:has(.uc-home) .commerce-navbar {
 
 .uc-home__chat-send {
   flex: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +290,7 @@ body:has(.uc-home) .commerce-navbar {
 
 .uc-home__primary-btn,
 .uc-home__ghost-btn {
-  min-height: 2.45rem;
+  min-height: 2.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -353,7 +353,8 @@ body:has(.uc-home) .commerce-navbar {
   align-items: center;
   border: 1px solid var(--uc-border-soft);
   border-radius: 999px;
-  padding: 0.4rem 0.8rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.85rem;
   font-size: 0.8rem;
   line-height: 1.3;
   color: var(--uc-text-muted);
@@ -417,10 +418,12 @@ body:has(.uc-home) .commerce-navbar {
 
 .uc-home__category-product-link {
   display: inline-flex;
+  align-items: center;
   border: 1px solid var(--uc-border-soft);
   border-radius: 999px;
   color: var(--uc-text-muted);
-  padding: 0.35rem 0.7rem;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.75rem;
   font-size: 0.8125rem;
   line-height: 1.4;
   text-decoration: none;
@@ -457,6 +460,7 @@ body:has(.uc-home) .commerce-navbar {
 .uc-home__portal-card,
 .uc-home__audience-card,
 .uc-home__proof-card {
+  min-width: 0;
   min-height: 13rem;
   display: grid;
   align-content: start;
@@ -484,6 +488,8 @@ body:has(.uc-home) .commerce-navbar {
 .uc-home__portal-card h3,
 .uc-home__audience-card h3,
 .uc-home__proof-card h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin: 0;
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
   line-height: 1.2;
@@ -493,6 +499,8 @@ body:has(.uc-home) .commerce-navbar {
 .uc-home__portal-card p,
 .uc-home__audience-card p,
 .uc-home__proof-card p {
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin: 0;
   color: var(--uc-text-muted);
   line-height: 1.5;
@@ -597,7 +605,102 @@ body:has(.uc-home) .commerce-navbar {
   outline-offset: 2px;
 }
 
+.uc-home__hero .uc-home__container,
+.uc-home__hero-actions > *,
+.uc-home__chat-panel > * {
+  min-width: 0;
+}
+
 /* Responsive */
+
+@media (min-width: 64rem) {
+  .uc-home {
+    --uc-max: min(88rem, var(--up-media-width));
+    --uc-section-y: clamp(3.75rem, 5vw, 5.5rem);
+  }
+
+  .uc-home__hero-inner {
+    min-height: clamp(34rem, 78vh, 44rem);
+    padding-block: clamp(3rem, 5vw, 5rem);
+  }
+
+  .uc-home__hero-stack {
+    width: min(100%, 64rem);
+    gap: 0.75rem;
+  }
+
+  .uc-home__hero h1,
+  .uc-home__hero-title {
+    max-width: 20ch;
+    font-size: clamp(2.2rem, 3.25vw, 3.4rem);
+    line-height: 1.06;
+    margin-bottom: 0.45rem;
+  }
+
+  .uc-home__chat-panel {
+    width: min(100%, 58rem);
+    margin-top: 1rem;
+  }
+
+  .uc-home__hero-actions {
+    margin-top: 0.95rem;
+    gap: 0.75rem;
+  }
+
+  .uc-home__section h2 {
+    max-width: 24ch;
+    margin-bottom: clamp(1.4rem, 2.5vw, 2rem);
+  }
+
+  .uc-home__section--intent {
+    padding-block: clamp(1rem, 1.6vw, 1.3rem);
+  }
+
+  .uc-home__categories-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+  }
+
+  .uc-home__portal-grid,
+  .uc-home__audience-grid,
+  .uc-home__proof-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .uc-home__portal-card,
+  .uc-home__audience-card,
+  .uc-home__proof-card,
+  .uc-home__category-card {
+    padding: clamp(1.25rem, 2vw, 1.8rem);
+  }
+
+  .uc-home__portal-card h3,
+  .uc-home__audience-card h3,
+  .uc-home__proof-card h3 {
+    font-size: clamp(1.1rem, 1.35vw, 1.28rem);
+    line-height: 1.22;
+  }
+
+  .uc-home__portal-card p,
+  .uc-home__audience-card p,
+  .uc-home__proof-card p {
+    font-size: 0.925rem;
+    line-height: 1.6;
+  }
+
+  .uc-home__card-link {
+    font-size: 0.9rem;
+  }
+
+  .uc-home__spotlight {
+    grid-template-columns: minmax(0, 1.05fr);
+    justify-content: center;
+  }
+
+  .uc-home__spotlight-content {
+    width: min(100%, 56rem);
+  }
+}
 
 @media (max-width: 62rem) {
   .uc-home__categories-grid {
@@ -605,18 +708,76 @@ body:has(.uc-home) .commerce-navbar {
   }
 }
 
-@media (max-width: 44rem) {
+@media (max-width: 767px) {
   .uc-home {
-    --uc-section-y: clamp(2.5rem, 6vw, 3.5rem);
+    --uc-section-y: clamp(2.2rem, 6vw, 3rem);
   }
 
   .uc-home__hero-inner {
     min-height: auto;
-    padding-block: clamp(1.5rem, 4vw, 2.5rem);
+    padding-block: clamp(1.1rem, 4vw, 2rem);
   }
 
   .uc-home__hero h1 {
-    font-size: clamp(22px, 6vw, 28px);
+    max-width: 13ch;
+    font-size: clamp(1.55rem, 7vw, 1.95rem);
+    line-height: 1.12;
+  }
+
+  .uc-home__chat-panel {
+    margin-top: 0.65rem;
+    gap: 0.6rem;
+  }
+
+  .uc-home__chat-composer-inner {
+    border-radius: 1.2rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.95rem;
+  }
+
+  .uc-home__chat-composer textarea {
+    min-height: 2rem;
+    line-height: 1.45;
+  }
+
+  .uc-home__chat-send {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .uc-home__chat-helper {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    padding-inline: 0.25rem;
+  }
+
+  .uc-home__hero-actions {
+    width: 100%;
+    gap: 0.55rem;
+    margin-top: 0.4rem;
+  }
+
+  .uc-home__primary-btn,
+  .uc-home__ghost-btn {
+    width: 100%;
+    min-height: 2.8rem;
+    padding-inline: 0.95rem;
+  }
+
+  .uc-home__section--intent {
+    padding-block: 0.7rem;
+  }
+
+  .uc-home__intent-strip {
+    justify-content: flex-start;
+    gap: 0.45rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.15rem;
+    scrollbar-width: none;
+  }
+
+  .uc-home__intent-strip::-webkit-scrollbar {
+    display: none;
   }
 
   .uc-home__categories-grid {
@@ -634,40 +795,53 @@ body:has(.uc-home) .commerce-navbar {
   .uc-home__proof-card {
     min-height: auto;
     gap: 0.7rem;
+    padding: 1rem 0.95rem;
   }
 
   .uc-home__section h2 {
     max-width: none;
+    font-size: clamp(1.4rem, 6vw, 1.85rem);
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 430px) {
   .uc-home__hero h1 {
     max-width: 12ch;
-    font-size: clamp(20px, 6vw, 24px);
+    font-size: clamp(1.45rem, 7.2vw, 1.75rem);
   }
 
   .uc-home__hero-inner {
-    padding-block: clamp(1rem, 3vw, 1.5rem);
-  }
-
-  .uc-home__hero-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .uc-home__primary-btn,
-  .uc-home__ghost-btn {
-    width: 100%;
+    padding-block: 1rem 1.35rem;
   }
 
   .uc-home__chat-composer-inner {
-    padding: 0.55rem 0.55rem 0.55rem 1rem;
-    border-radius: 1.25rem;
+    padding: 0.65rem;
+    border-radius: 1.1rem;
+  }
+
+  .uc-home__chat-composer textarea {
+    font-size: 1rem;
+    min-height: 1.9rem;
   }
 
   .uc-home__chat-suggestions {
     gap: 0.35rem;
+  }
+
+  .uc-home__section {
+    padding-block: clamp(2rem, 7vw, 2.7rem);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .uc-home__hero-inner {
+    min-height: min(34rem, calc(100svh - max(4.35rem, var(--up-header-h))));
+    padding-block: clamp(2rem, 5vw, 3rem);
+  }
+
+  .uc-home__hero h1 {
+    font-size: clamp(2rem, 4.8vw, 2.35rem);
   }
 }
 

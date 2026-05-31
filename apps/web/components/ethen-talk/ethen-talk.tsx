@@ -112,6 +112,9 @@ export function EthenTalk() {
           className="ethen-talk__fab"
           onClick={openPanel}
           aria-label="Talk to Ethen"
+          aria-expanded={open}
+          aria-controls="ethen-talk-panel"
+          type="button"
         >
           <svg
             width="20"
@@ -132,7 +135,13 @@ export function EthenTalk() {
       {open && (
         <div className="ethen-talk__overlay">
           <div className="ethen-talk__backdrop" onClick={closePanel} />
-          <div className="ethen-talk__panel">
+          <div
+            className="ethen-talk__panel"
+            id="ethen-talk-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Ethen assistant"
+          >
             <div className="ethen-talk__header">
               <h2 className="ethen-talk__title">Meet Ethen</h2>
               <p className="ethen-talk__subtitle">Your Upcube AI guide.</p>
@@ -140,6 +149,7 @@ export function EthenTalk() {
                 className="ethen-talk__close"
                 onClick={closePanel}
                 aria-label="Close"
+                type="button"
               >
                 <svg
                   width="20"
@@ -167,6 +177,7 @@ export function EthenTalk() {
                   className="ethen-talk__cta"
                   onClick={handleSpeak}
                   disabled={voiceStatus.type === "loading"}
+                  type="button"
                 >
                   Speak with Ethen
                 </button>
@@ -214,6 +225,7 @@ export function EthenTalk() {
                         key={s.label}
                         className="ethen-talk__starter"
                         onClick={() => handleStarterClick(s.label)}
+                        type="button"
                       >
                         {s.label}
                       </button>
