@@ -1,4 +1,11 @@
-// Auto-generated inline content from content/upcube-page-imports-flat
+// ⚠ GENERATED FILE — Do not edit the content body entries below manually.
+// Source: content/upcube-page-imports-flat/*.md
+// If you need to change page body content, edit the .md file in that directory.
+// There is currently no generator script wired into the build pipeline;
+// the markdown → TypeScript conversion for this file was done as a one-off.
+// See apps/web/content/README.md for how to work with this file.
+//
+// This file was auto-generated from content/upcube-page-imports-flat
 
 export type PageContentEntry = {
   slug: string;

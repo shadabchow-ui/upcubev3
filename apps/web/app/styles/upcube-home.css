@@ -203,9 +203,51 @@ body:has(.uc-home) .commerce-navbar {
   transform: scale(0.96);
 }
 
+.uc-home__chat-send:disabled {
+  opacity: 0.35;
+  cursor: default;
+  transform: none;
+}
+
 .uc-home__chat-send:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.3);
   outline-offset: 2px;
+}
+
+.uc-home__chat-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000;
+  border-radius: 999px;
+  animation: uc-spin 0.6s linear infinite;
+}
+
+@keyframes uc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.uc-home__chat-composer--error {
+  border-color: rgba(255, 80, 80, 0.45) !important;
+  box-shadow: 0 0 0 1px rgba(255, 80, 80, 0.12) !important;
+}
+
+.uc-home__chat-error {
+  margin: 0;
+  color: rgba(255, 110, 110, 0.85);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.uc-home__chat-helper {
+  margin: 0;
+  color: rgba(245, 245, 240, 0.3);
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
 }
 
 .uc-home__chat-suggestions {
@@ -705,6 +747,28 @@ html[data-theme="light"] .uc-home__chat-send {
   color: #fff;
 }
 
+html[data-theme="light"] .uc-home__chat-send:disabled {
+  opacity: 0.3;
+}
+
+html[data-theme="light"] .uc-home__chat-spinner {
+  border-color: rgba(255, 255, 255, 0.25);
+  border-top-color: #fff;
+}
+
+html[data-theme="light"] .uc-home__chat-helper {
+  color: rgba(16, 16, 16, 0.28);
+}
+
+html[data-theme="light"] .uc-home__chat-error {
+  color: rgba(200, 40, 40, 0.85);
+}
+
+html[data-theme="light"] .uc-home__chat-composer--error {
+  border-color: rgba(200, 40, 40, 0.45) !important;
+  box-shadow: 0 0 0 1px rgba(200, 40, 40, 0.12) !important;
+}
+
 html[data-theme="light"] .uc-home__grid--accent-outline::before {
   background: linear-gradient(135deg, rgba(80, 200, 120, 0.14), rgba(60, 130, 255, 0.10), rgba(255, 180, 60, 0.08), rgba(255, 80, 80, 0.06));
 }
@@ -722,5 +786,10 @@ html[data-theme="light"] .uc-home__grid--accent-outline::before {
   .uc-home__audience-card:hover,
   .uc-home__proof-card:hover {
     transform: none;
+  }
+
+  .uc-home__chat-spinner {
+    animation: none;
+    opacity: 0.6;
   }
 }

@@ -262,6 +262,22 @@ export function PortalHeader() {
           </button>
           <ThemeToggle />
           <UpcubeAppLauncher />
+          {session.status !== "authenticated" ? (
+            <>
+              <Link
+                className="uc-button"
+                href="/signin"
+              >
+                Sign in
+              </Link>
+              <Link
+                className="uc-button uc-button--accent"
+                href="/signup"
+              >
+                Get started
+              </Link>
+            </>
+          ) : null}
           {session.status === "authenticated" && session.user ? (
             <div className="uc-header-account">
               <Link
@@ -418,7 +434,24 @@ export function PortalHeader() {
                 >
                   {session.user.name || session.user.email || "Account"}
                 </Link>
-              ) : null}
+              ) : (
+                <>
+                  <Link
+                    className="uc-mobile-menu-cta"
+                    href="/signin"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Sign in
+                  </Link>
+                  <Link
+                    className="uc-mobile-menu-cta uc-mobile-menu-cta--accent"
+                    href="/signup"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Get started
+                  </Link>
+                </>
+              )}
               <Link
                 className="uc-mobile-menu-cta uc-mobile-menu-cta--accent"
                 href="https://console.upcube.ai"

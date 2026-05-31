@@ -1,16 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
 import { PortalFooter } from "components/upcube-portal/portal-footer";
 import { PortalHeader } from "components/upcube-portal/portal-header";
 import { PortalShell } from "components/upcube-portal/portal-shell";
+import { createBasicPageMetadata } from "lib/upcube-seo/metadata";
 import { upcubeProductLinks } from "lib/upcube-universal/product-links";
 
-export const metadata: Metadata = {
-  title: "All Products | Upcube",
-  description:
-    "Explore the full Upcube product family across Core, Build, Learn, and Explore.",
-};
+export const metadata = createBasicPageMetadata({ title: "All Products | Upcube", description: "Explore the full Upcube product family across Core, Build, Learn, and Explore.", path: "/products" });
 
 type GroupDef = {
   id: string;

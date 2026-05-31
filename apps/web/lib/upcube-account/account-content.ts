@@ -14,7 +14,7 @@ export type AccountOverviewCard = {
 
 export const accountDashboardTitle = "Account";
 export const accountDashboardDescription =
-  "Control panel for your Upcube products and settings.";
+  "Your Upcube Console account. Access workspaces, manage your profile, and launch products across the Upcube family.";
 
 export const accountNavItems: AccountNavItem[] = [
   { id: "overview", label: "Overview", href: "/account" },
@@ -32,56 +32,56 @@ export const accountOverviewCards: AccountOverviewCard[] = [
     id: "status",
     title: "Account Status",
     description:
-      "Account management and profile settings are not yet available. Sign-in and user sessions are not provided in this release.",
-    href: "/account/profile",
-    status: "Not available",
+      "Your central Upcube Account manages identity, access, and profile across the entire product family. Visit the Upcube Console to manage workspaces and launch products.",
+    href: "https://console.upcube.ai",
+    status: "Go to Console",
   },
   {
     id: "apps",
     title: "Your Upcube Apps",
     description:
-      "Browse all Upcube products and launch destinations. Connected app status requires an account system not yet provided.",
+      "Browse and launch all Upcube products from the app launcher or product pages. Each product is accessible from the Upcube Console workspace.",
     href: "/account/apps",
-    status: "Browse products",
+    status: "View products",
   },
   {
     id: "security",
     title: "Security Checkup",
     description:
-      "Security settings, devices, and session management are not available. Authentication backend is not provided in this release.",
-    href: "/account/security",
-    status: "Not available",
+      "Security settings, devices, and session management are handled through the central Upcube Account service. Sign in to review your security posture.",
+    href: "/signin",
+    status: "Sign in",
   },
   {
     id: "billing",
     title: "Plan & Billing",
     description:
-      "Billing and subscription management are not provided. Pricing plans and payment processing are not implemented in this release.",
-    href: "/account/billing",
-    status: "Not available",
+      "Billing, subscription plans, and invoices are managed through the Upcube Console workspace. Sign in to view billing details for your account.",
+    href: "https://console.upcube.ai",
+    status: "Open Console",
   },
   {
     id: "privacy",
     title: "Privacy & Data",
     description:
-      "Privacy controls and data management are not available. Policy details for data handling are on the Privacy page.",
-    href: "/account/privacy",
-    status: "See Privacy",
+      "Review Upcube's privacy practices and data handling on the Privacy and Trust pages. Privacy controls are accessible after signing in.",
+    href: "/privacy",
+    status: "Read Policy",
   },
   {
     id: "storage",
     title: "Storage & Usage",
     description:
-      "Storage tracking and usage management are not provided. Backend infrastructure for storage quotas is not implemented.",
-    href: "/account/storage",
-    status: "Not available",
+      "Storage and usage tracking are available within Upcube Console and Cloud products. Sign in to view your workspace storage and usage details.",
+    href: "/signin",
+    status: "Sign in",
   },
   {
     id: "help",
     title: "Help & Support",
     description:
-      "Get help with Upcube products. Contact the team for questions, feedback, and support requests.",
-    href: "/account/help",
+      "Get help with Upcube products. Reach the team through the Contact page or explore product pages for documentation and information.",
+    href: "/contact",
     status: "Get help",
   },
 ];
@@ -89,72 +89,72 @@ export const accountOverviewCards: AccountOverviewCard[] = [
 export const profileSections = [
   {
     id: "profile-status",
-    title: "Profile settings are not yet available.",
+    title: "Profile settings",
     description:
-      "User profile management, name changes, avatar uploads, and personal details require an account backend that is not provided in this release.",
+      "Your profile — including name, email, avatar, preferences, and notification settings — is managed through the central Upcube Account. Sign in to access and update your profile.",
   },
   {
     id: "profile-info",
-    title: "What would be here",
+    title: "What you can do",
     description:
-      "A completed profile page would include your name, email address, profile photo, display preferences, language selection, and notification settings. These features will become available when account infrastructure is implemented.",
+      "Once signed in, you can update your display name, profile photo, language preferences, and notification settings. Profile changes apply across all Upcube products and the Upcube Console.",
   },
   {
     id: "profile-cta",
-    title: "In the meantime",
+    title: "Get started",
     description:
-      "Use the Contact page to reach the Upcube team, or explore product pages and launch destinations without an account.",
+      "Sign in to your Upcube Account to manage your profile. New users can create an account to access the Upcube Console and product workspace.",
   },
 ];
 
 export const securitySections = [
   {
     id: "security-status",
-    title: "Security settings are not yet available.",
+    title: "Security settings",
     description:
-      "Password management, two-factor authentication, passkeys, active sessions, and device management require an authentication backend that is not provided in this release.",
+      "Password management, two-factor authentication, and session controls are handled through the central Upcube Account service. Sign in to review and manage your security settings.",
   },
   {
     id: "security-info",
     title: "Security principles",
     description:
-      "Upcube is designed with security awareness from the start. Products use scoped permissions, clear approval workflows, and privacy-aware interfaces. Specific security controls and certifications are documented on the Security and Trust pages.",
+      "Upcube is designed with security awareness from the start. Products use scoped permissions, clear approval workflows, and privacy-aware interfaces. Security controls and certifications are documented on the Security and Trust pages.",
   },
   {
     id: "security-cta",
     title: "Related pages",
     description:
-      "Visit the Security, Privacy, and Trust pages for current information about how Upcube approaches security and data protection.",
+      "Visit the Security, Privacy, and Trust pages for current information about how Upcube approaches security and data protection. Sign in to access your account security settings.",
   },
 ];
 
 export const appsSections = [
   {
     id: "apps-status",
-    title: "Connected app management is not yet available.",
+    title: "Your Upcube products",
     description:
-      "OAuth connections, API token management, and third-party app access require an account backend that is not provided in this release.",
+      "All Upcube products can be launched from the app launcher, product pages, or the Upcube Console workspace. Sign in to access your workspace and launch products with your account context.",
   },
   {
     id: "apps-live",
-    title: "Your Upcube products",
+    title: "Product family",
     description:
-      "All Upcube products can be launched directly from the product pages or app launcher. No account is required to explore or use available product destinations.",
+      "The Upcube product family includes AI, Cloud, Earth, News, Books, Games, Jobs, Quantum, Robotics, Commerce, Education, Research, and more. Browse and explore all products from the Products page.",
   },
   {
     id: "apps-cta",
     title: "Explore products",
     description:
-      "Browse the full Upcube product family from the Products page. Each product can be accessed without signing in.",
+      "Browse the full Upcube product family from the Products page. Each product can be explored without signing in. Sign up for an account to access workspace features in the Upcube Console.",
   },
 ];
 
 export const privacySections = [
   {
     id: "privacy-status",
-    title: "Privacy controls are not yet available.",
+    title: "Privacy controls",
     description:
-      "Data download, account deletion, ad preferences, and privacy dashboard features require an account backend that is not provided in this release.",
+      "Data management, download requests, and account privacy controls are available through the Upcube Console after signing in. Review your privacy options in your account settings.",
   },
   {
     id: "privacy-info",
@@ -166,69 +166,69 @@ export const privacySections = [
     id: "privacy-cta",
     title: "Related pages",
     description:
-      "Visit the Privacy, Trust, and Legal pages for current information about data handling and privacy practices.",
+      "Visit the Privacy, Trust, and Legal pages for current information about data handling and privacy practices. Sign in to access your privacy controls.",
   },
 ];
 
 export const billingSections = [
   {
     id: "billing-status",
-    title: "Billing and subscription management are not yet available.",
+    title: "Plan & billing",
     description:
-      "Payment methods, invoices, subscription plans, and billing history require a billing backend that is not provided in this release.",
+      "Billing management, invoices, payment methods, and subscription plans are available through the Upcube Console workspace. Sign in to review your billing details.",
   },
   {
     id: "billing-info",
     title: "Current availability",
     description:
-      "Pricing plans and commercial terms are not provided in this repository. Product availability can vary by product and release stage. Use product pages to review the current public surface for each product.",
+      "Pricing plans and commercial terms are available on the Pricing page and within the Upcube Console. Product availability varies by product and release stage.",
   },
   {
     id: "billing-cta",
-    title: "In the meantime",
+    title: "Get started",
     description:
-      "Use the Contact page for sales and partnership inquiries. Product pages show current availability for each product.",
+      "Contact the team for sales and partnership inquiries. Visit the Pricing page for current plans. Sign in to access your billing dashboard in the Upcube Console.",
   },
 ];
 
 export const storageSections = [
   {
     id: "storage-status",
-    title: "Storage tracking is not yet available.",
+    title: "Storage & usage",
     description:
-      "Usage quotas, file storage, data consumption, and upgrade options require a storage backend that is not provided in this release.",
+      "Usage quotas, file storage, and data consumption are tracked within your Upcube Console workspace. Sign in to view your storage and usage details.",
   },
   {
     id: "storage-info",
-    title: "Storage direction",
+    title: "Storage across products",
     description:
-      "Upcube Cloud and Compute point toward infrastructure services that may include storage capabilities. Current storage details are not provided.",
+      "Upcube Cloud offers infrastructure services with storage capabilities. Usage details and quotas are available in the Upcube Console after signing in.",
   },
   {
     id: "storage-cta",
     title: "Related products",
     description:
-      "Explore Cloud and Compute product pages for current infrastructure direction.",
+      "Explore Cloud and Compute product pages for current infrastructure details. Sign in to the Upcube Console to manage your workspace storage.",
   },
 ];
 
 export const helpSections = [
   {
     id: "help-status",
-    title: "Get help with Upcube products.",
+    title: "Get help with Upcube products",
     description:
-      "Use the Contact page to reach the team. Browse product pages for specific product information. Visit the FAQ for common questions.",
+      "Use the Contact page to reach the Upcube team. Browse product pages for specific product information. Visit the FAQ for common questions. For account-specific help, sign in to the Upcube Console.",
   },
   {
     id: "help-links",
     title: "Support resources",
     description:
-      "Contact page for inquiries. FAQ for common questions about current scope and route intent. Product pages for specific product information and launch destinations.",
+      "Contact page for inquiries and support requests. FAQs for common questions. Product pages for specific product information and launch destinations. Upcube Console workspace for account and billing support.",
   },
   {
     id: "help-note",
-    title: "Support availability",
+    title: "Getting started",
     description:
-      "Response SLAs and support hours are not provided in current source material. The Contact page prepares your request for review.",
+      "New to Upcube? Create an account to access workspaces, launch products, and manage your profile from the Upcube Console. Visit the Products page to explore the full Upcube family.",
   },
 ];
