@@ -847,103 +847,103 @@ body:has(.uc-home) .commerce-navbar {
 
 /* Light mode overrides */
 
-html[data-theme="light"] .uc-home__primary-btn {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__primary-btn {
   border-color: #101010;
   background: #101010;
   color: #fff;
 }
 
-html[data-theme="light"] .uc-home__primary-btn:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__primary-btn:hover {
   background: #303030;
   border-color: #303030;
 }
 
-html[data-theme="light"] .uc-home__ghost-btn {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__ghost-btn {
   border-color: rgba(16, 16, 16, 0.18);
 }
 
-html[data-theme="light"] .uc-home__ghost-btn:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__ghost-btn:hover {
   border-color: rgba(16, 16, 16, 0.32);
   background: rgba(0, 0, 0, 0.04);
 }
 
-html[data-theme="light"] .uc-home__intent-chip {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__intent-chip {
   background: rgba(0, 0, 0, 0.03);
   color: rgba(16, 16, 16, 0.7);
   border-color: rgba(16, 16, 16, 0.12);
 }
 
-html[data-theme="light"] .uc-home__intent-chip:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__intent-chip:hover {
   color: #101010;
   border-color: rgba(16, 16, 16, 0.3);
   background: rgba(0, 0, 0, 0.05);
 }
 
-html[data-theme="light"] .uc-home__category-product-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__category-product-link {
   background: rgba(0, 0, 0, 0.03);
   color: rgba(16, 16, 16, 0.7);
 }
 
-html[data-theme="light"] .uc-home__category-product-link:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__category-product-link:hover {
   color: #101010;
   border-color: rgba(16, 16, 16, 0.3);
   background: rgba(0, 0, 16, 0.05);
 }
 
-html[data-theme="light"] .uc-home__suggestion-chip {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__suggestion-chip {
   background: rgba(0, 0, 0, 0.03);
   color: rgba(16, 16, 16, 0.6);
   border-color: rgba(16, 16, 16, 0.08);
 }
 
-html[data-theme="light"] .uc-home__suggestion-chip:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__suggestion-chip:hover {
   color: #101010;
   border-color: rgba(16, 16, 16, 0.2);
   background: rgba(0, 0, 0, 0.05);
 }
 
-html[data-theme="light"] .uc-home__chat-composer-inner {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-composer-inner {
   background: #f5f5f5;
   border-color: rgba(16, 16, 16, 0.1);
 }
 
-html[data-theme="light"] .uc-home__chat-composer-inner:focus-within {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-composer-inner:focus-within {
   border-color: rgba(16, 16, 16, 0.25);
   box-shadow: 0 0 0 1px rgba(16, 16, 16, 0.06), 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-html[data-theme="light"] .uc-home__chat-composer textarea::placeholder {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-composer textarea::placeholder {
   color: rgba(16, 16, 16, 0.35);
 }
 
-html[data-theme="light"] .uc-home__chat-send {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-send {
   background: #101010;
   color: #fff;
 }
 
-html[data-theme="light"] .uc-home__chat-send:disabled {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-send:disabled {
   opacity: 0.3;
 }
 
-html[data-theme="light"] .uc-home__chat-spinner {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-spinner {
   border-color: rgba(255, 255, 255, 0.25);
   border-top-color: #fff;
 }
 
-html[data-theme="light"] .uc-home__chat-helper {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-helper {
   color: rgba(16, 16, 16, 0.28);
 }
 
-html[data-theme="light"] .uc-home__chat-error {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-error {
   color: rgba(200, 40, 40, 0.85);
 }
 
-html[data-theme="light"] .uc-home__chat-composer--error {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__chat-composer--error {
   border-color: rgba(200, 40, 40, 0.45) !important;
   box-shadow: 0 0 0 1px rgba(200, 40, 40, 0.12) !important;
 }
 
-html[data-theme="light"] .uc-home__grid--accent-outline::before {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-home__grid--accent-outline::before {
   background: linear-gradient(135deg, rgba(80, 200, 120, 0.14), rgba(60, 130, 255, 0.10), rgba(255, 180, 60, 0.08), rgba(255, 80, 80, 0.06));
 }
 

@@ -102,9 +102,6 @@ export function HeroChatPanel() {
           </p>
         ) : null}
       </form>
-      <p className="uc-home__chat-helper">
-        Ask about products, research, cloud, or anything Upcube.
-      </p>
     </section>
   );
 }

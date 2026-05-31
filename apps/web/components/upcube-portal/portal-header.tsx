@@ -35,8 +35,11 @@ export function PortalHeader() {
   const activeMenu =
     portalMenuGroups.find((group) => group.id === activeMenuId) ?? null;
   const menuGroupIds = new Set(portalMenuGroups.map((group) => group.id));
+  const topNavItems = portalPrimaryNav.filter(
+    (item) => item.id !== "developers" && item.id !== "pricing",
+  );
   const directNavItems = portalPrimaryNav.filter(
-    (item) => !menuGroupIds.has(item.id),
+    (item) => !menuGroupIds.has(item.id) && item.id !== "developers" && item.id !== "pricing",
   );
 
   function clearCloseTimer() {
@@ -270,12 +273,6 @@ export function PortalHeader() {
               >
                 Sign in
               </Link>
-              <Link
-                className="uc-button uc-button--accent"
-                href="/signup"
-              >
-                Get started
-              </Link>
             </>
           ) : null}
           {session.status === "authenticated" && session.user ? (
@@ -378,7 +375,7 @@ export function PortalHeader() {
                 >
                   <ThemeToggle />
                 </div>
-                {portalPrimaryNav.map((item) => (
+                {topNavItems.map((item) => (
                   <Link
                     key={item.id}
                     className="uc-mobile-menu-link"
@@ -442,13 +439,6 @@ export function PortalHeader() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Sign in
-                  </Link>
-                  <Link
-                    className="uc-mobile-menu-cta uc-mobile-menu-cta--accent"
-                    href="/signup"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Get started
                   </Link>
                 </>
               )}

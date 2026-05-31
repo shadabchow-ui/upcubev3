@@ -184,7 +184,7 @@ body:has(.uc-page) .commerce-navbar {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--up-color-primary-60);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: var(--up-type-nav-size);
   line-height: var(--up-type-nav-line);
@@ -252,17 +252,17 @@ body:has(.uc-page) .commerce-navbar {
   border-color: rgba(255, 255, 255, 0.85);
 }
 
-html[data-theme="light"] .uc-button--accent,
-html[data-theme="light"] .uc-header .uc-button--accent {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-button--accent,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header .uc-button--accent {
   background: #101010;
   color: #ffffff;
   border-color: #101010;
 }
 
-html[data-theme="light"] .uc-button--accent:hover,
-html[data-theme="light"] .uc-header .uc-button--accent:hover,
-html[data-theme="light"] .uc-button--accent:focus-visible,
-html[data-theme="light"] .uc-header .uc-button--accent:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-button--accent:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header .uc-button--accent:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-button--accent:focus-visible,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header .uc-button--accent:focus-visible {
   background: #303030;
   border-color: #303030;
 }
@@ -432,7 +432,7 @@ html[data-theme="light"] .uc-header .uc-button--accent:focus-visible {
   color: #000000;
 }
 
-html[data-theme="light"] .uc-mobile-menu-cta--accent {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-cta--accent {
   background: #101010;
   color: #ffffff;
 }
@@ -1029,7 +1029,7 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
 
 .uc-footer-heading {
   margin: 0 0 0.8rem;
-  color: var(--up-color-primary-60);
+  color: rgba(255, 255, 255, 0.62);
   font-size: 0.84375rem;
   line-height: 1.1rem;
   letter-spacing: 0.05em;
@@ -1063,7 +1063,7 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
   display: inline-flex;
   align-items: baseline;
   gap: 0.45rem;
-  color: var(--uc-text-muted);
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
   font-size: var(--up-type-footer-size);
   line-height: var(--up-type-footer-line);
@@ -1098,7 +1098,7 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
 
 .uc-footer-link:hover,
 .uc-footer-link:focus-visible {
-  color: var(--uc-text);
+  color: #ffffff;
 }
 
 /* Footer bottom bar */
@@ -1173,7 +1173,7 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
 .uc-footer-bottom-link {
   font-size: 0.875rem;
   line-height: 1.45;
-  color: var(--up-color-primary-60);
+  color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.18s ease;
@@ -1181,7 +1181,7 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
 
 .uc-footer-bottom-link:hover,
 .uc-footer-bottom-link:focus-visible {
-  color: var(--uc-text);
+  color: #ffffff;
 }
 
 .uc-footer-bottom-right {
@@ -1705,142 +1705,142 @@ html[data-theme="light"] .uc-mobile-menu-cta--accent {
 
 /* Black-surface contrast lock — keeps text/icons white on intentionally black surfaces in light mode */
 
-html[data-theme="light"] .uc-news-card,
-html[data-theme="light"] .uc-news-card--compact {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card--compact {
   color: rgba(255, 255, 255, 0.92);
 }
 
-html[data-theme="light"] .uc-news-card__title {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__title {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-news-card__excerpt,
-html[data-theme="light"] .uc-news-card p {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__excerpt,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card p {
   color: rgba(255, 255, 255, 0.72);
 }
 
-html[data-theme="light"] .uc-news-card__meta .uc-eyebrow,
-html[data-theme="light"] .uc-news-card .uc-eyebrow,
-html[data-theme="light"] .uc-news-card small {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__meta .uc-eyebrow,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card .uc-eyebrow,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card small {
   color: rgba(255, 255, 255, 0.52);
 }
 
-html[data-theme="light"] .uc-news-card__link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__link {
   color: rgba(255, 255, 255, 0.76);
 }
 
-html[data-theme="light"] .uc-news-card__link:hover,
-html[data-theme="light"] .uc-news-card__link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-news-card__link:focus-visible {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-longform-index-card {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-longform-index-card {
   color: rgba(255, 255, 255, 0.92);
 }
 
-html[data-theme="light"] .uc-longform-index-card-title {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-longform-index-card-title {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-longform-index-card-desc {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-longform-index-card-desc {
   color: rgba(255, 255, 255, 0.72);
 }
 
-html[data-theme="light"] .uc-longform-index-card-order {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-longform-index-card-order {
   color: rgba(255, 255, 255, 0.52);
 }
 
 /* Light mode header + footer overrides */
 
-html[data-theme="light"] .uc-nav-link,
-html[data-theme="light"] .uc-nav-trigger {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-link,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-trigger {
   color: rgba(255, 255, 255, 0.72);
 }
 
-html[data-theme="light"] .uc-nav-link:hover,
-html[data-theme="light"] .uc-nav-link:focus-visible,
-html[data-theme="light"] .uc-nav-trigger:hover,
-html[data-theme="light"] .uc-nav-trigger:focus-visible,
-html[data-theme="light"] .uc-nav-trigger[aria-expanded="true"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-link:focus-visible,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-trigger:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-trigger:focus-visible,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-trigger[aria-expanded="true"] {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
 
-html[data-theme="light"] .uc-header {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header {
   background: rgba(0, 0, 0, 0.95);
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
-html[data-theme="light"] .uc-theme-toggle {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-theme-toggle {
   color: rgba(255, 255, 255, 0.75);
 }
 
-html[data-theme="light"] .uc-theme-toggle:hover,
-html[data-theme="light"] .uc-theme-toggle:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-theme-toggle:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-theme-toggle:focus-visible {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-search-trigger {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-search-trigger {
   color: rgba(255, 255, 255, 0.75);
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-html[data-theme="light"] .uc-search-trigger:hover,
-html[data-theme="light"] .uc-search-trigger[aria-expanded="true"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-search-trigger:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-search-trigger[aria-expanded="true"] {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
 
-html[data-theme="light"] .uc-page .uc-button,
-html[data-theme="light"] main[data-product] .uc-button {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-page .uc-button,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) main[data-product] .uc-button {
   color: #111111;
   border-color: rgba(17, 17, 17, 0.22);
   background: #ffffff;
 }
 
-html[data-theme="light"] .uc-header .uc-button[data-variant="solid"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header .uc-button[data-variant="solid"] {
   background: #ffffff;
   color: #000000;
   border-color: rgba(0, 0, 0, 0.18);
 }
 
-html[data-theme="light"] .uc-header .uc-button[data-variant="solid"]:hover,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header .uc-button[data-variant="solid"]:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   .uc-header
   .uc-button[data-variant="solid"]:focus-visible {
   background: #e8e8e8;
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-html[data-theme="light"] .uc-page .uc-button[data-variant="solid"],
-html[data-theme="light"] main[data-product] .uc-button[data-variant="solid"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-page .uc-button[data-variant="solid"],
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) main[data-product] .uc-button[data-variant="solid"] {
   background: #050505;
   color: #ffffff;
   border-color: #050505;
 }
 
-html[data-theme="light"] .uc-page .uc-button[data-variant="solid"]:hover,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-page .uc-button[data-variant="solid"]:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   .uc-page
   .uc-button[data-variant="solid"]:focus-visible,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   main[data-product]
   .uc-button[data-variant="solid"]:hover,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   main[data-product]
   .uc-button[data-variant="solid"]:focus-visible {
   background: #202020;
   border-color: #202020;
 }
 
-html[data-theme="light"] .uc-page .uc-button:not([data-variant="solid"]):hover,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-page .uc-button:not([data-variant="solid"]):hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   .uc-page
   .uc-button:not([data-variant="solid"]):focus-visible,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   main[data-product]
   .uc-button:not([data-variant="solid"]):hover,
-html[data-theme="light"]
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"])
   main[data-product]
   .uc-button:not([data-variant="solid"]):focus-visible {
   background: #f2f2f2;
@@ -1848,13 +1848,13 @@ html[data-theme="light"]
   border-color: rgba(17, 17, 17, 0.34);
 }
 
-html[data-theme="light"] .uuh-launcher-trigger {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uuh-launcher-trigger {
   color: rgba(255, 255, 255, 0.75);
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-html[data-theme="light"] .uuh-launcher-trigger:hover,
-html[data-theme="light"] .uuh-launcher-trigger[aria-expanded="true"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uuh-launcher-trigger:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uuh-launcher-trigger[aria-expanded="true"] {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -1878,161 +1878,161 @@ html[data-theme="light"] .uuh-launcher-trigger[aria-expanded="true"] {
 
 /* Light mode account button in header */
 
-html[data-theme="light"] .uc-header-account .uc-button {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-account .uc-button {
   color: rgba(255, 255, 255, 0.85) !important;
   border-color: rgba(255, 255, 255, 0.18) !important;
 }
 
-html[data-theme="light"] .uc-header-account .uc-button:hover {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-account .uc-button:hover {
   color: #fff !important;
   background: rgba(255, 255, 255, 0.08) !important;
   border-color: rgba(255, 255, 255, 0.26) !important;
 }
 
-html[data-theme="light"] .uc-header-account .uc-account-avatar {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-account .uc-account-avatar {
   background: rgba(255, 255, 255, 0.16);
   color: #fff;
 }
 
-html[data-theme="light"] .uc-account-redirect-card {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-account-redirect-card {
   background: #050505;
 }
 
-html[data-theme="light"] .uc-mobile-menu-button {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-button {
   color: rgba(255, 255, 255, 0.85);
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-html[data-theme="light"] .uc-mobile-menu-button:hover,
-html[data-theme="light"] .uc-mobile-menu-button:focus-visible,
-html[data-theme="light"] .uc-mobile-menu-button[aria-expanded="true"] {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-button:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-button:focus-visible,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-button[aria-expanded="true"] {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-html[data-theme="light"] .uc-footer {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer {
   background: #050505;
   border-top-color: rgba(255, 255, 255, 0.08);
 }
 
-html[data-theme="light"] .uc-footer-heading {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-heading {
   color: rgba(255, 255, 255, 0.55);
 }
 
-html[data-theme="light"] .uc-footer-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-link {
   color: rgba(255, 255, 255, 0.72);
 }
 
-html[data-theme="light"] .uc-footer-link:hover,
-html[data-theme="light"] .uc-footer-link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-link:focus-visible {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-footer-brand-text,
-html[data-theme="light"] .uc-footer-brand-tagline {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-brand-text,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-brand-tagline {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-footer-brand-subtitle {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-brand-subtitle {
   color: rgba(255, 255, 255, 0.6);
 }
 
-html[data-theme="light"] .uc-nav-note {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-nav-note {
   color: rgba(255, 255, 255, 0.55);
 }
 
-html[data-theme="light"] .uc-footer-bottom {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom {
   border-top-color: rgba(255, 255, 255, 0.08);
 }
 
-html[data-theme="light"] .uc-footer-bottom-copy,
-html[data-theme="light"] .uc-footer-bottom-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-copy,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-link {
   color: rgba(255, 255, 255, 0.55);
 }
 
-html[data-theme="light"] .uc-footer-bottom-link:hover,
-html[data-theme="light"] .uc-footer-bottom-link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-link:focus-visible {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-footer-bottom-lang {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-lang {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-html[data-theme="light"] .uc-footer-bottom-lang:hover,
-html[data-theme="light"] .uc-footer-bottom-lang:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-lang:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-bottom-lang:focus-visible {
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-html[data-theme="light"] .uc-footer-social-icon {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-social-icon {
   color: rgba(255, 255, 255, 0.72);
 }
 
-html[data-theme="light"] .uc-footer-social-icon:hover,
-html[data-theme="light"] .uc-footer-social-icon:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-social-icon:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-footer-social-icon:focus-visible {
   color: #ffffff;
 }
 
 /* Light mode: mega menu text readable on black */
-html[data-theme="light"] .uc-header-mega-label {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-label {
   color: #9ca3af;
 }
 
-html[data-theme="light"] .uc-header-mega-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link {
   color: #d1d5db;
 }
 
-html[data-theme="light"] .uc-header-mega-link:hover,
-html[data-theme="light"] .uc-header-mega-link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link:focus-visible {
   color: #ffffff;
 }
 
-html[data-theme="light"] .uc-header-mega-link small {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link small {
   color: #9ca3af;
 }
 
-html[data-theme="light"] .uc-header-mega-link:hover small,
-html[data-theme="light"] .uc-header-mega-link:focus-visible small {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link:hover small,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-link:focus-visible small {
   color: #e5e7eb;
 }
 
-html[data-theme="light"] .uc-header-mega-group-title {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-header-mega-group-title {
   color: #9ca3af;
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Light mode: mobile menu text readable on black */
-html[data-theme="light"] .uc-mobile-menu-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-link {
   color: #e5e7eb;
 }
 
-html[data-theme="light"] .uc-mobile-menu-link:hover,
-html[data-theme="light"] .uc-mobile-menu-link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-link:focus-visible {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
 }
 
-html[data-theme="light"] .uc-mobile-menu-group-title {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-group-title {
   color: #9ca3af;
 }
 
-html[data-theme="light"] .uc-mobile-menu-label {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-label {
   color: #9ca3af;
 }
 
-html[data-theme="light"] .uc-mobile-menu-app-link {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-app-link {
   color: #9ca3af;
 }
 
-html[data-theme="light"] .uc-mobile-menu-app-link:hover,
-html[data-theme="light"] .uc-mobile-menu-app-link:focus-visible {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-app-link:hover,
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-app-link:focus-visible {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
 }
 
-html[data-theme="light"] .uc-mobile-menu-cta {
+:is(html[data-theme="light"], .uc-page[data-theme="light"], .uc-home[data-theme="light"]) .uc-mobile-menu-cta {
   background: #ffffff;
   color: #0a0a0a;
 }
