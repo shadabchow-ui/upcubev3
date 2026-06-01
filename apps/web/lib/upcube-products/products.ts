@@ -62,14 +62,15 @@ export type UpcubeProduct = {
 export const upcubeProducts: UpcubeProduct[] = [
   {
     slug: "upcube-ai",
-    name: "UpcubeAI",
-    eyebrow: "Ethen workspace",
-    headline: "The AI workspace for clear, connected work.",
+    name: "Upcube Ethen",
+    eyebrow: "Upcube Ethen",
+    headline: "The AI workspace built for serious work.",
     summary:
-      "UpcubeAI keeps powerful work focused, visible, and moving forward. It brings Ethen, chat, research, artifacts, governed tools, approvals, and workspace continuity into one calm, capable product experience.",
-    seoTitle: "UpcubeAI | AI Workspace and Assistant Platform",
+      "Upcube Ethen combines a streaming AI assistant with a governed platform for retrieval-grounded answers, durable artifacts, risk-tiered tool execution, and human-in-the-loop approvals across web, CLI, desktop, mobile, and IDE surfaces.",
+    seoTitle:
+      "Upcube Ethen | Governed AI Workspace with Artifacts and Human Approvals",
     seoDescription:
-      "UpcubeAI is an AI workspace and assistant platform for chat, research, artifacts, approvals, and connected work across the Upcube ecosystem.",
+      "Upcube Ethen is an AI workspace platform combining a streaming AI assistant, retrieval-grounded answers, durable artifacts, risk-tiered tool governance, and human-in-the-loop approvals across web, CLI, desktop, mobile, and IDE surfaces.",
     primaryAction: {
       label: "Launch UpcubeAI",
       href: "https://ethen.upcube.ai",
@@ -79,72 +80,72 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "/research",
     },
     heroHighlights: [
-      "Ethen is built for daily work, deep questions, and multi-step tasks.",
-      "Artifacts turn answers into reusable output.",
-      "Approvals and tool controls keep every important action visible.",
+      "Ethen routes every inference through a controlled gateway so every call is logged, policy-checked, and auditable.",
+      "Artifacts are typed, versioned work products you can return to, refine, and export.",
+      "Tier 3 tool actions require explicit human approval before they execute.",
     ],
     heroImage: {
       src: "/product-art/050b0e5fb4bd48bbb2c6a91baa3afc40_sw-2962_sh-2191.webp",
       alt: "Abstract modern composition representing AI-powered work.",
     },
     signatureTitle:
-      "One workspace for thinking through the work — and moving it forward.",
+      "One workspace for thinking through the work and moving it forward.",
     signatureBody:
-      "UpcubeAI is for people who need more than a chat transcript. It gives every conversation a real workspace around it, keeping context, sources, tools, and outputs together instead of scattered across tabs.",
+      "Upcube Ethen is for people who need more than a chat transcript. It gives every conversation a structured workspace around it, keeping context, retrieval sources, tools, citations, and outputs together in one place instead of scattered across sessions and tabs.",
     signatureCards: [
       {
-        title: "Chat with continuity",
-        body: "Start with a question, refine the work, and return to the same thread without losing the shape of the task.",
+        title: "Retrieval-grounded answers",
+        body: "Ethen pulls from trusted retrieval sources before answering. Citations appear inline. Route evidence and retrieval status are part of the telemetry record so you always know whether an answer is grounded or generated from model knowledge alone.",
       },
       {
-        title: "Artifacts that last",
-        body: "Turn live conversation into plans, documents, structured outputs, and deliverables you can keep using.",
+        title: "Durable artifacts",
+        body: "When Ethen produces something worth keeping, it becomes a named artifact with its own lifecycle. Artifacts are versioned, typed, and stored alongside the conversation. Supported types include markdown, code, HTML, JSON, and plain text.",
       },
       {
-        title: "Clear approvals",
-        body: "When a workflow needs review, UpcubeAI makes the decision point visible, deliberate, and easy to understand.",
+        title: "Human-in-the-loop approvals",
+        body: "The tool registry defines every available tool, its risk tier, and its approval requirement. Low-risk actions run automatically. File writes and other Tier 3 actions require an explicit approval step that is visible, deliberate, and logged.",
       },
     ],
     featureStories: [
       {
-        title: "Research that stays with the answer",
-        body: "UpcubeAI is built for grounded work, keeping research, sources, and context close to the response instead of turning them into a separate step.",
+        title: "Gateway-first model routing",
+        body: "All inference routes through a controlled gateway. The gateway resolves tenant context, checks policy, selects the provider and model, and emits route evidence as part of the telemetry record. Product surfaces never call model providers directly.",
       },
       {
-        title: "Tools that feel governed, not chaotic",
-        body: "Tool use is designed with visibility, policies, and approvals, so automation stays useful, controlled, and understandable.",
+        title: "Policy-first execution",
+        body: "Before any inference or tool call executes, it passes through a policy layer. Risky or out-of-scope actions fail closed rather than proceeding silently when policy is unavailable.",
       },
       {
-        title: "A workspace that reaches beyond one surface",
-        body: "UpcubeAI points beyond the browser, with continuity across web, CLI, desktop, mobile, and IDE workflows shaping the broader product direction.",
+        title: "Multi-surface continuity",
+        body: "Upcube Ethen is not a single-surface product. The web workspace is primary, but the platform is designed for continuity across a CLI that plans before it executes, a desktop client with scoped file access, a mobile companion for approvals, and an IDE with diff-first editing.",
       },
     ],
     techCards: [
       {
-        title: "Streaming answers",
-        body: "Responses arrive as the work unfolds, making the experience feel immediate while still leaving room for careful review.",
+        title: "Streaming chat runtime",
+        body: "The chat runtime emits typed Server-Sent Events for stream start, token deltas, citations, artifact creation, audit metadata, telemetry, and eval traces. Responses arrive progressively so the experience feels immediate without sacrificing reviewability.",
       },
       {
-        title: "Artifacts and memory of work",
-        body: "Outputs become useful objects you can return to, not answers that disappear into a chat log.",
+        title: "Telemetry, audit, and eval traces",
+        body: "Every session emits structured telemetry covering route evidence, provider and model selection, time to first token, token estimates, retrieval status, citation counts, audit events, and groundedness status.",
       },
       {
-        title: "Approvals where they matter",
-        body: "Sensitive actions are designed around clear checkpoints, keeping powerful workflows inspectable and trusted.",
+        title: "Risk-tiered tool registry",
+        body: "The seed tool registry defines web search and document retrieval as Tier 1, code execution as Tier 2, and file writes as Tier 3 requiring approval. The registry is the contract. The platform enforces it.",
       },
     ],
     useCases: [
       {
-        title: "Turn a rough idea into a plan",
-        body: "Use Ethen to shape an unclear task into milestones, open questions, and next actions while preserving the original context.",
+        title: "Turn a rough idea into a structured plan",
+        body: "Start with something unclear. Ask Ethen to help shape it into open questions, dependencies, and next actions. The original context stays in the workspace. The artifact stays accessible for the next session.",
       },
       {
-        title: "Move from research to output",
-        body: "Gather grounded context, synthesize what matters, and turn it into something ready to share, ship, or build from.",
+        title: "Research a topic and produce something from it",
+        body: "Pull grounded context from trusted retrieval sources. Synthesize what matters. Ask Ethen to turn the synthesis into a document, a structured brief, or a draft you can hand off. Citations are inline and the artifact is exportable.",
       },
       {
-        title: "Keep teams aligned on the work",
-        body: "Bring prompts, artifacts, approvals, and follow-through into one workspace instead of spreading the task across disconnected tools.",
+        title: "Run a governed automation with confidence",
+        body: "Define a task involving file access, web tools, or multi-step execution. Review the proposed plan before anything executes. Approve the actions that require human sign-off. The audit log records every decision.",
       },
     ],
     ecosystemLinks: [
@@ -154,8 +155,8 @@ export const upcubeProducts: UpcubeProduct[] = [
         href: "/products/books",
       },
       {
-        title: "Upcube Earth",
-        body: "Continue into 3D exploration, place search, and map-driven context.",
+        title: "Upcube Planet",
+        body: "Continue into 3D globe exploration, place search, and map-driven context.",
         href: "/products/earth",
       },
       {
@@ -164,9 +165,9 @@ export const upcubeProducts: UpcubeProduct[] = [
         href: "/products/cloud",
       },
     ],
-    finalCtaTitle: "Start with a prompt. Leave with something you can use.",
+    finalCtaTitle: "Start with a question. End with something you can ship.",
     finalCtaBody:
-      "UpcubeAI is built to make serious AI work feel calm, visible, and ready to move forward.",
+      "Upcube Ethen is an AI workspace for people who need real outputs. Governed tools. Retrieval-grounded answers. Durable artifacts. Human approvals where they matter. A platform designed from the start to be trustworthy.",
     finalPrimaryAction: {
       label: "Open UpcubeAI",
       href: "https://ethen.upcube.ai",
@@ -423,14 +424,15 @@ export const upcubeProducts: UpcubeProduct[] = [
   },
   {
     slug: "earth",
-    name: "Upcube Earth",
-    eyebrow: "3D Earth and spatial intelligence",
-    headline: "Explore the planet in deeper detail.",
+    name: "Upcube Planet",
+    eyebrow: "Upcube Planet",
+    headline: "The Earth, rendered in your browser.",
     summary:
-      "Upcube Earth turns the map into an immersive discovery experience. Explore terrain, cities, overlays, search, and shareable views through a spatial product built to make the world feel clearer, richer, and easier to understand.",
-    seoTitle: "Upcube Earth | 3D Globe and Spatial Intelligence Platform",
+      "Upcube Planet is an interactive 3D globe application with satellite imagery, terrain, photorealistic city layer direction, geocoding, KML and GeoJSON overlays, and shareable views built on a configurable Google, Cesium, Mapbox, and Pelias provider stack.",
+    seoTitle:
+      "Upcube Planet | Interactive 3D Globe with Satellite Imagery and Terrain",
     seoDescription:
-      "Upcube Earth is a 3D globe and spatial intelligence platform for exploration, terrain, city context, search, overlays, and shareable views.",
+      "Upcube Planet is a browser-based 3D globe application with satellite imagery, terrain visualization, photorealistic 3D city direction, geocoding, KML and GeoJSON overlays, and shareable views built on a configurable geospatial provider stack.",
     primaryAction: {
       label: "Launch Upcube Earth",
       href: "https://planet.upcube.ai",
@@ -440,72 +442,72 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "/explore",
     },
     heroHighlights: [
-      "Move from a place name to a mapped view in seconds.",
-      "See terrain, cities, and layers with greater visual depth.",
-      "Use overlays and shareable views to preserve geographic context.",
+      "Navigate a real 3D Earth with camera controls for zoom, pan, rotate, and tilt.",
+      "Satellite imagery and terrain reflect actual provider data configured through environment variables.",
+      "Shareable view URLs capture the exact perspective so anyone can open the same location.",
     ],
     heroImage: {
       src: "/product-art/FAA_starrry_night.jpg",
       alt: "Starry abstract landscape representing global exploration.",
     },
     signatureTitle:
-      "Spatial exploration that feels immersive from the first movement.",
+      "A globe workspace built for spatial exploration, not just decoration.",
     signatureBody:
-      "Upcube Earth is designed to make the world feel explorable, not flat. The experience centers on a high-clarity 3D globe that helps people move between search, terrain, overlays, and visual context without losing orientation.",
+      "Upcube Planet starts from the globe as the main workspace. Controls, layers, overlays, and tools support exploration without overwhelming the view. Every feature is in service of the space itself.",
     signatureCards: [
       {
-        title: "3D Earth at the center",
-        body: "The globe becomes the interface, creating a more natural way to move through cities, regions, landscapes, and terrain.",
+        title: "Interactive 3D globe navigation",
+        body: "The core of Upcube Planet is a smooth, interactive 3D Earth with camera controls for zoom, pan, rotate, and tilt. You can move from a continental overview to a city-level view without a page transition or a mode switch.",
       },
       {
-        title: "Search that lands with context",
-        body: "Location search does more than move the camera. It brings you into a view that feels worth staying in.",
+        title: "Satellite imagery and terrain",
+        body: "Satellite imagery layers are served through configured tile providers. Terrain visualization uses Cesium ion token configuration and Terrain-RGB-style URL support so elevation is represented geometrically, not as a flat colored surface.",
       },
       {
-        title: "Overlays that add meaning",
-        body: "Layered context helps people understand what they are seeing, turning maps from a static background into a living surface for discovery.",
+        title: "Shareable views and overlays",
+        body: "Camera and view state can be captured as a shareable URL. The product direction includes client-side KML and GeoJSON overlay visualization for teams who need to layer their own geospatial data on top of the globe.",
       },
     ],
     featureStories: [
       {
-        title: "Terrain and elevation that change how a place feels",
-        body: "Richer topography makes mountains, coastlines, valleys, city edges, and natural boundaries feel more legible in motion.",
+        title: "Configurable geospatial provider stack",
+        body: "The server reads environment variables to determine which capabilities are available: GOOGLE_MAPS_API_KEY, CESIUM_ION_TOKEN, MAPBOX_TOKEN, PELIAS_API_URL, OPENMAPTILES_URL, and TERRAIN_RGB_URL. When a key is missing the app degrades gracefully rather than breaking.",
       },
       {
-        title: "Cities, layers, and spatial detail in one view",
-        body: "Upcube Earth brings imagery, 3D context, and map layers together in one experience instead of forcing each mode into a separate tool.",
+        title: "Geocoding provider selection",
+        body: "The geocoding layer supports Google, Mapbox, and Pelias providers selectable through the GEOCODER_PROVIDER environment variable. The architecture treats geocoding as a swappable integration point rather than a fixed service.",
       },
       {
-        title: "Spatial intelligence with visual calm",
-        body: "Search, overlays, and provider-backed data deepen exploration while keeping the interface clean, focused, and inviting.",
+        title: "Photorealistic 3D city direction",
+        body: "The product direction includes support for Google Photorealistic 3D Tiles. This capability depends on Google API access and usage policy compliance. It is part of the active product direction rather than a universally available feature today.",
       },
     ],
     techCards: [
       {
-        title: "Provider-backed map layers",
-        body: "Earth is designed around configurable map providers while keeping attribution and data boundaries visible.",
+        title: "React and Vite client with Zustand state",
+        body: "The client is a Vite and React TypeScript application using Zustand for state management and Radix UI primitives for accessible UI components. Provider configuration is server-controlled. UI state is client-controlled through Zustand.",
       },
       {
-        title: "3D terrain and city context",
-        body: "Elevation, terrain, and urban detail help places feel real instead of abstract.",
+        title: "Express configuration and health API",
+        body: "The server exposes GET /api/healthz for service health and GET /api/config for frontend configuration derived from environment variables. The client reads from /api/config at startup to understand which providers are available.",
       },
       {
-        title: "Shareable views",
-        body: "Meaningful perspectives can be saved and shared, turning exploration into something others can understand instantly.",
+        title: "Built-in attribution handling",
+        body: "Attribution metadata for configured providers is built into the server configuration layer and flows through the same pipeline as provider tokens. Geospatial providers require attribution and the architecture treats it as a first-class concern.",
       },
     ],
     useCases: [
       {
-        title: "Search a city and settle into the view",
-        body: "Move from a quick search into a perspective that gives you a stronger sense of the surrounding place.",
+        title: "Orient a team around a physical location",
+        body: "Navigate to a region, enable the terrain layer, and tilt the camera to see elevation along a proposed route. Share the view URL so colleagues can open the same perspective without being talked through how to find it.",
       },
       {
-        title: "Compare terrain, neighborhoods, and layers",
-        body: "Use the 3D view to understand how elevation, geography, and overlays shape a region.",
+        title: "Layer custom geospatial data over a real globe",
+        body: "Load a GeoJSON file with field measurement locations and see the measurements on actual satellite and terrain data. The overlay is client-side so nothing is uploaded to a server.",
       },
       {
-        title: "Share a location with more context",
-        body: "Pass along a view that captures why a place matters, not just where it is.",
+        title: "Deploy a geospatial visualization layer",
+        body: "Configure the environment variables for your provider accounts and use the /api/config endpoint to wire client configuration to your key management approach. Layer toggles, geocoding behavior, and attribution are all configurable without modifying client code.",
       },
     ],
     ecosystemLinks: [
@@ -520,14 +522,14 @@ export const upcubeProducts: UpcubeProduct[] = [
         href: "/products/cloud",
       },
       {
-        title: "Cloud VM",
+        title: "Upcube VM",
         body: "Explore the cloud compute layer behind scalable geospatial services and spatial workloads.",
         href: "/products/vm",
       },
     ],
-    finalCtaTitle: "Step into a more immersive view of the world.",
+    finalCtaTitle: "The globe is the workspace. Start there.",
     finalCtaBody:
-      "Upcube Earth is built for people who want richer spatial context, cleaner exploration, and a map experience that rewards curiosity.",
+      "Upcube Planet is a serious 3D globe application foundation in active development. The provider architecture, client state model, configuration API, and attribution handling are built to support real geospatial workflows now and grow toward more advanced capabilities as the roadmap matures.",
     finalPrimaryAction: {
       label: "Open Upcube Earth",
       href: "https://planet.upcube.ai",
@@ -1234,13 +1236,14 @@ export const upcubeProducts: UpcubeProduct[] = [
   {
     slug: "robotics",
     name: "Upcube Robotics",
-    eyebrow: "Future Platforms",
-    headline: "Understand every mission.",
+    eyebrow: "Upcube Robotics",
+    headline: "Know what your robots actually did.",
     summary:
-      "Upcube Robotics gives teams a clearer way to operate robot fleets, replay missions, investigate incidents, and turn robot activity into reviewable evidence.",
-    seoTitle: "Robotics | UpcubeAI",
+      "Upcube Robotics records every mission, safety decision, and incident in a structured, verifiable format so your team can replay what happened, understand why it happened, and prove it to anyone who asks.",
+    seoTitle:
+      "Upcube Robotics | Robot Mission Observability, Safety Evidence, and Fleet Audit Platform",
     seoDescription:
-      "Upcube Robotics helps teams replay robot missions, observe fleets, investigate incidents, and create audit-ready evidence.",
+      "Upcube Robotics is a vendor-agnostic trace layer for physical automation. Record robot missions, telemetry, safety policy decisions, and incidents. Replay mission timelines and export SHA-256-verified evidence bundles for post-incident review and compliance audit.",
     primaryAction: {
       label: "Explore Robotics",
       href: "#overview",
@@ -1250,89 +1253,90 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "#features",
     },
     heroHighlights: [
-      "Replay robot missions as clear timelines.",
-      "Turn incidents into reviewable evidence.",
-      "Observe fleet status from one focused view.",
+      "Every mission is structured into named phases with typed, correlated event records tied together by a correlation ID.",
+      "Every policy evaluation is recorded including blocked actions, the policy that blocked them, and the violation details.",
+      "Evidence bundles are packaged with a SHA-256 manifest so anyone who receives them can verify they have not been modified.",
     ],
-    signatureTitle: "Built for robot operations.",
+    signatureTitle:
+      "Built around the questions your team asks when something goes wrong, and the records you need before something does.",
     signatureBody:
-      "Robots generate a stream of commands, sensor events, pauses, handoffs, errors, policy checks, and operator decisions. Robotics turns that activity into a clear mission timeline your team can understand.",
+      "Robot deployments generate a continuous stream of events: commands, sensor readings, safety checks, pauses, handoffs, blocked actions, and operator confirmations. Most of that stream is invisible until something fails. Upcube Robotics captures it in real time in a typed, validated format so the record is already there when you need it.",
     signatureCards: [
       {
-        title: "See every mission as a timeline",
-        body: "Commands, sensor events, pauses, handoffs, blocked actions, and operator decisions come together in one clear replayable view.",
+        title: "Mission timeline replay",
+        body: "A mission in Upcube Robotics is organized into named phases with typed event records for every meaningful moment. Every mission run carries a correlation ID that ties all records together across systems. You are navigating a structured timeline, not scrolling through undifferentiated log lines.",
       },
       {
-        title: "When something goes wrong, keep the evidence",
-        body: "Turn failures, stops, safety blocks, and handoff issues into structured evidence your team can review, share, and trust.",
+        title: "Safety decision records",
+        body: "Every action evaluated against your safety policies is recorded. When an action is blocked, the system creates a record with the denied action, the policy that blocked it, and the specific violation details. Blocked actions are no longer invisible.",
       },
       {
-        title: "A clearer view across the fleet",
-        body: "Track robot status, mission progress, exceptions, and operational patterns from one focused interface.",
+        title: "SHA-256 evidence bundles",
+        body: "When an incident occurs, Upcube Robotics assembles an evidence bundle with the relevant mission trace, telemetry slice, policy decisions, blocked actions, operator approvals, and incident record, packaged with a SHA-256 manifest. Anyone who receives the bundle can verify it has not been modified since it was generated.",
       },
     ],
     featureStories: [
       {
-        title: "See every mission as a timeline",
-        body: "Commands, sensor events, pauses, handoffs, blocked actions, and operator decisions come together in one clear replayable view.",
+        title: "Versioned safety policies",
+        body: "Every policy decision references the exact policy version that was active when the decision was made. When you review a blocked action from three months ago, you are looking at the rule set that was in effect then, not the one that is active today.",
       },
       {
-        title: "Incident evidence that stays organized",
-        body: "Turn failures, stops, safety blocks, and handoff issues into structured evidence your team can review, share, and trust.",
+        title: "Operator approval records",
+        body: "When a mission phase requires operator sign-off, that approval decision is recorded as a first-class event: who approved it, what they approved, and when. It sits in the mission timeline at the point where the decision was made.",
       },
       {
-        title: "Fleet observability across the operation",
-        body: "Track robot status, mission progress, exceptions, and operational patterns from one focused interface.",
+        title: "Vendor-neutral robot registry",
+        body: "The RobotCard schema captures each robot's morphology, sensor suite, actuators, safety IO, and kinematic limits in a format that does not depend on any specific manufacturer or middleware. Trace records are readable and comparable across your entire fleet even when robots come from different vendors.",
       },
     ],
     techCards: [
       {
-        title: "Mission timeline engine",
-        body: "Commands, sensor events, pauses, handoffs, errors, policy checks, and operator decisions reconstructed as one coherent replayable sequence.",
+        title: "Strict schema validation at ingest",
+        body: "Every entity in Upcube Robotics has a defined schema with required fields and typed values. Records that do not pass validation are rejected at the boundary. A mission run without a correlation ID does not enter the system. An evidence bundle without a SHA-256 manifest is not a valid bundle.",
       },
       {
-        title: "Structured incident bundles",
-        body: "Failures, stops, safety blocks, and handoff issues captured as reviewable evidence packages for post-incident analysis.",
+        title: "Hot-path telemetry capture",
+        body: "Telemetry event records capture real-time robot state on the hot path: pose, velocity, battery level, operating mode, and safety state. When you scrub to the moment before a safety stop, you are looking at the actual telemetry state at that timestamp, not an interpolated reconstruction.",
       },
       {
-        title: "Fleet state aggregation",
-        body: "Robot status, mission progress, exceptions, and operational patterns surfaced from one focused observability view.",
+        title: "Role-scoped access model",
+        body: "The platform user model defines four roles scoped to an organization tenant: admin, engineer, operator, and viewer. Evidence bundles, policy records, and mission traces are accessible based on role. The roles map to how real robotics operations teams are actually structured.",
       },
     ],
     useCases: [
       {
-        title: "Operators",
-        body: "See mission status at a glance and replay incidents without digging through logs.",
+        title: "Reconstruct a mission that ended in an unexpected stop",
+        body: "Open the mission run record, navigate to the phase where the stop occurred, and review the telemetry stream and policy decision records from that window. If a blocked action preceded the stop, it is in the trace with the policy version that blocked it and the violation details.",
       },
       {
-        title: "Engineers",
-        body: "Trace command sequences, sensor data, and policy decisions across missions.",
+        title: "Package an incident for safety review",
+        body: "Generate an evidence bundle from the incident window. The bundle includes the correlated mission trace, telemetry slice, policy decisions, operator approvals, and incident record, packaged with a SHA-256 manifest. The safety reviewer receives a file they can verify, not just read.",
       },
       {
-        title: "Compliance",
-        body: "Export reviewable evidence bundles for audits and post-incident reviews.",
+        title: "Scale a pilot with an audit-ready record from day one",
+        body: "Export evidence bundles from recent incidents, pull the policy decision log, and share robot registry and version state snapshots. The documentation already exists because the pilot has been running on Upcube Robotics from the start.",
       },
     ],
     ecosystemLinks: [
+      {
+        title: "UpcubeAI",
+        body: "Bring mission traces, incident records, and evidence bundles into the AI workspace to run structured analysis and generate post-incident reports.",
+        href: "/products/upcube-ai",
+      },
       {
         title: "Upcube Cloud",
         body: "Infrastructure and compute layer for robotics data pipelines and fleet operations.",
         href: "/products/cloud",
       },
       {
-        title: "UpcubeAI",
-        body: "Connect robotics analysis with the assistant workspace for broader operational workflows.",
-        href: "/products/upcube-ai",
-      },
-      {
-        title: "Cloud VM",
+        title: "Upcube VM",
         body: "Virtual machines and storage for robotics data processing and simulation workloads.",
         href: "/products/vm",
       },
     ],
-    finalCtaTitle: "Start with mission replay. Scale with confidence.",
+    finalCtaTitle: "The trace record that makes everything else trustworthy.",
     finalCtaBody:
-      "Robotics begins with mission replay and fleet observability, then grows toward policy-governed control, handoff records, adapter SDKs, and enterprise robot operations.",
+      "Governance, policy enforcement, and enterprise controls are only as good as the evidence layer underneath them. Upcube Robotics starts with the canonical data model and strict schema validation that make every subsequent capability credible. Start with a clear trace record. Everything else follows from it.",
     finalPrimaryAction: {
       label: "Explore Robotics",
       href: "/products/robotics",
@@ -1460,15 +1464,15 @@ export const upcubeProducts: UpcubeProduct[] = [
   },
   {
     slug: "vm",
-    name: "Cloud VM",
-    eyebrow: "Virtual machines inside Upcube Cloud",
-    headline:
-      "Cloud Virtual Machines with networking, storage, and operations in the Cloud console.",
+    name: "Upcube VM",
+    eyebrow: "Upcube VM",
+    headline: "Cloud compute built on real infrastructure thinking.",
     summary:
-      "Cloud VM is the virtual machine product inside Upcube Cloud, built around instance lifecycle, storage, networking, jobs, repair loops, and scalable systems language that still reads clearly in public.",
-    seoTitle: "Cloud VM | Virtual Machine Platform inside Upcube Cloud",
+      "Upcube VM is an EC2-style virtual machine platform with API-driven instance lifecycle, async job execution, scheduler and host-agent boundaries, VPC networking foundations, detached block storage, and reconciliation loops that move the system toward a safe state when things go wrong.",
+    seoTitle:
+      "Upcube VM | EC2-Style Virtual Machine Platform with Async Jobs and VPC Networking",
     seoDescription:
-      "Cloud VM is the virtual machine platform inside Upcube Cloud for lifecycle control, networking, storage, jobs, and repair-oriented infrastructure.",
+      "Upcube VM is an API-driven virtual machine platform with durable instance lifecycle, async job execution, scheduler and host-agent separation, VPC networking foundations, detached block storage, and reconciliation loops. A serious cloud compute foundation in active development.",
     primaryAction: {
       label: "Open Upcube Cloud",
       href: "https://cloud.upcube.ai",
@@ -1478,74 +1482,72 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "/products/cloud",
     },
     heroHighlights: [
-      "Virtual machines with durable lifecycle thinking behind them.",
-      "Storage, networking, and async operations presented as one system story.",
-      "Scalable systems language without disappearing into control-plane jargon.",
+      "Every lifecycle operation creates a durable job record that can be tracked, repaired, and reconciled.",
+      "The scheduler and host-agent seams are defined and enforced so placement decisions and host execution stay separated.",
+      "A reconciler and janitor run continuously to detect drift and move stuck jobs toward a safe state.",
     ],
     heroImage: {
       src: "/product-art/COMPOSITION-VII.jpg",
       alt: "Expressive abstract composition representing cloud compute scale.",
     },
-    availabilityNote:
-      "Cloud VM launches through Upcube Cloud, giving the broader cloud experience a direct path into virtual machines.",
     signatureTitle:
-      "Cloud VMs that treat infrastructure like a real system, not a demo.",
+      "Built around the parts of cloud compute that actually make it reliable.",
     signatureBody:
-      "Cloud VM is built around the hard parts that make cloud platforms serious: lifecycle control, durable state, storage, networking, scheduling, repair, and the long-running jobs that tie them together.",
+      "The gap between a VM product that works in a demo and one that works under real operational load comes down to a handful of hard architectural decisions: how lifecycle state is modeled, how long-running operations are handled, how placement decisions are separated from API calls, and how the system recovers when something goes wrong. Upcube VM addresses each of these directly.",
     signatureCards: [
       {
-        title: "Virtual machines with durable identity",
-        body: "The product story emphasizes instances that are treated as persistent resources with real lifecycle logic behind them.",
+        title: "Durable instance lifecycle",
+        body: "Instances are modeled as persistent resources with ownership, state, and a full lifecycle: create, start, stop, reboot, and delete, each with admission rules, idempotency guarantees, and job-status tracking. This is the foundational distinction between a CRUD API and a real compute control plane.",
       },
       {
-        title: "Storage and networking as first-class parts of the experience",
-        body: "Disks, IPs, networks, and routing belong inside the same product narrative as cloud compute instead of feeling bolted on after the fact.",
+        title: "Async job-driven operations",
+        body: "Every lifecycle operation creates a durable job record that can be admitted by the API, processed by workers, observed by users, and repaired if it gets stuck. Timeouts, retries, stuck-job scans, and repair dispatch are all handled without losing track of what was requested.",
       },
       {
-        title: "Async operations that match how infrastructure really behaves",
-        body: "Long-running actions are part of the platform design, which makes the public story more honest and more useful.",
+        title: "Reconciliation and repair",
+        body: "The reconciler scans for drift between intended and actual state and dispatches repair work. The janitor finds stuck or timed-out jobs and moves them to a safe terminal state. Real infrastructure systems become reliable through convergence. This platform is built with that model from the start.",
       },
     ],
     featureStories: [
       {
-        title: "Compute that keeps pace with real control-plane work",
-        body: "Cloud VM is shaped around instance lifecycle admission, scheduling, host coordination, and repair instead of a shallow create-delete demo story.",
+        title: "VPC networking foundation",
+        body: "The networking layer covers public IP lifecycle, duplicate IP prevention, IP release on stop and delete paths, SSH readiness gating before instances are marked as running, DNAT and SNAT lifecycle correctness, VPC resources, subnets, security groups, security group rules, route tables, and route entries.",
       },
       {
-        title: "Storage and snapshots that belong in the conversation",
-        body: "Volume attach, detach, snapshot, and restore ideas are part of the way the product explains compute readiness and operational depth.",
+        title: "Detached block storage",
+        body: "Volumes are first-class resources with their own ownership and lifecycle. Volume create, list, get, delete, attach, and detach flows are supported alongside availability-zone affinity concepts, attachment limits, delete-on-termination behavior, and snapshot-aware constraints.",
       },
       {
-        title: "Networking that matters to the final outcome",
-        body: "Public IP lifecycle, VPC-style structure, and route-aware networking make the product feel like infrastructure, not just branding around instances.",
+        title: "Ownership-aware resource access",
+        body: "Every resource belongs to a project. Access checks are ownership-aware so a request for an instance, volume, IP, or image that belongs to a different project is not returned. Cross-project resource leakage is not a configuration option that can be accidentally enabled.",
       },
     ],
     techCards: [
       {
-        title: "Instance lifecycle",
-        body: "Create, start, stop, reboot, and delete flows are part of a broader system that tracks ownership and operation state carefully.",
+        title: "Control-plane-first admission",
+        body: "The resource manager is the API layer. Its job is to admit, validate, and record intent. Actual VM runtime work is separated into worker, scheduler, host-agent, and network-controller seams. The boundary is explicit and enforced in the codebase.",
       },
       {
-        title: "Jobs, reconciliation, and repair",
-        body: "The platform is designed around work that can take time, fail, recover, and still move toward a safe state.",
+        title: "PostgreSQL-backed repository layer",
+        body: "Persistence goes through a repository layer that backs instances, jobs, IPs, networks, projects, events, volumes, images, and related resources to PostgreSQL. The repository is a seam, not an implementation detail baked into service logic.",
       },
       {
-        title: "Scalable systems seams",
-        body: "Scheduler, host agent, network controller, and repository boundaries keep the story anchored in real cloud architecture.",
+        title: "gRPC and Protocol Buffer contracts",
+        body: "Service-to-service communication uses gRPC and Protocol Buffers for typed, versioned contracts between the resource manager, worker, scheduler, host agent, and network controller. Services can evolve independently without requiring every other service to understand the new one's internal API.",
       },
     ],
     useCases: [
       {
-        title: "Launch cloud VMs with more confidence",
-        body: "Use a product built around instance durability, job tracking, and operational visibility instead of fragile one-shot actions.",
+        title: "Launch a workload that needs to survive a stop and restart",
+        body: "Stop an instance overnight and start it again in the morning with the same disk, the same IP, and the same configuration. Instances are modeled as persistent resources. The restart brings the same instance back with the same disk attached and the same job-tracking visibility.",
       },
       {
-        title: "Explain infrastructure to more than one audience",
-        body: "The product page is written so operators, builders, and business teams can follow the system story together.",
+        title: "Diagnose why an instance is stuck",
+        body: "Retrieve the job status for a lifecycle operation that has not completed. Identify whether the job is in a timeout window the janitor will handle or whether a repair dispatch is already in progress. The reconciler and janitor are running continuously.",
       },
       {
-        title: "Scale toward more complex systems",
-        body: "Storage, networking, and repair loops help the platform story grow beyond one isolated workload.",
+        title: "Evaluate the platform before building on top of it",
+        body: "Clone the repository and run go build and go test. The service boundary between the resource manager and the scheduler is explicit in the code structure. The maturity map in the README is honest about what is implemented, what is partial, and what is planned.",
       },
     ],
     ecosystemLinks: [
@@ -1556,19 +1558,19 @@ export const upcubeProducts: UpcubeProduct[] = [
       },
       {
         title: "Upcube Commerce",
-        body: "Follow how scalable commerce can depend on stronger cloud compute systems.",
+        body: "Connect infrastructure analysis and automation workflows to large-scale commerce workloads in the product ecosystem.",
         href: "/products/shopping",
       },
       {
-        title: "Upcube Earth",
-        body: "Connect compute-heavy infrastructure thinking to spatial and map-centric products.",
+        title: "Upcube Planet",
+        body: "Explore the geospatial visualization layer that sits alongside cloud infrastructure.",
         href: "/products/earth",
       },
     ],
     finalCtaTitle:
-      "Bring clearer thinking to cloud compute, storage, and networking.",
+      "A serious cloud compute foundation, built to grow.",
     finalCtaBody:
-      "Cloud VM is designed for teams that want infrastructure products to feel serious, coherent, and ready to scale.",
+      "Upcube VM is an early but serious EC2-style platform foundation with a real control-plane architecture, async job modeling, scheduler and host-agent seams, reconciliation loops, VPC networking foundations, and detached block storage. The architecture is built to support that growth without redesigning the foundations.",
     finalPrimaryAction: {
       label: "Open Upcube Cloud",
       href: "https://cloud.upcube.ai",
@@ -1581,13 +1583,14 @@ export const upcubeProducts: UpcubeProduct[] = [
   {
     slug: "upcube-os",
     name: "Upcube OS",
-    eyebrow: "Desktop operating system",
-    headline: "A consumer operating system for the AI era.",
+    eyebrow: "Upcube OS",
+    headline: "A computer that helps you get things done and shows you exactly how.",
     summary:
-      "Upcube OS is designed to make AI feel built in, visible, and firmly under your control. It is the public operating-system vision inside the Upcube ecosystem — built around trustworthy AI help, clear permissions, visible actions, readable history, and a planned public consumer release in 2028 while improvements continue.",
-    seoTitle: "Upcube OS | AI Operating System",
+      "Upcube OS is an AI-first operating system built around tasks, trust, and visible control. AI is part of the system itself, helping across files, documents, email, browser, and workspaces, with task-scoped permissions, human approval before important actions, and a readable activity history. Public consumer release planned for 2028.",
+    seoTitle:
+      "Upcube OS | AI-First Operating System with Visible Control and Built-In Approval",
     seoDescription:
-      "Upcube OS is an AI operating system built around visible help, system context, permissions, and trust-first computing direction.",
+      "Upcube OS is an experimental AI-first operating system built around tasks, trust, and visible control. AI assistance is built into the system layer with task-scoped permissions, human approval before important actions, and a readable activity history. Public consumer release planned for 2028.",
     primaryAction: {
       label: "Read the vision",
       href: "/vision",
@@ -1597,9 +1600,9 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "/trust",
     },
     heroHighlights: [
-      "AI help that feels built into the computer, not added on.",
-      "Clear permissions, approvals, and visible activity history.",
-      "Public consumer release planned for 2028 while the product continues to improve.",
+      "AI is built into the system layer, available across files, documents, email, browser, and workspaces.",
+      "Permissions are scoped to each specific task, described in plain language, and bounded by what the task requires.",
+      "Before anything consequential executes, the system pauses and asks in plain language with three options: approve, edit, or cancel.",
     ],
     heroImage: {
       src: "/product-art/Composition.jpg",
@@ -1607,85 +1610,86 @@ export const upcubeProducts: UpcubeProduct[] = [
     },
     availabilityNote:
       "Public consumer release is planned for 2028 while improvements continue across the product and system experience.",
-    signatureTitle: "An operating system that explains itself as it helps.",
+    signatureTitle:
+      "Built around the idea that AI should help more and explain itself better.",
     signatureBody:
-      "Upcube OS is built around a simple idea: your computer should become more helpful without becoming more hidden. AI assistance should stay visible, understandable, and connected to real system work.",
+      "The design philosophy behind Upcube OS is that AI assistance built into the system should be more visible, more understandable, and more controllable than AI assistance that lives inside a third-party app. Every feature is an expression of that philosophy in a specific part of the computing experience.",
     signatureCards: [
       {
-        title: "AI that feels built in",
-        body: "Help can live across files, documents, email, browser, settings, and workspaces — not behind a single app icon.",
+        title: "System-level AI assistance",
+        body: "Because Upcube OS is designed with AI as part of the operating system itself, a request like organize my documents or summarize this PDF does not require knowing which app to open. The system can address those requests by working across the relevant parts of your computer.",
       },
       {
-        title: "Visible action, not silent automation",
-        body: "The system is designed to show what AI is doing, what it can access, and when your approval is needed.",
+        title: "Task-scoped permissions",
+        body: "Instead of broad one-time permission grants, Upcube OS scopes access requests to the specific task being performed. Read only. 20 minutes. No changes to files. Saying yes to one task does not mean saying yes to everything.",
       },
       {
-        title: "Trust through understandable control",
-        body: "Permissions, history, and approvals are presented in plain language, so control feels clear instead of technical.",
+        title: "Approval before important actions",
+        body: "Sending an email, deleting files, uploading documents, changing settings, or running risky commands all trigger an approval step. The prompt describes the action in plain language, shows the specific targets, and gives you the choice to approve, edit, or cancel.",
       },
     ],
     featureStories: [
       {
-        title: "AI that helps across the whole system",
-        body: "Upcube OS imagines a computer where summarizing a PDF, organizing files, restoring a workspace, or explaining battery drain feels like a natural request.",
+        title: "Readable activity history",
+        body: "Upcube OS keeps a history of what AI helped with, which files it used, what changed, and what can be undone. When possible, the system preserves a prior version before making changes so comparison and undo are available without a separate backup workflow.",
       },
       {
-        title: "An activity history you can actually read",
-        body: "The system direction emphasizes showing what changed, which files were involved, what you approved, and what can be undone.",
+        title: "Meaning-based search",
+        body: "Search works on what you remember about a file, not on the exact file name. Requests like find my tax documents or show files about my Medicaid case describe the context of what you are looking for. The system understands what you mean.",
       },
       {
-        title: "Approvals for the moments that matter",
-        body: "Deleting files, sending messages, changing settings, and other meaningful actions are designed to stay visible, intentional, and reviewable.",
+        title: "Controllable AI modes",
+        body: "Upcube OS provides five AI assistance levels: Manual where AI only suggests, Assisted where AI drafts and asks first, Balanced where AI handles safe tasks and asks before risky ones, Automatic where AI runs approved routines within defined limits, and Locked Down where AI is mostly off.",
       },
     ],
     techCards: [
       {
-        title: "System-level intelligence",
-        body: "Upcube OS is framed around AI as part of the computer itself — not a separate novelty layer.",
+        title: "Reversibility by design",
+        body: "Where possible, Upcube OS saves a prior version before making changes. After AI assistance, you can view what changed, compare the before and after, and undo if the result is not what you wanted.",
       },
       {
-        title: "Permission design that makes sense",
-        body: "Access requests are meant to be specific to the task, time-bounded where possible, and easy to understand.",
+        title: "Intelligent task and battery management",
+        body: "Tasks requiring significant processing can be scheduled to run when the device is charging, connected to Wi-Fi, cooled down, or not actively in use. When a task is paused, the system explains why and commits to resuming when the condition is met.",
       },
       {
-        title: "A trust-first operating model",
-        body: "Visibility, control, and reversibility stay at the center of the experience.",
+        title: "System-level explainability",
+        body: "When something on the computer is confusing or unexpected, you can ask about it and get a specific answer. Why is my battery draining returns which apps were responsible and for how long, with a suggestion for what can be paused.",
       },
     ],
     useCases: [
       {
-        title: "Organize real work without losing sight of the changes",
-        body: "Ask the system for help, see the scope of access clearly, and understand the result afterward.",
+        title: "Organize a parent's care documents",
+        body: "Ask Upcube OS to organize care documents and make a checklist of what is missing. It finds the relevant files, groups them by category, names what is present and what appears missing, and asks for approval before moving anything.",
       },
       {
-        title: "Get explanations instead of mystery",
-        body: "Battery, files, workspaces, and settings should feel more explainable through built-in intelligence.",
+        title: "Recover from a confusing file change",
+        body: "Ask why a file changed and the system returns which assistant action changed it, the time it happened, whether you approved it, and whether undo is still available.",
       },
       {
-        title: "Move faster without surrendering control",
-        body: "The long-term goal is a computer that helps more often while keeping important decisions reviewable.",
+        title: "Clean up a Downloads folder without anxiety",
+        body: "Upcube OS scans the folder, shows a breakdown by category, proposes what to do with each group, and makes clear that nothing will be deleted until you approve each category individually.",
       },
     ],
     ecosystemLinks: [
       {
         title: "Upcube Mobile OS",
-        body: "See how the same trust-first product story carries into a phone experience.",
+        body: "The trust-first design philosophy carries into the phone experience through Upcube Mobile OS.",
         href: "/products/upcube-mobile-os",
       },
       {
         title: "UpcubeAI",
-        body: "Follow the workspace and assistant story shaping the broader ecosystem.",
+        body: "Connect the desktop OS experience to the AI workspace and assistant platform for deeper research and structured work.",
         href: "/products/upcube-ai",
       },
       {
         title: "Upcube Cloud",
-        body: "Connect the operating-system vision to the infrastructure and developer side of the platform.",
+        body: "Cloud infrastructure and compute for AI workloads and connected features that Upcube OS depends on.",
         href: "/products/cloud",
       },
     ],
-    finalCtaTitle: "A more helpful computer should still feel like yours.",
+    finalCtaTitle: "A computer that helps more and hides less.",
     finalCtaBody:
-      "Upcube OS presents a public consumer vision for AI-native computing — designed around help, trust, visibility, and control, with public release planned for 2028.",
+      "Upcube OS is an experimental AI-first operating system in active development with a public consumer release planned for 2028. AI assistance is built into the system, visible, task-scoped, and approvable before anything important happens. Recoverable when something does not go as planned.",
     finalPrimaryAction: {
       label: "Read the Upcube OS vision",
       href: "/vision",
@@ -1698,13 +1702,14 @@ export const upcubeProducts: UpcubeProduct[] = [
   {
     slug: "upcube-mobile-os",
     name: "Upcube Mobile OS",
-    eyebrow: "Mobile operating system",
-    headline: "A mobile operating system for trusted AI.",
+    eyebrow: "Upcube Mobile OS",
+    headline: "A phone built around intelligence, not just apps.",
     summary:
-      "Upcube Mobile OS is designed around privacy, trust, and AI help that stays visible every step of the way. It is the public mobile operating-system vision inside the Upcube ecosystem — built around trusted launch, privacy-aware intelligence, clear system boundaries, visible control, and a planned public consumer release in 2028 while improvements continue.",
-    seoTitle: "Upcube Mobile OS | AI Mobile Operating System",
+      "Upcube Mobile OS is an original AI-native mobile operating system built from first principles: trusted app launch, process isolation, system-owned daemons, out-of-process rendering, and AI available across the whole system with clear per-app permission controls and user-owned memory. Public consumer release planned for 2028.",
+    seoTitle:
+      "Upcube Mobile OS | AI-Native Mobile Operating System with Trusted Launch and Privacy Controls",
     seoDescription:
-      "Upcube Mobile OS is an AI mobile operating system focused on trusted assistance, privacy, system clarity, and future phone computing.",
+      "Upcube Mobile OS is an experimental AI-first mobile operating system built from first principles. Trusted app launch, process isolation, system daemons, out-of-process rendering, per-app AI permissions, and privacy-aware system intelligence. Public consumer release planned for 2028.",
     primaryAction: {
       label: "Read the vision",
       href: "/vision",
@@ -1714,9 +1719,9 @@ export const upcubeProducts: UpcubeProduct[] = [
       href: "/trust",
     },
     heroHighlights: [
-      "AI as a system layer, not just an assistant icon.",
-      "Privacy-aware intelligence with clearer user control.",
-      "Public consumer release planned for 2028 while the product continues to improve.",
+      "AI is a system layer available across settings, search, notifications, files, photos, privacy, storage, and diagnostics.",
+      "Every app has understandable controls for local AI, cloud AI, memory access, and sensitive action confirmation.",
+      "The phone tells you when AI ran, what it accessed, whether it stayed on device, and whether cloud AI was involved.",
     ],
     heroImage: {
       src: "/product-art/a32ca26a50a12c330df049b8b402b6a8.jpg",
@@ -1725,85 +1730,85 @@ export const upcubeProducts: UpcubeProduct[] = [
     availabilityNote:
       "Public consumer release is planned for 2028 while improvements continue across the product and mobile system direction.",
     signatureTitle:
-      "A mobile OS where trust and intelligence are designed together.",
+      "Built around what a phone could be if intelligence and trust were designed in from the start.",
     signatureBody:
-      "Upcube Mobile OS is positioned as an original AI-native phone platform — one that helps with everyday tasks while keeping privacy, system boundaries, and user control visible from the start.",
+      "Most phone platforms treat privacy as a settings menu and AI as an assistant app. Upcube Mobile OS explores what changes when both are part of the operating system itself: visible permissions, system-level intelligence, trusted app boundaries, and a phone that can explain what it is doing in plain language.",
     signatureCards: [
       {
-        title: "AI across the system",
-        body: "Search, settings, files, photos, notifications, privacy, and diagnostics become part of the intelligence layer instead of staying disconnected from it.",
+        title: "AI across the whole system",
+        body: "A request like make my phone more private does not open an assistant window and ask you to navigate settings yourself. The system understands the request, identifies the relevant settings, explains what each one does, and surfaces the right action.",
       },
       {
-        title: "Privacy you can understand",
-        body: "The product direction emphasizes showing when AI runs locally, when cloud AI is involved, and what information was touched.",
+        title: "Trusted app launch and process isolation",
+        body: "Every app launch goes through a trust boundary, every app runs in a defined process boundary, and access to system resources requires explicit permission. Security boundaries are structural rather than advisory.",
       },
       {
-        title: "Trust built into the phone experience",
-        body: "Trusted launch, app boundaries, services, and user approvals shape the foundation of the mobile platform story.",
+        title: "Privacy-aware intelligence",
+        body: "The product direction includes a private AI mode where cloud AI is blocked, memory saving is paused, apps must ask before using AI, sensitive data stays on device, and AI activity is logged clearly. Users can inspect, delete, pause, or limit what the system remembers at any time.",
       },
     ],
     featureStories: [
       {
-        title: "Ask for what you need in plain language",
-        body: "The mobile vision supports requests like cleaning up storage, improving privacy, finding the right setting, or understanding what changed.",
+        title: "Plain-language system requests",
+        body: "Find the photo from last summer, why is my battery draining, summarize what I missed, clean up storage but ask me before deleting anything. The system understands the request, identifies the relevant data or settings, explains what it plans to do, and confirms before any action with consequences.",
       },
       {
-        title: "System intelligence with visible boundaries",
-        body: "Apps, services, frameworks, and background processes are treated as clear system layers, so AI can be powerful without becoming blurry.",
+        title: "Out-of-process rendering architecture",
+        body: "App rendering happens in a system-owned render server rather than inside each app process. This means an app crash does not crash the display, app processes cannot directly access the graphics buffer, and the system retains control over frame composition.",
       },
       {
-        title: "A phone that explains itself better",
-        body: "Diagnostics, settings, privacy, accessibility, storage, and everyday help are designed to feel easier to inspect, understand, and control.",
+        title: "Diagnostics and system explainability",
+        body: "When something unexpected happens, the phone can describe what caused it in plain terms. Why is the battery draining returns which apps were responsible and for how long. Why was a permission denied returns the specific rule that applied.",
       },
     ],
     techCards: [
       {
-        title: "Trusted app launch and boundaries",
-        body: "The product story begins with secure launch, process separation, and clear ownership of system services.",
+        title: "Kernel-adjacent module foundations",
+        body: "The project includes foundations for memory management, process lifecycle, inter-process communication, scheduling, signing and trust, sandboxing, and virtual filesystem concepts organized as separate CMake build targets. These are research and prototype components, not a production kernel replacement.",
       },
       {
-        title: "System-owned intelligence",
-        body: "AI help is framed as part of the operating system itself — not a bolt-on assistant competing for attention.",
+        title: "System daemon architecture",
+        body: "The build includes daemon directions for supervision, trust, app installation, rendering, diagnostics, location, notifications, thermal management, power, networking, and audio session management. Daemon names reflect subsystem boundaries and should be evaluated based on source and test evidence.",
       },
       {
-        title: "Original and IP-safe direction",
-        body: "Upcube Mobile OS is presented as an independent platform vision with its own trust model, interaction language, and system design direction.",
+        title: "CMake and CTest build system",
+        body: "The build system uses CMake 3.20 or later, Ninja, C11, and CTest. The top-level CMake configuration wires subsystem directories conditionally so individual subsystems can be enabled, disabled, and validated independently.",
       },
     ],
     useCases: [
       {
-        title: "Find the right setting faster",
-        body: "Ask in plain language and move toward the right answer without digging through layers of menus.",
+        title: "Understand why the battery is draining",
+        body: "Ask the phone why the battery is draining and get a description of which processes were active and for how long, which used significant processing power, and which could be paused or restricted without affecting active work.",
       },
       {
-        title: "Understand what the phone is doing",
-        body: "Battery, storage, privacy, diagnostics, and background activity should feel easier to inspect and explain.",
+        title: "Make the phone more private without a settings tutorial",
+        body: "Ask Upcube Mobile OS to make the phone more private. The system identifies relevant settings, explains what each one does and what the tradeoff is, and offers to make the changes with your confirmation. Nothing changes without your approval.",
       },
       {
-        title: "Get help without surrendering privacy",
-        body: "The mobile vision is built around useful intelligence with visible, bounded data access.",
+        title: "Find a photo without remembering when it was taken",
+        body: "Ask for the photo from last summer at the beach with the red umbrella. The system uses semantic search across the photo library to surface candidates based on the description rather than the date.",
       },
     ],
     ecosystemLinks: [
       {
         title: "Upcube OS",
-        body: "Explore the desktop operating-system vision that shares the same trust-first philosophy.",
+        body: "The trust-first, AI-as-system-layer design philosophy of Upcube Mobile OS carries into the desktop experience through Upcube OS.",
         href: "/products/upcube-os",
       },
       {
         title: "UpcubeAI",
-        body: "Connect the mobile experience to the wider AI assistant and workspace story.",
+        body: "Connect the mobile experience to the AI workspace and assistant platform for research, document work, and structured tasks.",
         href: "/products/upcube-ai",
       },
       {
         title: "Upcube Cloud",
-        body: "Follow the infrastructure and platform story behind connected product surfaces.",
+        body: "Cloud infrastructure and governed services that Upcube Mobile OS depends on for cloud-connected AI tasks.",
         href: "/products/cloud",
       },
     ],
-    finalCtaTitle: "A phone should help more — and explain more.",
+    finalCtaTitle: "An original mobile OS built for the AI era, from the system up.",
     finalCtaBody:
-      "Upcube Mobile OS presents a public consumer vision for AI-native mobile computing, designed around trust, privacy, visibility, and control, with public release planned for 2028.",
+      "Upcube Mobile OS is an experimental systems project and AI-native product vision in active development with a planned public consumer release in 2028. The architecture includes kernel-adjacent module foundations, system daemon boundaries, rendering service foundations, app-facing frameworks, and sandbox and trust seams. The product vision is a phone where intelligence is built into the system layer, privacy is visible and controllable, and plain-language requests get real system responses.",
     finalPrimaryAction: {
       label: "Read the Upcube Mobile OS vision",
       href: "/vision",
