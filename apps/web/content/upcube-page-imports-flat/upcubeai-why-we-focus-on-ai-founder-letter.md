@@ -1,56 +1,44 @@
 # Why We Focus on AI and What Comes Next
 
-## Building a connected technology ecosystem for the next era of computing.
+## Building the AI agent marketplace.
 
 A founder letter from **Shadab**, Founder of Upcube
 
-The future will not be one app. People need tools that work together: an assistant to think with, cloud and compute to build with, education to grow with, commerce and jobs to navigate opportunity, Earth and Games to explore, Robotics to operate physical systems, and OS platforms to shape the next interface for computing.
+The future is not one AI product. It is a marketplace of focused agents — each one designed to do a specific task well, and easy for people to find.
 
-That is why Upcube exists.
+That is why Upcube builds Ethen.
 
-We are building a connected technology ecosystem across AI, cloud infrastructure, compute, robotics, commerce, education, spatial exploration, entertainment, discovery, and future operating systems. Not as a collection of unrelated products, but as a family designed to work together.
+## Why an agent marketplace
 
-## Why a product ecosystem
+Most AI products are built as a single assistant that tries to do everything. One chat box. One model. One set of capabilities.
 
-Most technology products are built as isolated tools. A chat app here. A cloud console there. A job board somewhere else. A learning platform that has nothing to do with the tools you use to build.
+Upcube is building differently.
 
-Upcube is being built differently.
+The agent marketplace model means people can find agents that are focused on what they actually need. A search agent. A writing agent. An analysis agent. An agent for decisions or planning. Categories make discovery practical. Depth comes from specialization.
 
-The product family is designed to connect work, learning, discovery, commerce, infrastructure, and future computing through a shared product language. Each product should stand on its own, but also make the next useful destination easy to discover.
+You may begin in Ethen looking for help with research. You find a research agent. It is focused on that task. It does it well. You come back because it helped.
 
-You may begin in Ethen with a question. You may turn that question into an artifact, continue into research, explore books, build a learning path, inspect a place in Earth, evaluate products in Ventari, or connect the work to cloud and compute systems. You may operate a robot fleet, browse jobs, play games, or explore quantum computing.
-
-The long-term vision is a connected ecosystem where technology works across boundaries, not trapped inside separate apps.
+That is the long-term vision: an agent marketplace where the right tool is easy to find and worthy of trust.
 
 ## What we build
 
-**AI Products.** Ethen is an AI workspace for chat, research, artifacts, and execution that turns questions into durable work.
+**Ethen.** The flagship AI agent marketplace, organized by category. The public product catalog starts broad. Specialized agents come next.
 
-**Cloud Infrastructure.** Upcube Cloud provides developer tools, workflows, and platform services for builders and teams.
+**Agent categories.** The organizing structure for discovery — search, writing, analysis, planning, learning, decisions, and more.
 
-**Compute Platform.** Virtual machines, networking, storage, and operations for workloads that need power and control.
-
-**Robotics Operations.** Mission replay, fleet observability, incident evidence, and policy-aware operations for robot operations teams.
-
-**Commerce Technology.** Ventari delivers marketplace-scale product discovery with AI-powered search, reviews, and recommendations.
-
-**Education Platform.** Upcube Education brings structured learning, AI education, product training, and guided paths to anyone who wants to learn.
-
-**Discovery Products.** Earth for spatial exploration. Books for knowledge. Games for entertainment. Jobs for opportunity.
-
-**Future Platforms.** OS and Mobile OS for the next computing interface. Voice for natural interaction. Quantum for understanding the next computational paradigm.
+**Company research.** The thinking behind Ethen: search, language, trust, safety, responsible AI, and agent design.
 
 ## The belief behind the company
 
-We believe technology should feel useful, not complicated. Products should connect, not clutter. The best tools are the ones that make people more capable without making the process harder to understand.
+We believe AI should be practical enough for daily work, honest enough that people understand what it is doing, and well-designed enough that finding the right agent feels natural.
 
-AI is one important layer of that vision. It makes products smarter, more helpful, and more responsive. But it is one layer among many. The company is building across software, infrastructure, discovery, learning, robotics, and future computing.
+The most useful AI product is not the most powerful one. It is the one that is focused, trustworthy, and easy to start.
 
-We are building for the long term. Some products are live. Some are previews. Some are future directions. The important thing is that each surface is presented honestly, beautifully, and with enough clarity for users to understand what exists now and where the ecosystem is going.
+We are building for the long term. Categories are live. Specialized agents are coming. Public claims stay tied to what exists now.
 
 ## The founder standard
 
-Build products that help people. Build interfaces that explain themselves. Build platforms that scale. Build learning paths that widen access. Build discovery experiences that reduce noise. Build future computing around trust from the beginning.
+Build agents that help people with real tasks. Build categories that make discovery natural. Keep capability honest. Keep the interface clear.
 
 Technology should not make people feel smaller. It should make them more capable.
 

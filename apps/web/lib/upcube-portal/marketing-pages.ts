@@ -2,9 +2,7 @@ import {
   UPCUBE_BOOKS_URL,
   UPCUBE_CHAT_URL,
   UPCUBE_CLOUD_URL,
-  UPCUBE_GAMES_URL,
   UPCUBE_JOBS_URL,
-  UPCUBE_PLANET_URL,
 } from "lib/upcube-portal/content";
 
 export type MarketingCard = {
@@ -31,52 +29,51 @@ export type MarketingPageContent = {
   sections: MarketingSection[];
 };
 
-const appLinks = [
-  { title: "UpcubeAI", href: UPCUBE_CHAT_URL },
-  { title: "Upcube Earth", href: UPCUBE_PLANET_URL },
-  { title: "Upcube Books", href: UPCUBE_BOOKS_URL },
-  { title: "Upcube Jobs", href: UPCUBE_JOBS_URL },
-  { title: "Upcube Games", href: UPCUBE_GAMES_URL },
-  { title: "Upcube Cloud", href: UPCUBE_CLOUD_URL },
-];
-
 export const explorePageContent: MarketingPageContent = {
-  eyebrow: "UpcubeAI ecosystem",
-  title: "Explore the UpcubeAI portal",
-  lead: "Move from question to execution with one workspace across chat, research, spatial tools, publishing, hiring, and developer surfaces.",
-  chips: ["Portal-first", "Black editorial UI", "App-linked experiences"],
-  primaryCta: { label: "Try Ethen", href: UPCUBE_CHAT_URL, external: true },
-  secondaryCta: { label: "View capabilities", href: "/capabilities" },
+  eyebrow: "Ethen",
+  title: "Explore the Ethen agent marketplace",
+  lead: "Find specialized agents for search, writing, analysis, planning, learning, and decisions. Browse by category and get real work done.",
+  chips: ["Agent categories", "Specialized agents", "Real-world tasks"],
+  primaryCta: { label: "Explore Ethen", href: "/ethen", external: false },
+  secondaryCta: { label: "Agent categories", href: "/ethen/agents" },
   sections: [
     {
-      eyebrow: "App entry points",
-      title: "Connected Upcube destinations",
-      cards: appLinks.map((item) => ({
-        title: item.title,
-        body: "Launch the dedicated surface for this workflow.",
-        href: item.href,
-        external: true,
-      })),
-    },
-    {
-      eyebrow: "What to do here",
-      title: "Common portal starting paths",
+      eyebrow: "How to start",
+      title: "Starting paths in Ethen",
       cards: [
         {
-          title: "Start in chat",
-          body: "Draft ideas, summarize inputs, and route work into the right app.",
+          title: "Browse agent categories",
+          body: "Find agents organized by what they do — search, write, analyze, plan, compare, or create.",
+          href: "/ethen/agents",
+        },
+        {
+          title: "Start with a task",
+          body: "Open Ethen and describe your task. The right agent category is close.",
           href: UPCUBE_CHAT_URL,
           external: true,
         },
         {
           title: "Research with structure",
-          body: "Use the research page for evidence-oriented planning and decision artifacts.",
+          body: "Use the research page for company and product thinking behind Ethen.",
           href: "/research",
         },
+      ],
+    },
+    {
+      eyebrow: "What Ethen helps with",
+      title: "Agent work categories",
+      cards: [
         {
-          title: "Review enterprise lane",
-          body: "See how teams can adopt UpcubeAI workflows with governance and review gates.",
-          href: "/enterprise",
+          title: "Search and gather",
+          body: "Find information, extract sources, and summarize findings.",
+        },
+        {
+          title: "Write and create",
+          body: "Draft documents, summaries, plans, and structured output.",
+        },
+        {
+          title: "Analyze and decide",
+          body: "Compare options, evaluate evidence, and support decisions.",
         },
       ],
     },
@@ -106,9 +103,9 @@ export const platformPageContent: MarketingPageContent = {
           external: true,
         },
         {
-          title: "Domain apps",
-          body: "Upcube Earth, Upcube Books, Upcube Jobs, Upcube Games, and Upcube Cloud are connected through one navigation model.",
-          href: "/explore",
+          title: "Agent categories",
+          body: "Ethen organizes agents by category so the right agent is easy to find from any starting point.",
+          href: "/ethen/agents",
         },
         {
           title: "Portal layer",
@@ -219,8 +216,9 @@ export const capabilitiesPageContent: MarketingPageContent = {
           body: "Convert source inputs into concise decision-oriented outputs.",
         },
         {
-          title: "Cross-app routing",
-          body: "Move from portal context into Upcube Earth, Upcube Books, Upcube Jobs, Upcube Games, or Upcube Cloud.",
+          title: "Agent discovery",
+          body: "Find the right specialized agent for the task by browsing Ethen categories.",
+          href: "/ethen/agents",
         },
       ],
     },
@@ -502,26 +500,24 @@ export const researchPageContent: MarketingPageContent = {
       ],
     },
     {
-      eyebrow: "Connected lanes",
-      title: "Route results into the right app",
+      eyebrow: "Next steps",
+      title: "Where research leads",
       cards: [
         {
-          title: "Spatial research",
-          body: "Continue location and mapping exploration in Upcube Earth.",
-          href: UPCUBE_PLANET_URL,
+          title: "Explore Ethen agents",
+          body: "Find the right agent to act on research findings.",
+          href: "/ethen/agents",
+        },
+        {
+          title: "Ethen",
+          body: "Open Ethen to continue working with research output.",
+          href: UPCUBE_CHAT_URL,
           external: true,
         },
         {
-          title: "Publishing flow",
-          body: "Move editorial research outputs toward Upcube Books.",
-          href: UPCUBE_BOOKS_URL,
-          external: true,
-        },
-        {
-          title: "Developer follow-through",
-          body: "Move technical implementation tracks into Upcube Cloud.",
-          href: UPCUBE_CLOUD_URL,
-          external: true,
+          title: "Company research",
+          body: "Return to the research index for more topics.",
+          href: "/research",
         },
       ],
     },

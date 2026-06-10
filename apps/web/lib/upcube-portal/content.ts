@@ -163,11 +163,10 @@ export type ProductScaleStat = {
 };
 
 export const productScaleStats: ProductScaleStat[] = [
-  { id: "books-scale", label: "Books", value: "50M books" },
-  { id: "games-scale", label: "Games", value: "400K games" },
-  { id: "ventari-scale", label: "Commerce", value: "1B product scale" },
-  { id: "jobs-scale", label: "Jobs", value: "8M jobs" },
-  { id: "university-scale", label: "Education", value: "100K courses" },
+  { id: "ethen-categories", label: "Agent categories", value: "15 categories" },
+  { id: "ethen-tasks", label: "Work types", value: "Real-world tasks" },
+  { id: "ethen-access", label: "Access", value: "Free to explore" },
+  { id: "ethen-built-by", label: "Built by", value: "Upcube" },
 ];
 
 export type UpcubeCompanyIdentity = {
@@ -231,27 +230,24 @@ export {
 
 export const upcubeCompanyIdentity: UpcubeCompanyIdentity = {
   descriptor: "Technology company",
-  tagline:
-    "A connected family of products across AI, cloud, robotics, education, commerce, and discovery.",
+  tagline: "The company behind Ethen, the AI agent marketplace.",
   oneLiner:
-    "A technology company building a connected family of products across AI, cloud, robotics, education, commerce, spatial exploration, entertainment, jobs, books, voice, and next-generation operating systems.",
+    "Upcube builds Ethen — an AI agent marketplace where people find, use, and build AI agents for work, learning, and everyday tasks.",
   mission:
-    "Make advanced technology feel clear, connected, and useful across the products people rely on every day.",
+    "Make AI agents practical and accessible for the tasks people rely on every day.",
   vision:
-    "Build a connected product ecosystem for work, learning, commerce, infrastructure, robotics, discovery, entertainment, and future computing.",
+    "Build the leading marketplace for AI agents, starting with broad categories and growing into specialized agents across every domain.",
   belief:
-    "The future is not one app. It is a family of focused products that work together.",
+    "The future is not one AI product. It is a marketplace of focused agents that work together.",
   promise:
-    "Build premium products with clear interfaces, honest capability framing, and practical value.",
+    "Build a marketplace with honest capability framing, clear pricing, and practical value.",
   pillars: [
-    "AI & Intelligence",
-    "Cloud & Infrastructure",
-    "Robotics & Physical AI",
+    "AI Agents",
+    "Agent Marketplace",
+    "Work & Productivity",
+    "Learning & Education",
     "Commerce",
     "Discovery",
-    "Education & Knowledge",
-    "Entertainment",
-    "Future Operating Systems",
   ],
 };
 
@@ -276,14 +272,7 @@ export const portalFooterLinks: PortalNavItem[] = [
 export const portalAppLinks: PortalNavItem[] = [
   { id: "app-ethen", label: "Ethen", href: UPCUBE_CHAT_URL },
   { id: "app-account", label: "Account", href: "/account" },
-  { id: "app-earth", label: "Earth", href: UPCUBE_PLANET_URL },
-  { id: "app-news", label: "News", href: UPCUBE_NEWS_URL },
-  { id: "app-books", label: "Books", href: UPCUBE_BOOKS_URL },
-  { id: "app-games", label: "Games", href: UPCUBE_GAMES_URL },
-  { id: "app-jobs", label: "Jobs", href: UPCUBE_JOBS_URL },
   { id: "app-cloud", label: "Cloud", href: UPCUBE_CLOUD_URL },
-  { id: "app-quantum", label: "Quantum", href: UPCUBE_QUANTUM_URL },
-  { id: "app-ventari", label: "Commerce", href: UPCUBE_VENTARI_URL },
 ];
 
 const portalHomepageStatusById: Record<
@@ -526,17 +515,15 @@ function ecosystemFooterLinks(groupId: string): PortalNavItem[] {
 export const portalFooterGroups: PortalFooterGroup[] = [
   {
     id: "products",
-    title: "Products",
+    title: "Ethen",
     links: [
-      { id: "ai-footer", label: "AI", href: "/products/upcube-ai" },
-      { id: "cloud-footer", label: "Cloud", href: "/products/cloud" },
-      { id: "earth-footer", label: "Earth", href: "/products/earth" },
-      { id: "books-footer", label: "Books", href: "/products/books" },
-      { id: "research-footer", label: "Research", href: "/products/research" },
-      { id: "news-footer", label: "News", href: "/products/news" },
-      { id: "jobs-footer", label: "Jobs", href: "/products/jobs" },
-      { id: "shopping-footer", label: "Commerce", href: "/products/shopping" },
-      { id: "products-all-footer", label: "All Products", href: "/products" },
+      { id: "ethen-footer", label: "Ethen", href: "/ethen" },
+      { id: "ethen-productivity-footer", label: "Productivity agents", href: "/ethen/agents" },
+      { id: "ethen-writing-footer", label: "Writing agents", href: "/ethen/agents" },
+      { id: "ethen-research-footer", label: "Research agents", href: "/ethen/agents" },
+      { id: "ethen-coding-footer", label: "Coding agents", href: "/ethen/agents" },
+      { id: "ethen-business-footer", label: "Business agents", href: "/ethen/agents" },
+      { id: "products-all-footer", label: "All categories", href: "/ethen/agents" },
     ],
   },
   {
@@ -904,17 +891,15 @@ export const privacySections: PortalPrivacySection[] = [
 export const portalMenuGroups: PortalMenuGroup[] = [
   {
     id: "products",
-    title: "Products",
+    title: "Ethen",
     items: [
-      { id: "ai-menu", label: "AI", href: "/products/upcube-ai", description: "Chat, tools, and workspace intelligence." },
-      { id: "cloud-menu", label: "Cloud", href: "/products/cloud", description: "Developer tools and compute." },
-      { id: "earth-menu", label: "Earth", href: "/products/earth", description: "3D spatial exploration." },
-      { id: "books-menu", label: "Books", href: "/products/books", description: "Book discovery and previews." },
-      { id: "research-menu", label: "Research", href: "/products/research", description: "AI-native research workspace." },
-      { id: "news-menu", label: "News", href: "/products/news", description: "News intelligence and briefings." },
-      { id: "jobs-menu", label: "Jobs", href: "/products/jobs", description: "Career and opportunity workflows." },
-      { id: "shopping-menu", label: "Commerce", href: "/products/shopping", description: "Marketplace-scale commerce." },
-      { id: "all-products-menu", label: "All Products", href: "/products", description: "Every product in the Upcube family." },
+      { id: "ethen-menu", label: "Ethen", href: "/ethen", description: "The AI agent marketplace for real-world work." },
+      { id: "productivity-menu", label: "Productivity agents", href: "/ethen/agents", description: "Agents for planning, tasks, and execution." },
+      { id: "writing-menu", label: "Writing agents", href: "/ethen/agents", description: "Draft, edit, and refine documents and content." },
+      { id: "research-agent-menu", label: "Research agents", href: "/ethen/agents", description: "Search, synthesize, and export web intelligence." },
+      { id: "coding-menu", label: "Coding agents", href: "/ethen/agents", description: "Write, debug, and document code." },
+      { id: "business-menu-ethen", label: "Business & Finance agents", href: "/ethen/agents", description: "Analyze, plan, and decide with professional agents." },
+      { id: "all-categories-menu", label: "All categories", href: "/ethen/agents", description: "Browse all agent categories in Ethen." },
     ],
   },
   {
@@ -1166,29 +1151,29 @@ export const portalNewsItems: PortalNewsItem[] = [
 
 export const companyMission: PortalHeroCopy = {
   eyebrow: "Company",
-  title: "A technology company for the way you work, discover, and build.",
+  title: "Upcube builds Ethen — an AI agent marketplace for real-world work.",
   description:
-    "Upcube is a technology company building a connected family of products across AI, commerce, discovery, cloud infrastructure, entertainment, and computing.",
+    "Upcube is a technology company. Ethen is our flagship product: a premium AI agent marketplace where people discover and use specialized agents to search, write, analyze, plan, compare, create, learn, and decide.",
 };
 
 export const companyVisionBullets: PortalBullet[] = [
   {
     id: "vision-products",
-    label: "One ecosystem. Many products.",
+    label: "Upcube builds Ethen.",
     detail:
-      "AI, cloud, compute, robotics, commerce, education, discovery, and future operating systems designed to work together.",
+      "Ethen is a premium AI agent marketplace where people discover and use specialized agents for real-world work.",
   },
   {
     id: "vision-execution",
-    label: "Products designed to connect",
+    label: "Agents built for specific work.",
     detail:
-      "Each product stands on its own. Together they form a connected ecosystem for work, learning, infrastructure, and exploration.",
+      "Specialized agents for productivity, writing, research, coding, business, finance, and more — purpose-built for the work you need to do.",
   },
   {
     id: "vision-trust",
-    label: "Clear about what we build",
+    label: "Clear about what we build.",
     detail:
-      "Ambitious product direction paired with honest language about what is live, what is preview, and what is future.",
+      "Honest language about what is live, what is coming, and what each agent is for.",
   },
 ];
 

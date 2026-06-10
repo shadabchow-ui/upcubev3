@@ -194,9 +194,9 @@ export function createItemListJsonLd(
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "UpcubeAI Product Family",
+    name: "Ethen Agent Categories",
     description:
-      "Connected products spanning AI, cloud, robotics, education, commerce, discovery, entertainment, and future platforms.",
+      "Ethen is Upcube's AI agent marketplace. Browse agent categories for work, learning, commerce, and everyday tasks.",
     url: buildCanonicalUrl(path),
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",

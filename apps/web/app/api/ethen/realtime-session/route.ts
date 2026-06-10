@@ -24,7 +24,7 @@ export async function POST() {
           voice: "alloy",
           modalities: ["audio", "text"],
           instructions:
-            "You are Ethen, an AI guide for the Upcube platform. Help users understand Upcube products, cloud tools, and AI capabilities. Be concise and helpful.",
+            "You are Ethen, an AI guide for Upcube. Help users understand Ethen, agent categories, real-world workflows, trust, and how to get started. Be concise and helpful.",
         }),
       },
     );

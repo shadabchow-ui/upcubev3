@@ -5,9 +5,9 @@ import type { UpcubeProduct } from "lib/upcube-products/products";
 
 export const CANONICAL_BASE_URL = "https://upcube.ai";
 export const DEFAULT_SITE_TITLE =
-  "Upcube | AI, Cloud, Compute, Robotics, Education & Future Technology Products";
+  "Upcube | The Company Behind Ethen, the AI Agent Marketplace";
 export const DEFAULT_SITE_DESCRIPTION =
-  "Upcube builds a connected technology ecosystem across AI, cloud infrastructure, compute, robotics, education, commerce, spatial exploration, entertainment, jobs, books, voice, and next-generation operating systems.";
+  "Upcube builds Ethen — an AI agent marketplace where people find, use, and build AI agents for work, learning, and everyday tasks.";
 export const DEFAULT_OG_IMAGE = "/opengraph-image";
 
 export const canonicalBaseUrl = CANONICAL_BASE_URL;
@@ -40,8 +40,7 @@ export const upcubeOrganizationSchema = {
   url: CANONICAL_BASE_URL,
   description: DEFAULT_SITE_DESCRIPTION,
   logo: buildCanonicalUrl("/brand/logo-mark.png"),
-  slogan:
-    "A connected family of products across AI, cloud, compute, robotics, education, commerce, and discovery.",
+  slogan: "The company behind Ethen, the AI agent marketplace.",
   sameAs: [
     "https://www.facebook.com/upcubeinc/",
     "https://www.linkedin.com/company/35441477",
@@ -113,7 +112,7 @@ export function createNewsIndexMetadata(): Metadata {
   return createBasicPageMetadata({
     title: `Upcube News | ${upcubeSiteName}`,
     description:
-      "Launch stories and product previews across Upcube, Robotics, Voice, Education, Commerce, Books, Earth, Games, Jobs, Cloud, OS, and Mobile OS.",
+      "News and updates from Upcube — the company building Ethen, the AI agent marketplace.",
     path: "/news",
   });
 }

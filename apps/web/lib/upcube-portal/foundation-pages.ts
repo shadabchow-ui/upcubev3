@@ -32,28 +32,28 @@ const careersStatusNotice =
 
 export const aboutPageContent: FoundationPageContent = {
   eyebrow: "Company Overview",
-  title: "Building the next generation of intelligent technology.",
+  title: "Building the AI agent marketplace.",
   description:
-    "Upcube is an AI technology company building a connected family of premium products across AI, commerce, discovery, cloud infrastructure, entertainment, and computing.",
+    "Upcube is an AI technology company building Ethen — an AI agent marketplace where people find and use specialized agents for real work.",
   sections: [
     {
       id: "platform",
       title: "What the company is building",
       paragraphs: [
         upcubeCompanyIdentity.mission,
-        "Ethen, Earth, Upcube Commerce, Cloud, Books, Games, Jobs, and the computing roadmap are positioned as connected product lines inside one broader company story.",
+        "Ethen is the flagship product. It is an AI agent marketplace organized by category, designed to help people discover focused agents for search, writing, analysis, planning, learning, and decisions.",
       ],
     },
     {
       id: "approach",
       title: "How the work should feel",
       paragraphs: [
-        "The product language favors clarity, precision, and continuity across the ecosystem.",
+        "The product language favors clarity, practical value, and trust at every step.",
       ],
       bullets: [
-        "Useful intelligence over decorative complexity.",
-        "Premium product craft across every surface.",
-        "Connected systems instead of isolated apps.",
+        "Useful agents over broad platform claims.",
+        "Category-first discovery before specialized depth.",
+        "Honest capability framing across every surface.",
       ],
     },
     {
@@ -102,10 +102,10 @@ export const charterPageContent: FoundationPageContent = {
       ],
     },
     {
-      id: "connected-ecosystem",
-      title: "Connected ecosystem",
+      id: "agent-first",
+      title: "Agent-first product thinking",
       paragraphs: [
-        "Every product line should feel like part of a broader company system rather than a collection of disconnected apps.",
+        "Ethen is organized around specialized agents, not a single monolithic assistant. Categories come before specific named agents.",
       ],
     },
     {
@@ -118,13 +118,6 @@ export const charterPageContent: FoundationPageContent = {
         "No invented legal standing.",
         "No invented security commitments.",
         "No invented research partnerships.",
-      ],
-    },
-    {
-      id: "future-computing",
-      title: "Future computing",
-      paragraphs: [
-        "The company direction reaches beyond today’s apps toward the next era of operating systems, infrastructure, and intelligent devices.",
       ],
     },
   ],
@@ -228,11 +221,11 @@ export const brandPageContent: FoundationPageContent = {
         "Use product names as they appear in the live site so the ecosystem stays coherent.",
       ],
       bullets: [
-        "Use UpcubeAI for the AI workspace and product family.",
+        "Use Upcube for the company name.",
         "Use AI technology company as the short public descriptor where a company label is needed.",
-        'Use "AI for the way you work, discover, build, and imagine what\'s next" as the public-facing tagline.',
-        "Use Ethen for the chat workspace destination.",
-        "Use Earth, Books, Games, Jobs, Cloud, Upcube Commerce, OS, and Mobile OS as product names when linking to those destinations.",
+        'Use "The company behind Ethen, the AI agent marketplace." as the public tagline.',
+        "Use Ethen for the flagship AI agent marketplace product.",
+        "Use agent categories as the public product framing for now.",
       ],
     },
     {
@@ -511,13 +504,12 @@ export const societalImpactPageContent: FoundationPageContent = {
       id: "areas",
       title: "Areas of potential societal contribution",
       paragraphs: [
-        "The current product family touches several areas where AI can have a meaningful impact.",
+        "Ethen and the agent marketplace can have meaningful societal impact in several areas.",
       ],
       bullets: [
-        "Learning and education through Upcube Education.",
-        "Spatial discovery and public understanding through Upcube Earth AI.",
-        "Health-adjacent research support through Upcube Health AI.",
-        "Scientific research acceleration through Upcube Science AI.",
+        "Making useful AI agents accessible for learning, research, and decision-making.",
+        "Trust and safety work that makes agents more reliable and honest.",
+        "Research that supports the design of agents that help people understand complex information.",
       ],
     },
     {
@@ -596,8 +588,8 @@ export const forOrganizationsPageContent: FoundationPageContent = {
         "Strategic planning and briefing preparation.",
         "Cross-team research synthesis and decision support.",
         "Content and documentation workflows with review gates.",
-        "Discovery and analysis across the Upcube product ecosystem.",
-        "Learning and skill development through Upcube Education.",
+        "Agent-assisted discovery and analysis for research and reporting tasks.",
+        "Learning workflows supported by specialized Ethen agents.",
       ],
       paragraphs: [
         "These use cases describe product direction, not claims of deployed enterprise infrastructure.",

@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import {
-  accountSignInUrl,
   accountLogoutUrl,
   useSession,
 } from "lib/upcube-account/client";
@@ -265,16 +264,6 @@ export function PortalHeader() {
           </button>
           <ThemeToggle />
           <UpcubeAppLauncher />
-          {session.status !== "authenticated" ? (
-            <>
-              <Link
-                className="uc-button"
-                href="/signin"
-              >
-                Sign in
-              </Link>
-            </>
-          ) : null}
           {session.status === "authenticated" && session.user ? (
             <div className="uc-header-account">
               <Link
@@ -313,12 +302,6 @@ export function PortalHeader() {
               </a>
             </div>
           ) : null}
-          <Link
-            className="uc-button uc-button--accent"
-            href="https://console.upcube.ai"
-          >
-            Console
-          </Link>
           {portalActionNav
             .filter((item) => item.id !== "account")
             .map((item) => (
@@ -431,24 +414,7 @@ export function PortalHeader() {
                 >
                   {session.user.name || session.user.email || "Account"}
                 </Link>
-              ) : (
-                <>
-                  <Link
-                    className="uc-mobile-menu-cta"
-                    href="/signin"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Sign in
-                  </Link>
-                </>
-              )}
-              <Link
-                className="uc-mobile-menu-cta uc-mobile-menu-cta--accent"
-                href="https://console.upcube.ai"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Console
-              </Link>
+              ) : null}
               {portalActionNav
                 .filter((item) => item.id !== "account")
                 .map((item) => (

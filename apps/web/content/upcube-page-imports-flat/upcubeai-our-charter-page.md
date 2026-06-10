@@ -1,71 +1,57 @@
 # Product Principles
 
-## The standards that guide how we build every product.
+## The standards that guide how we build Ethen.
 
-The Upcube product principles describe how the ecosystem should grow. They are not a legal document, certification, or formal governance report. They are a public statement of direction for how Upcube builds AI products, cloud infrastructure, compute platforms, robotics systems, commerce technology, education products, discovery surfaces, and future operating systems.
+The Upcube product principles describe how Ethen should grow and how the company approaches agent marketplace design. They are not a legal document, certification, or formal governance report. They are a public statement of direction for how Upcube builds AI agent experiences.
 
-The goal is simple: build products that help people move forward, while keeping clarity, trust, and quality at the center.
+The goal is simple: build agents and a marketplace that help people move forward, while keeping clarity, trust, and quality at the center.
 
 ## Principle 1: Useful before flashy
 
-Every product should solve a real problem. Features should earn their place by making the experience clearer or the workflow faster.
+Every agent and every category should solve a real problem. Features should earn their place by making the experience clearer or the workflow faster.
 
-A product should not ship a feature because it sounds impressive. It should ship because the feature makes someone's work, learning, or discovery measurably better.
+An agent should not exist because it sounds impressive. It should exist because it makes someone's work, learning, or decisions measurably better.
 
-This applies across all products: AI workspaces, commerce systems, discovery surfaces, infrastructure tools, and future platforms.
+## Principle 2: Clear and honest
 
-## Principle 2: Premium but simple
+An agent marketplace should be straightforward about what each agent does and does not do. Capability should match the description. Limits should be stated.
 
-Power should not feel complicated. Premium design means refined, confident, and honest about what each product does. It does not mean expensive-looking or feature-packed.
+Ethen should feel clear from the first interaction. The interface should reduce cognitive load, not add to it. The language should be direct, not promotional.
 
-Every product should feel clear from the first moment. The interface should reduce cognitive load, not add to it. The language should be direct, not promotional.
+## Principle 3: Agent-first, category-driven
 
-The ecosystem should make each product more useful, not more crowded.
+Specialization produces better results than generalism. Ethen organizes agents by what they do, not by platform abstraction.
 
-## Principle 3: Connected, not cluttered
-
-Products should work together without becoming a maze. Each product stands on its own, but the sum should be greater than the parts.
-
-AI should connect to cloud and compute. Commerce should connect to discovery. Education should connect to the tools people use to build. Robotics operations should connect to the infrastructure layer.
-
-But connection should not create confusion. Each product should have a clear job, a clear boundary, and a clear reason to exist.
+Category browsing should feel natural. The right agent for a task should be close, not buried.
 
 ## Principle 4: Built for real workflows
 
-Products should fit how people actually work, learn, discover, and operate. Start with the user's task, not the technology stack.
+Agents should fit how people actually work, learn, and decide. Start with the user's task, not the technology stack.
 
-A job seeker needs clear opportunity discovery, not AI features. A builder needs infrastructure that works, not a dashboard with buzzwords. A student needs structured learning, not platform gimmicks.
+A researcher needs clear summarization and source grounding, not flashy branding. A planner needs structured output, not vague AI narrative.
 
-Design for real workflows. Prefer inspectable outputs over opaque automation. Support review workflows that can be audited by operators.
+Design for real tasks. Prefer inspectable agent output over opaque automation.
 
-## Principle 5: Designed for scale
+## Principle 5: Honest about what is live and what is future direction
 
-From commerce catalogs with billions of products to infrastructure serving millions of requests, scale should feel invisible. Users should never notice when a product crosses a performance threshold.
+Every agent and category page should make clear what exists now, what is in preview, and what is future direction. A polished page should not imply production readiness or formal certification unless those facts are documented.
 
-Architect systems that grow without losing clarity. Plan for scale at every layer: product, data, infrastructure, and operations. Keep performance and reliability as product features, not afterthoughts.
+Future directions can be described, but they should be labeled as direction, preview, or planned work when that is the truth. Trust is easier to lose than to earn.
 
-## Principle 6: Honest about what is live and what is future direction
+## Principle 6: Clear interfaces over noisy complexity
 
-Every product page should make clear what exists now, what is in preview, and what is future direction. A polished page should not imply formal certification, production readiness, or public availability unless those facts are documented.
+Complex agents should produce simple output. The interface should reveal what matters and hide what does not.
 
-Future directions can be described clearly, but they should be labeled as direction, preview, or planned work when that is the truth. Trust is easier to lose than to earn.
-
-## Principle 7: Clear interfaces over noisy complexity
-
-Complex systems should produce simple interfaces. Whether the product is an AI workspace, a robotics operations dashboard, a cloud console, or a commerce catalog, the interface should reveal what matters and hide what does not.
-
-Users should not need to understand the underlying system to use the product effectively. The interface is the product.
+Users should not need to understand how an agent works to benefit from it. But they should be able to inspect what it did.
 
 ## What this charter does not claim
 
-This charter does not claim formal certification, regulatory approval, legal review, security certification, clinical validation, or mature compliance controls. Those claims require documented evidence.
+This charter does not claim formal certification, regulatory approval, legal review, security certification, or mature compliance controls. Those claims require documented evidence.
 
 Until that evidence exists, Upcube should present trust, safety, and governance topics with careful, truthful language.
 
-## The product principles standard
+## The standard
 
-This Charter sets the standard for how Upcube builds every product. Upcube's product ambition is broad. That makes the standard higher, not lower.
+Build boldly, but describe honestly. Move quickly, but keep review points visible. Design clear interfaces, but do not hide uncertainty.
 
-Build boldly, but describe honestly. Move quickly, but keep review points visible. Design premium interfaces, but do not hide uncertainty. Connect products, but do not blur what is live, planned, or experimental.
-
-**Build products that help people do more, understand more, and stay in control.**
+**Build agents that help people do more, understand more, and stay in control.**

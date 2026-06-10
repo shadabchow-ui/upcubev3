@@ -24,243 +24,154 @@ export type FeatureBand = {
 };
 
 export const homeBuildSectionIntro =
-  "The ecosystem spans AI workspaces, cloud infrastructure, robotics, education, commerce, spatial exploration, entertainment, and next-generation operating systems.";
+  "Ethen is a premium AI agent marketplace where people discover and use specialized agents for real-world work.";
+
 
 export const homeCapabilityPoints: HomeProofPoint[] = [
   {
-    title: "AI & Voice",
+    title: "Search and discover",
     description:
-      "A connected intelligence layer for work, creation, and conversation. Ethen brings chat, research, artifacts, and governed tool flows into one AI workspace, while Voice extends that assistant into future device experiences.",
-    href: "/products/upcube-ai",
+      "Browse Ethen's agent marketplace by category. Find specialized agents built for your exact workflow — from research and writing to finance and coding.",
+    href: "https://ethen.upcube.ai",
     links: [
-      { label: "AI", href: "/products/upcube-ai" },
-      { label: "Voice", href: "/products/voice" },
+      { label: "Try Ethen", href: "https://ethen.upcube.ai" },
     ],
   },
   {
-    title: "Commerce",
+    title: "Get real work done",
     description:
-      "Commerce technology for marketplace-scale discovery. Built for billion-product catalogs with AI-powered search, product pages, reviews, recommendations, and brand storefront infrastructure.",
-    href: "/products/shopping",
-    links: [{ label: "Commerce", href: "/products/shopping" }],
-  },
-  {
-    title: "Discovery",
-    description:
-      "New ways to explore knowledge, places, news, and entertainment. Earth, News, Books, and Games extend into AI-powered discovery across the world, reading, news intelligence, and interactive entertainment.",
-    href: "/products/earth",
+      "Agents in Ethen are built for outcomes. Ask questions, synthesize research, plan work, write documents, analyze data, and move from idea to result.",
+    href: "https://ethen.upcube.ai",
     links: [
-      { label: "Earth", href: "/products/earth" },
-      { label: "News", href: "/products/news" },
-      { label: "Books", href: "/products/books" },
-      { label: "Games", href: "/products/games" },
+      { label: "Open Ethen", href: "https://ethen.upcube.ai" },
     ],
   },
   {
-    title: "Education & Learning",
+    title: "Built by Upcube",
     description:
-      "Learning designed for the AI era. Education brings AI education, product training, technical courses, and guided learning paths into the ecosystem.",
-    href: "/products/university",
-    links: [{ label: "Education", href: "/products/university" }],
-  },
-  {
-    title: "Cloud & Infrastructure",
-    description:
-      "The foundation behind every product. Cloud provides the shared infrastructure, developer tools, and delivery layer that power the product family.",
-    href: "/products/cloud",
+      "Upcube builds Ethen. The platform is designed with clear capability framing, honest agent descriptions, and a premium experience across every category.",
+    href: "/company",
     links: [
-      { label: "Cloud", href: "/products/cloud" },
-      { label: "Cloud VM", href: "/products/vm" },
-    ],
-  },
-  {
-    title: "Entertainment",
-    description:
-      "Consumer discovery at ambitious scale. Games and other entertainment surfaces pair bold interfaces with broad, intelligent discovery experiences.",
-    href: "/products/games",
-    links: [{ label: "Games", href: "/products/games" }],
-  },
-  {
-    title: "Platforms",
-    description:
-      "A future direction for intelligent systems. OS and Mobile OS define a broader path toward AI-native operating systems and next-generation computing.",
-    href: "/products/upcube-os",
-    links: [
-      { label: "OS", href: "/products/upcube-os" },
-      { label: "Mobile OS", href: "/products/upcube-mobile-os" },
+      { label: "About Upcube", href: "/company" },
     ],
   },
 ];
 
 export const featureBands: FeatureBand[] = [
   {
-    title: "Ethen",
+    title: "Productivity",
     description:
-      "An AI workspace for chat, research, artifacts, and execution. Turn questions into durable work and reusable output.",
-    href: "/products/upcube-ai",
-    cta: "Open AI",
+      "Get more done with agents built for task management, planning, and execution.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "green",
   },
   {
-    title: "Books",
+    title: "Writing",
     description:
-      "Explore 50M books with previews, saved titles, and a calmer path to discovery.",
-    href: "/products/books",
-    cta: "Browse Books",
+      "Draft, edit, and refine documents, emails, and long-form content with dedicated writing agents.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "teal",
   },
   {
-    title: "Earth",
+    title: "Research",
     description:
-      "A 3D spatial discovery product for maps, terrain, cities, and shareable world exploration.",
-    href: "/products/earth",
-    cta: "Explore Earth",
+      "Search the web, extract sources, synthesize evidence, and export structured research briefs.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "teal",
   },
   {
-    title: "Games",
+    title: "Coding",
     description:
-      "Discover across 400K games with releases, genres, platforms, and recommendation paths.",
-    href: "/products/games",
-    cta: "Explore Games",
-    tone: "amber",
-  },
-  {
-    title: "Jobs",
-    description:
-      "Browse an 8M-job discovery surface for career exploration and clearer opportunity workflows.",
-    href: "/products/jobs",
-    cta: "Explore Jobs",
-    tone: "amber",
-  },
-  {
-    title: "Cloud",
-    description:
-      "Developer tools, cloud workflows, and compute access. The infrastructure front door for the Upcube ecosystem.",
-    href: "/products/cloud",
-    cta: "Open Cloud",
+      "Write, review, debug, and document code across languages and frameworks.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "blue",
   },
   {
-    title: "Quantum",
+    title: "Business",
     description:
-      "A beginner-friendly quantum workspace for guided experiments, visual runs, and clear result charts.",
-    href: "/products/quantum",
-    cta: "Explore Quantum",
+      "Plan, analyze, and operate with agents built for teams and decision-makers.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
+    tone: "amber",
+  },
+  {
+    title: "Finance",
+    description:
+      "Analyze, model, and plan financial workflows with precision-built finance agents.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "green",
   },
   {
-    title: "Commerce",
+    title: "Data & Analysis",
     description:
-      "Commerce technology for marketplace-scale product discovery with AI-powered search and brand storefronts.",
-    href: "/products/shopping",
-    cta: "Explore Commerce",
-    tone: "amber",
-  },
-  {
-    title: "Cloud VM",
-    description:
-      "Virtual machines, networking, storage, and operations inside Upcube Cloud.",
-    href: "/products/vm",
-    cta: "Explore Cloud VMs",
+      "Clean, explore, and visualize data to surface answers fast.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
     tone: "blue",
-  },
-  {
-    title: "OS",
-    description:
-      "An AI operating system direction for desktop computing with visible control, trust, and clarity.",
-    href: "/products/upcube-os",
-    cta: "View preview",
-    tone: "blue",
-  },
-  {
-    title: "Mobile OS",
-    description:
-      "An AI-native mobile computing direction focused on privacy, trust, and clear interaction.",
-    href: "/products/upcube-mobile-os",
-    cta: "View preview",
-    tone: "blue",
-  },
-  {
-    title: "Voice",
-    description:
-      "AI voice platform for future Upcube devices, built around private push-to-talk and real-time assistance.",
-    href: "/products/voice",
-    cta: "View preview",
-    tone: "green",
   },
   {
     title: "Education",
     description:
-      "100K courses with simple $5 course pricing for AI education, product training, and guided learning paths.",
-    href: "/products/university",
-    cta: "Explore Education",
-    tone: "green",
+      "Learn, practice, and build knowledge with guided AI instruction.",
+    href: "https://ethen.upcube.ai",
+    cta: "Explore agents",
+    tone: "teal",
   },
 ];
 
 export const stories: HomeLinkItem[] = [
   {
-    title: "UpcubeAI workspace launch",
+    title: "Introducing Ethen",
     description:
-      "How Ethen brings research, artifacts, execution, and governed tool flows together in one serious AI workspace.",
+      "Ethen is a premium AI agent marketplace where people discover and use specialized agents for real-world work.",
     href: "/news/upcube-ai-launch",
-    tag: "AI workspace",
+    tag: "Agent marketplace",
   },
   {
-    title: "Upcube Commerce launch",
+    title: "Agents for productivity",
     description:
-      "A commerce technology story built around marketplace-scale search, product discovery, and brand storefront infrastructure.",
-    href: "/news/ventari-launch",
-    tag: "AI commerce",
+      "Get more done with agents designed for planning, task management, and structured execution workflows.",
+    href: "https://ethen.upcube.ai",
+    tag: "Productivity",
   },
   {
-    title: "Upcube Earth launch story",
+    title: "Agents for research and writing",
     description:
-      "A spatial discovery experience designed for 3D globe exploration, intelligent layers, terrain, and place search.",
-    href: "/news/upcube-earth-launch",
-    tag: "Discovery",
+      "Search, synthesize, draft, and edit with agents built for knowledge workers and writers.",
+    href: "https://ethen.upcube.ai",
+    tag: "Writing & Research",
   },
   {
-    title: "Upcube Books launch story",
+    title: "Agents for coding",
     description:
-      "A calmer, more thoughtful way to discover books through previews, saved titles, and guided reading paths.",
-    href: "/news/upcube-books-launch",
-    tag: "Books",
+      "Write, review, debug, and document code with agents that understand the full development workflow.",
+    href: "https://ethen.upcube.ai",
+    tag: "Coding",
   },
   {
-    title: "Upcube News launch story",
+    title: "Agents for business and finance",
     description:
-      "A live news intelligence app for AI-powered summaries, topic discovery, source-linked stories, and briefing-style reading.",
-    href: "/news/upcube-news-launch",
-    tag: "News intelligence",
+      "Plan, analyze, model, and decide with agents built for professional and financial workflows.",
+    href: "https://ethen.upcube.ai",
+    tag: "Business & Finance",
   },
   {
-    title: "Upcube Voice preview",
+    title: "Upcube company direction",
     description:
-      "A voice platform direction for future Upcube devices, centered on private push-to-talk, real-time assistance, and trusted interaction.",
-    href: "/news/upcube-voice-preview",
-    tag: "AI & Voice",
-  },
-  {
-    title: "Upcube Education preview",
-    description:
-      "Learning paths, product training, and ecosystem education designed for the AI age.",
-    href: "/news/upcube-university-preview",
-    tag: "Education & Learning",
+      "Upcube builds Ethen — an AI agent marketplace for real-world work. The company mission and product direction.",
+    href: "/company",
+    tag: "Company",
   },
   {
     title: "Research direction",
     description:
-      "Editorial work on architecture, evaluation, and systems thinking across the Upcube product family.",
+      "Editorial work on architecture, evaluation, and systems thinking at Upcube.",
     href: "/research",
     tag: "Research",
-  },
-  {
-    title: "Research notes refresh",
-    description:
-      "Fresh editorial summaries covering architecture, evaluation, workflow experiments, and product development progress.",
-    href: "/research",
-    tag: "Updates",
   },
 ];

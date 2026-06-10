@@ -11,8 +11,8 @@ import { researchLongformPages } from "lib/upcube-portal/longform-pages";
 const product = getUpcubeProductBySlug("research");
 
 export const metadata: Metadata = createBasicPageMetadata({
-  title: "Upcube Research | AI-Native Research Workspace",
-  description: "Upcube Research is an AI-native workspace for searching the web, collecting sources, synthesizing findings, monitoring topics, and exporting research into briefs, reports, and decisions across the Upcube ecosystem.",
+  title: "Upcube Research | Company and Product Research",
+  description: "Upcube Research covers the company's thinking behind Ethen and AI agents — topics in search, language, trust, safety, responsible AI, and the design of useful agent experiences.",
   path: "/research",
 });
 

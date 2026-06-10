@@ -26,103 +26,75 @@ const contentEntries: PageContentEntry[] = [
     title: "About Us",
     body: `# About Us
 
-## Building a product family for the AI age.
+## Building the AI agent marketplace.
 
-Upcube is an artificial intelligence technology company building a connected family of products across AI workspaces, voice, education, commerce, discovery, cloud infrastructure, entertainment, and future computing.
+Upcube is an artificial intelligence technology company building Ethen — an AI agent marketplace where people find, use, and rely on specialized agents for real work.
 
-The company begins with a simple belief: the next generation of software should feel more intelligent, more useful, and more understandable at the same time.
+The company begins with a simple belief: AI should be useful, trustworthy, and easy to understand. Not a mystery. Not a black box.
 
-AI should not only answer questions. It should help people think through work, discover better paths, create durable output, understand complex systems, and move forward with more clarity.
-
-That is the direction behind UpcubeAI.
+That is the direction behind Upcube.
 
 ## What Upcube builds
 
-Upcube is building a broad product ecosystem designed around serious utility and long-term platform ambition.
+Upcube builds Ethen.
 
-UpcubeAI and Ethen bring chat, research, artifacts, governed tools, approvals, and workspace continuity into one focused AI workspace.
+Ethen is the flagship product — an AI agent marketplace organized by category. People browse agent categories to find the right agent for their task, whether that is search, writing, analysis, planning, learning, or decisions.
 
-Upcube Voice extends that assistant direction into future private, real-time voice experiences for Upcube devices and companion surfaces.
+The public product catalog starts with broad categories. Specific named agents come later as the marketplace grows.
 
-Upcube Education brings structured learning into the ecosystem through AI education, product training, technical courses, and guided learning paths.
+## Why this approach matters
 
-Ventari expands the company into AI commerce, with large-scale search, richer product pages, category discovery, recommendations, and product decision support.
+Most AI products offer a single assistant that tries to do everything.
 
-Upcube Earth, Books, Games, and Jobs bring AI discovery into maps, reading, entertainment, and opportunity.
+Ethen is built differently.
 
-Upcube Cloud and Compute represent the infrastructure layer behind the ecosystem, connecting developer workflows, compute systems, and platform operations.
-
-Upcube OS and Upcube Mobile OS describe the long-range computing ambition: AI-native operating systems designed around trust, visibility, privacy, and user control.
-
-## Why this ecosystem matters
-
-Most AI products are built as isolated tools.
-
-Upcube is being built differently.
-
-The product family is designed to connect work, learning, discovery, commerce, infrastructure, and future computing through a shared product language. Each product should stand on its own, but also make the next useful destination easy to discover.
-
-A user may begin in Ethen with a question. They may turn that question into an artifact, continue into research, explore books, build a learning path, inspect a place in Earth, evaluate products in Ventari, or connect the work to cloud and compute systems.
-
-The long-term vision is a connected ecosystem where AI is not trapped inside one chat box. It becomes part of the way people work, learn, search, build, and understand.
+The marketplace model means people can find agents that are focused on what they actually need. A search agent. A writing agent. An analysis agent. An agent for decisions or planning. Categories make discovery practical. Depth comes from specialization.
 
 ## Product principles
 
 ### Clarity before complexity
 
-Powerful products should not feel chaotic. Upcube products are designed to make complex workflows feel calmer, more organized, and easier to inspect.
+Useful agents should not feel chaotic. Ethen is designed to make the right agent easy to find and straightforward to use.
 
 ### Trust before automation
 
-AI should help users move faster without hiding important decisions. Approvals, permissions, source context, and action visibility matter.
+AI agents should help users move faster without hiding what they are doing. Transparency, honest capability framing, and clear limits matter.
 
 ### Discovery with momentum
 
-A good product helps users keep moving. Whether the surface is books, jobs, games, maps, products, or research, the next useful step should feel close.
+A good marketplace helps users find what they need and keep moving. Categories, search, and simple navigation are the starting point.
 
-### Systems that explain themselves
+### Honest capability framing
 
-Infrastructure, AI agents, voice systems, operating systems, and cloud workflows should become easier to understand, not more mysterious.
-
-### Ambition with responsible framing
-
-Upcube is building toward a large product future, but public claims should stay tied to what is actually implemented, documented, or clearly marked as future direction.
+Upcube builds toward a serious product future, but public claims stay tied to what is implemented, documented, or clearly marked as future direction.
 
 ## The company direction
 
-Upcube is not trying to build a single app.
+Upcube is building an AI agent marketplace because the future is not one AI product. It is a set of focused agents that do specific things well and are easy for people to find and trust.
 
-It is building a product company around a larger idea: AI should become a clearer operating layer for work, knowledge, discovery, and computing.
-
-That requires design, infrastructure, research, content, trust, education, and product discipline working together.
-
-The company’s public presence should reflect that ambition without overstating maturity. Some products are live. Some are previews. Some are long-range directions. The important thing is that each surface should be presented honestly, beautifully, and with enough clarity for users to understand what exists now and where the ecosystem is going.
+That requires thoughtful design, careful trust and safety work, clear policies, and a strong research foundation.
 
 ## Founder-led product vision
 
 Upcube is founder-led and product-driven.
 
-The company is shaped by a builder’s view of the future: AI should be practical enough for daily work, ambitious enough to define new categories, and transparent enough that people do not feel locked out of understanding what the system is doing.
+The company is shaped by a builder’s view of the future: AI should be practical enough for daily work, honest enough that people understand what the system is doing, and well-designed enough that finding the right agent feels natural.
 
 That means moving quickly, but not carelessly.
 
-It means building interfaces that feel premium, while keeping public language grounded.
+It means keeping public language grounded.
 
-It means treating research, trust, safety, and policy pages as part of the product experience, not as afterthoughts.
+It means treating research, trust, safety, and policy pages as part of the product, not afterthoughts.
 
 ## Our standard
 
-Upcube exists to build AI products that feel useful, serious, and clear.
+Upcube exists to build AI agents that feel useful, serious, and clear.
 
 The goal is not to make technology louder.
 
 The goal is to make it work better for people.
 
-AI work should become more durable. Discovery should become more focused. Learning should become more structured. Commerce should become easier to decide through. Cloud infrastructure should become easier to understand. Future computing should feel more helpful without becoming more hidden.
-
-That is the Upcube direction:
-
-**A connected AI product family for work, discovery, learning, infrastructure, and future computing — built with clarity, trust, and ambition.**
+**Upcube builds Ethen — the AI agent marketplace for work, learning, and everyday decisions — built with clarity, trust, and practical ambition.**
 `,
   },
   {
@@ -131,75 +103,61 @@ That is the Upcube direction:
     title: "Our Charter",
     body: `# Product Principles
 
-## The standards that guide how we build every product.
+## The standards that guide how we build Ethen.
 
-The Upcube product principles describe how the ecosystem should grow. They are not a legal document, certification, or formal governance report. They are a public statement of direction for how Upcube builds AI products, cloud infrastructure, compute platforms, robotics systems, commerce technology, education products, discovery surfaces, and future operating systems.
+The Upcube product principles describe how Ethen should grow and how the company approaches agent marketplace design. They are not a legal document, certification, or formal governance report. They are a public statement of direction for how Upcube builds AI agent experiences.
 
-The goal is simple: build products that help people move forward, while keeping clarity, trust, and quality at the center.
+The goal is simple: build agents and a marketplace that help people move forward, while keeping clarity, trust, and quality at the center.
 
 ## Principle 1: Useful before flashy
 
-Every product should solve a real problem. Features should earn their place by making the experience clearer or the workflow faster.
+Every agent and every category should solve a real problem. Features should earn their place by making the experience clearer or the workflow faster.
 
-A product should not ship a feature because it sounds impressive. It should ship because the feature makes someone's work, learning, or discovery measurably better.
+An agent should not exist because it sounds impressive. It should exist because it makes someone's work, learning, or decisions measurably better.
 
-This applies across all products: AI workspaces, commerce systems, discovery surfaces, infrastructure tools, and future platforms.
+## Principle 2: Clear and honest
 
-## Principle 2: Premium but simple
+An agent marketplace should be straightforward about what each agent does and does not do. Capability should match the description. Limits should be stated.
 
-Power should not feel complicated. Premium design means refined, confident, and honest about what each product does. It does not mean expensive-looking or feature-packed.
+Ethen should feel clear from the first interaction. The interface should reduce cognitive load, not add to it. The language should be direct, not promotional.
 
-Every product should feel clear from the first moment. The interface should reduce cognitive load, not add to it. The language should be direct, not promotional.
+## Principle 3: Agent-first, category-driven
 
-The ecosystem should make each product more useful, not more crowded.
+Specialization produces better results than generalism. Ethen organizes agents by what they do, not by platform abstraction or product family.
 
-## Principle 3: Connected, not cluttered
-
-Products should work together without becoming a maze. Each product stands on its own, but the sum should be greater than the parts.
-
-AI should connect to cloud and compute. Commerce should connect to discovery. Education should connect to the tools people use to build. Robotics operations should connect to the infrastructure layer.
-
-But connection should not create confusion. Each product should have a clear job, a clear boundary, and a clear reason to exist.
+Category browsing should feel natural. The right agent for a task should be close, not buried.
 
 ## Principle 4: Built for real workflows
 
-Products should fit how people actually work, learn, discover, and operate. Start with the user's task, not the technology stack.
+Agents should fit how people actually work, learn, and decide. Start with the user's task, not the technology stack.
 
-A job seeker needs clear opportunity discovery, not AI features. A builder needs infrastructure that works, not a dashboard with buzzwords. A student needs structured learning, not platform gimmicks.
+A researcher needs clear summarization and source grounding, not flashy branding. A planner needs structured output, not vague AI narrative.
 
-Design for real workflows. Prefer inspectable outputs over opaque automation. Support review workflows that can be audited by operators.
+Design for real tasks. Prefer inspectable agent output over opaque automation.
 
-## Principle 5: Designed for scale
+## Principle 5: Honest about what is live and what is future direction
 
-From commerce catalogs with billions of products to infrastructure serving millions of requests, scale should feel invisible. Users should never notice when a product crosses a performance threshold.
+Every agent and category page should make clear what exists now, what is in preview, and what is future direction. Polished design should not imply production readiness or formal certification unless those facts are documented.
 
-Architect systems that grow without losing clarity. Plan for scale at every layer: product, data, infrastructure, and operations. Keep performance and reliability as product features, not afterthoughts.
+Future directions can be described, but they should be labeled as direction, preview, or planned work when that is the truth. Trust is easier to lose than to earn.
 
-## Principle 6: Honest about what is live and what is future direction
+## Principle 6: Clear interfaces over noisy complexity
 
-Every product page should make clear what exists now, what is in preview, and what is future direction. A polished page should not imply formal certification, production readiness, or public availability unless those facts are documented.
+Complex agents should produce simple output. The interface should reveal what matters and hide what does not.
 
-Future directions can be described clearly, but they should be labeled as direction, preview, or planned work when that is the truth. Trust is easier to lose than to earn.
-
-## Principle 7: Clear interfaces over noisy complexity
-
-Complex systems should produce simple interfaces. Whether the product is an AI workspace, a robotics operations dashboard, a cloud console, or a commerce catalog, the interface should reveal what matters and hide what does not.
-
-Users should not need to understand the underlying system to use the product effectively. The interface is the product.
+Users should not need to understand how an agent works to benefit from it. But they should be able to inspect what it did.
 
 ## What this charter does not claim
 
-This charter does not claim formal certification, regulatory approval, legal review, security certification, clinical validation, or mature compliance controls. Those claims require documented evidence.
+This charter does not claim formal certification, regulatory approval, legal review, security certification, or mature compliance controls. Those claims require documented evidence.
 
 Until that evidence exists, Upcube should present trust, safety, and governance topics with careful, truthful language.
 
-## The product principles standard
+## The standard
 
-This Charter sets the standard for how Upcube builds every product. Upcube's product ambition is broad. That makes the standard higher, not lower.
+Build boldly, but describe honestly. Move quickly, but keep review points visible. Design clear interfaces, but do not hide uncertainty.
 
-Build boldly, but describe honestly. Move quickly, but keep review points visible. Design premium interfaces, but do not hide uncertainty. Connect products, but do not blur what is live, planned, or experimental.
-
-**Build products that help people do more, understand more, and stay in control.**
+**Build agents that help people do more, understand more, and stay in control.**
 `,
   },
   {
@@ -208,49 +166,31 @@ Build boldly, but describe honestly. Move quickly, but keep review points visibl
     title: "Foundation",
     body: `# Mission
 
-## Make advanced technology feel clear, connected, and useful.
+## Make AI agents practical, trustworthy, and easy to find.
 
-Upcube builds connected products across AI, cloud infrastructure, compute, robotics, commerce, education, spatial exploration, entertainment, and future operating systems. Our mission is to make advanced technology feel clear, connected, and useful across every product we build.
+Upcube builds Ethen — an AI agent marketplace where people discover and use specialized agents for real work. Our mission is to make AI agents practical, accessible, and worthy of trust.
 
-Technology should help people learn faster, build smarter, discover more, and operate better systems. It should turn ideas into real outcomes. That mission applies across the product family, not only to one product layer.
+AI should help people do real work. Not impress them. Not overwhelm them. Help them.
 
-## Help people learn faster
+## Help people find the right agent
 
-Education should be accessible, structured, and practical. Upcube Education brings AI learning, product training, technical courses, and guided paths to anyone who wants to understand modern technology systems.
+The hardest part of using AI is knowing which tool is right for which task. Ethen's category-first design solves that. Browse by what you need. Find an agent that is focused on that task.
 
-Learning should connect to real tools. Courses should help people move from confusion to capability, not just present abstract theory.
+## Help people work with more confidence
 
-## Help people build smarter
+Agents should produce output people can inspect, review, and rely on. Not black-box responses. Visible, grounded, checkable work.
 
-AI, cloud, and compute products should give builders more power with less complexity. Ethen provides an AI workspace for research, artifacts, and execution. Cloud and Compute provide the infrastructure layer for teams that need to scale.
+## Help people learn and decide
 
-Building smarter means reducing friction between an idea and its implementation.
-
-## Help people discover more
-
-Discovery should feel expansive but not overwhelming. Earth helps people explore the world spatially. Books opens knowledge discovery across millions of titles. Games connects players to entertainment they will enjoy. Jobs helps people navigate career opportunity.
-
-Each discovery surface uses technology to make large information spaces feel navigable.
-
-## Help people operate better systems
-
-Robotics operations, cloud infrastructure, and commerce technology all depend on systems that work reliably at scale. Upcube Robotics brings mission replay, fleet observability, and incident tools to operations teams. Cloud and Compute power the backend. Ventari enables commerce discovery at marketplace scale.
-
-## Turn ideas into real outcomes
-
-The mission is not about technology for its own sake. It is about helping people move from idea to outcome faster, with more clarity and less friction.
-
-That means practical products. Clear interfaces. Honest capability framing. And a product family designed to work together.
+From research and analysis to planning and decisions, specialized agents can help people think more clearly and act with more confidence.
 
 ## What this page does not claim
 
-This page does not claim that Upcube has a registered nonprofit foundation, grantmaking program, charitable entity, or formal philanthropic institution unless separately documented. The word foundation describes the mission foundation behind the product ecosystem.
+This page does not claim that Upcube has a registered nonprofit foundation, grantmaking program, charitable entity, or formal philanthropic institution unless separately documented.
 
 ## The mission standard
 
-Make advanced technology feel clear, connected, and useful.
-
-Help people learn faster. Build smarter. Discover more. Operate better systems. Turn ideas into real outcomes.
+Make AI agents practical, trustworthy, and easy to find.
 
 **That is the Upcube mission.**
 `,
@@ -261,21 +201,17 @@ Help people learn faster. Build smarter. Discover more. Operate better systems. 
     title: "Careers",
     body: `# Careers
 
-## Build the product ecosystem.
+## Build the agent marketplace.
 
-Upcube is a technology company building connected products across AI, cloud infrastructure, compute, robotics, commerce, education, spatial exploration, entertainment, discovery, and future operating systems.
+Upcube is a technology company building Ethen — an AI agent marketplace for real work. That kind of product takes people who care about product craft, clear design, and the discipline of turning a broad vision into focused, trustworthy software.
 
-That kind of ambition takes people who care about product craft, systems thinking, design quality, infrastructure, and the discipline of turning a broad vision into real software.
-
-Careers at Upcube are for people who want to help build products that feel premium, useful, and connected.
+Careers at Upcube are for people who want to help build an AI marketplace that feels useful, honest, and clear.
 
 ## The work
 
-The product family includes Ethen for AI workspace, Cloud for infrastructure, Compute for virtual machines and operations, Robotics for mission replay and fleet observability, Ventari for commerce technology, Education for structured learning, Earth for spatial discovery, Books for knowledge discovery, Games for entertainment, Jobs for opportunity workflows, and OS, Mobile OS, Voice, and Quantum for future platforms.
+The current product is Ethen. That creates focused work:
 
-That creates a wide range of work:
-
-Designing better product experiences. Building infrastructure that scales. Creating robotics operations software. Developing commerce and discovery systems. Building education platforms. Improving search and retrieval. Designing safe tool workflows. Creating premium visual systems. Writing product language that is ambitious but honest. Turning technical systems into experiences people can understand.
+Designing agent discovery experiences. Building agent category systems. Creating search and browse interfaces. Writing product language that is ambitious but honest. Designing safe and transparent agent workflows. Improving how agents present and explain their output. Turning complex AI capabilities into experiences people can understand and trust.
 
 ## How we work
 
@@ -289,35 +225,19 @@ This is a builder culture. We care about strong plans, but plans are not the pro
 
 ### Product Design
 
-Shape how connected products look, feel, and work across the ecosystem. Design premium interfaces that make advanced technology feel clear and useful.
+Shape how Ethen looks, feels, and works. Design agent discovery experiences that make finding the right agent feel natural.
 
 ### Software Engineering
 
-Develop the products, infrastructure, and platforms that power the ecosystem. Build across AI, cloud, compute, robotics, commerce, education, and discovery.
+Develop the agent marketplace, agent category systems, and the platform infrastructure behind Ethen.
 
-### Cloud and Infrastructure
+### Trust and Safety
 
-Design and operate the cloud infrastructure, compute platform, storage, networking, and developer tools behind the product family.
+Design clear approvals, privacy-aware flows, responsible product framing, and trust surfaces across the agent marketplace.
 
-### Robotics Systems
+### Research and Product Strategy
 
-Create mission replay, fleet observability, incident evidence, and policy-aware operations software for robotics operations teams.
-
-### Commerce and Discovery
-
-Shape the commerce, books, games, earth, and jobs discovery experiences. Build products that help people explore large information spaces with clarity.
-
-### Education Systems
-
-Build the learning platform. Create structured learning paths, AI education, product training, and guided technical courses.
-
-### Operating Systems and Interfaces
-
-Work on OS, Mobile OS, Voice, and Quantum platform directions. Shape future computing interfaces around trust, privacy, and user control.
-
-### Trust and Operations
-
-Design clear approvals, privacy-aware flows, responsible product framing, and trust surfaces across the ecosystem.
+Support the company's research agenda behind Ethen — understanding agents, search, language, trust, and the design of useful agent experiences.
 
 ## Current status
 
@@ -327,11 +247,11 @@ Until formal hiring details are published, this page should be treated as compan
 
 ## The careers standard
 
-Upcube is building for the long term. The work needs people who can think clearly, build carefully, and keep going when the product becomes complex.
+Upcube is building for the long term. The work needs people who can think clearly, build carefully, and keep the product honest and useful.
 
-If you want to help build connected products across software, infrastructure, learning, commerce, robotics, and future computing, this is the kind of company Upcube is becoming.
+If you want to help build an AI agent marketplace that people trust and rely on, this is the kind of company Upcube is becoming.
 
-**Build the product ecosystem. Keep the standard high. Make advanced technology feel useful.**
+**Build Ethen. Keep the standard high. Make AI agents feel useful.**
 `,
   },
   {
@@ -942,15 +862,15 @@ That is what UpcubeAI is building toward.
     title: "Why We Focus on AI and What Comes Next",
     body: `# Why We Focus on AI and What Comes Next
 
-## Building a connected technology ecosystem for the next era of computing.
+## Building the AI agent marketplace.
 
 A founder letter from **Shadab**, Founder of Upcube
 
-The future will not be one app. People need tools that work together: an assistant to think with, cloud and compute to build with, education to grow with, commerce and jobs to navigate opportunity, Earth and Games to explore, Robotics to operate physical systems, and OS platforms to shape the next interface for computing.
+The future is not one AI product. It is a marketplace of focused agents — each one designed to do a specific task well, and easy for people to find.
 
-That is why Upcube exists.
+That is why Upcube builds Ethen.
 
-We are building a connected technology ecosystem across AI, cloud infrastructure, compute, robotics, commerce, education, spatial exploration, entertainment, discovery, and future operating systems.
+We are building Ethen — an AI agent marketplace where people find specialized agents for work, learning, and everyday decisions.
 
 But our focus is not AI for its own sake.
 
@@ -993,13 +913,13 @@ Our belief is simple:
 
 That belief shapes every part of the UpcubeAI ecosystem.
 
-Ethen is designed to be more than a chat box. It is an AI workspace where research, artifacts, tools, approvals, and execution can stay connected. Upcube Books is designed to make knowledge discovery feel calmer and more useful. Upcube Earth brings spatial exploration into the product family. Ventari brings AI discovery into commerce at catalog scale. Upcube Education points toward practical learning for the AI age. Upcube Cloud and Cloud VM represent the systems layer behind the ecosystem. Upcube Voice, Upcube OS, and Upcube Mobile OS point toward a future where AI help is built into the devices and environments people use every day.
+Ethen is designed to be the AI agent marketplace where the right agent for any task is easy to find. The marketplace is organized by category first. Specialized agents come next. The goal is not to offer a single assistant that tries to do everything — it is to help people find focused agents that do specific things well.
 
 The goal is not to make AI feel magical.
 
 The goal is to make it useful enough, clear enough, and trustworthy enough that people can rely on it for serious work.
 
-We know this will take time. Some parts of the product family are live or foundational. Some are previews. Some are long-range platform directions. We will not pretend that everything is finished when it is still being built. That kind of honesty matters, especially in AI.
+We know this will take time. Categories and agents are being built carefully. We will not pretend that the marketplace is complete when it is still growing. That kind of honesty matters, especially in AI.
 
 The future of AI should not belong only to the largest companies, the most technical users, or the people who already have access to the best tools. It should help students, workers, builders, creators, small businesses, researchers, job seekers, educators, and teams everywhere participate in the next era of technology.
 

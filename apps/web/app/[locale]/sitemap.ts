@@ -8,6 +8,8 @@ import { policyPageSlugs } from "lib/upcube-portal/policy-pages";
 
 const publicRoutes = [
   "/",
+  "/ethen",
+  "/ethen/agents",
   "/products",
   "/news",
   "/research",
@@ -50,19 +52,23 @@ const publicRoutes = [
 ];
 
 const sitemap = (): MetadataRoute.Sitemap => {
+  const ethenPaths = new Set(["/ethen", "/ethen/agents"]);
   const entries: MetadataRoute.Sitemap = publicRoutes.map((path) => ({
     url: `${CANONICAL_BASE_URL}${path}`,
     lastModified: new Date(),
-    changeFrequency: path === "/" ? "monthly" as const : "monthly" as const,
-    priority: path === "/" ? 1.0 : 0.7,
+    changeFrequency: "monthly" as const,
+    priority: path === "/" ? 1.0 : ethenPaths.has(path) ? 0.9 : 0.7,
   }));
 
+  // Old product routes are kept for continuity but de-prioritized.
+  // Ethen and agent category routes are the public product story.
+  const ethenProductSlugs = new Set(["upcube-ai"]);
   for (const product of upcubeProducts) {
     entries.push({
       url: `${CANONICAL_BASE_URL}/products/${product.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: ethenProductSlugs.has(product.slug) ? 0.7 : 0.2,
     });
   }
 

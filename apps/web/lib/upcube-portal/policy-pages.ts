@@ -21,8 +21,8 @@ export const policyPageContentBySlug: Record<
         id: "approach",
         title: "AI should be useful, understandable, and worthy of trust",
         paragraphs: [
-          "UpcubeAI is building a connected product family across AI workspaces, voice, education, commerce, discovery, cloud infrastructure, entertainment, and future computing.",
-          "UpcubeAI's AI principles are built around three commitments: 1. Bold innovation, 2. Responsible development and deployment, 3. Collaborative progress, together.",
+          "Upcube builds Ethen — an AI agent marketplace designed to help people find specialized agents for real work, learning, and everyday decisions.",
+          "Upcube's AI principles are built around three commitments: 1. Bold innovation, 2. Responsible development and deployment, 3. Collaborative progress, together.",
         ],
       },
       {
@@ -104,7 +104,7 @@ export const policyPageContentBySlug: Record<
         title: "Building with more perspectives",
         paragraphs: [
           "The people who design AI systems shape what those systems notice, what they miss, and how they respond. That makes collaboration one of the most important parts of responsible product development.",
-          "To build across a product family that spans AI workspaces, voice, books, spatial exploration, games, jobs, commerce, cloud infrastructure, education, and future computing, the product process has to make room for different perspectives early.",
+          "To build an AI agent marketplace that works across diverse tasks, domains, and users, the product process has to make room for different perspectives early.",
         ],
         bullets: [
           "Collaboration from the start, before decisions harden into interfaces, policies, and defaults.",
@@ -209,9 +209,7 @@ export const policyPageContentBySlug: Record<
           "Forecasting, emergency response, and public safety decisions should remain in the hands of qualified organizations and experts.",
         ],
         bullets: [
-          "Spatial context through Upcube Earth for terrain, cities, and geographic understanding.",
-          "Research and reporting through Ethen for summarization and clearer briefings.",
-          "Infrastructure awareness through Cloud and VM Compute for more advanced workflows.",
+          "Research and reporting through Ethen agents for summarization and clearer briefings.",
           "Responsible limits: no implied emergency authority or guaranteed safety outcomes.",
         ],
       },
@@ -226,7 +224,7 @@ export const policyPageContentBySlug: Record<
           "Guided learning paths from fundamentals to deeper technical understanding.",
           "Product-based education connected to real systems.",
           "Support for builders, creators, entrepreneurs, and students.",
-          "Clear education boundaries: Upcube Education is not presented as an accredited institution, degree program, or legal university unless that status is formally established.",
+          "Clear limits: agents are not substitutes for professional advice in medicine, law, finance, or other specialized domains.",
         ],
       },
       {
@@ -236,10 +234,9 @@ export const policyPageContentBySlug: Record<
           "AI will change how people work. The question is whether that change expands opportunity or concentrates it. Useful AI should help more people build, learn, sell, search, hire, create, and operate.",
         ],
         bullets: [
-          "Tools for small teams to draft plans, research markets, and execute faster.",
-          "Skills for the AI economy through practical education and training.",
-          "Career discovery through Upcube Jobs.",
-          "Commerce at scale through Upcube Commerce for large-catalog discovery.",
+          "Specialized agents that help individuals and small teams move faster.",
+          "Agent categories that cover search, writing, analysis, planning, and decisions.",
+          "Discovery-first design so the right agent is easy to find.",
         ],
       },
       {
@@ -260,7 +257,7 @@ export const policyPageContentBySlug: Record<
     ctas: [
       { label: "Building With Communities", href: "/policy/working-together" },
       { label: "Safety", href: "/safety" },
-      { label: "Upcube Education", href: "/products/university" },
+      { label: "Try Ethen", href: "/ethen" },
     ],
   },
 
@@ -277,7 +274,7 @@ export const policyPageContentBySlug: Record<
           "We are living through a defining moment in technology. AI is no longer only a research topic or a feature hidden inside software. It is becoming a new layer for work, learning, discovery, commerce, voice, infrastructure, and computing itself.",
           "That possibility is exciting. It is also serious. As AI becomes more capable, the responsibility around it becomes more important. A powerful system should not feel mysterious. A helpful assistant should not silently take control.",
           "Our belief is simple: AI should assist, complement, empower, and inspire people without taking away the clarity and control they need to trust the work.",
-          "Ethen is designed to be more than a chat box. It is an AI workspace where research, artifacts, tools, approvals, and execution can stay connected. Upcube Books, Earth, Upcube Commerce, Education, Cloud, Voice, OS, and Mobile OS each carry that same standard.",
+          "Ethen is designed to be more than a chat box. It is an AI agent marketplace where people discover specialized agents by category, get real work done, and move forward with clarity.",
           "The goal is not to make AI feel magical. The goal is to make it useful enough, clear enough, and trustworthy enough that people can rely on it for serious work.",
         ],
       },
@@ -290,7 +287,7 @@ export const policyPageContentBySlug: Record<
         bullets: [
           "Make information more useful by turning scattered inputs into clearer answers, summaries, and plans.",
           "Help people work with more confidence across drafting, research, organizing, and execution.",
-          "Unlock new product experiences: workspaces, voice, discovery surfaces, and explainable operating systems.",
+          "Unlock agent-powered experiences: specialized agents that focus on one task and do it well.",
           "Expand access by helping people overcome barriers of language, complexity, disability, or cost.",
         ],
       },
@@ -298,15 +295,13 @@ export const policyPageContentBySlug: Record<
         id: "to-what-end",
         title: "To what end?",
         paragraphs: [
-          "The purpose of UpcubeAI is not to chase every AI trend. It is to build a connected product ecosystem where AI makes real work, learning, discovery, and computing better.",
+          "The purpose of Upcube is not to chase every AI trend. It is to build Ethen — an agent marketplace where AI makes real work, learning, and decisions better.",
           "The end goal is not simply intelligence. The end goal is usefulness.",
         ],
         bullets: [
-          "Build a serious AI workspace for turning questions into durable work.",
-          "Bring AI into discovery across Books, Earth, Games, Jobs, and Upcube Commerce.",
-          "Make learning more practical through structured AI education and product training.",
-          "Support builders with infrastructure through Cloud and VM Compute.",
-          "Shape future computing around trust with visible controls from the beginning.",
+          "Build Ethen as the leading AI agent marketplace for real-world work.",
+          "Make agent discovery category-first so anyone can find the right agent.",
+          "Keep trust, transparency, and honest capability framing as core product values.",
         ],
       },
       {
@@ -349,7 +344,7 @@ export const policyPageContentBySlug: Record<
     eyebrow: "For Teams & Builders",
     title: "Unlock more capability with AI",
     description:
-      "AI can help organizations move with more clarity, speed, and confidence. UpcubeAI is building a product family for that future.",
+      "AI agents can help organizations move with more clarity, speed, and confidence. Upcube builds Ethen for that purpose.",
     sections: [
       {
         id: "every-organization",
@@ -359,63 +354,38 @@ export const policyPageContentBySlug: Record<
           "The goal is not to make every organization use AI the same way. The goal is to give each one a clearer path to use AI well.",
         ],
         bullets: [
-          "For nonprofits: organize research, draft program materials, support grant workflows.",
-          "For professionals: move through research, documents, planning, and client-facing work with more structure.",
-          "For education: support learning paths, product training, and clearer explanations.",
-          "For startups: move faster across product planning, market research, and technical documentation.",
-          "For businesses: improve productivity, customer experience, internal knowledge, and decision support.",
+          "For nonprofits: organize research, draft program materials, and find agents for grant and communications workflows.",
+          "For professionals: use specialized agents for research, documents, planning, and structured output.",
+          "For educators: find agents that support learning, explanation, and guided content creation.",
+          "For startups: move faster across product planning, market research, and documentation.",
+          "For businesses: find agents for productivity, knowledge work, and decision support.",
         ],
       },
       {
         id: "workspace",
-        title: "UpcubeAI workspace for organizations",
+        title: "Ethen for organizations",
         paragraphs: [
-          "Ethen is the center of the UpcubeAI workspace experience. It is designed for chat, research, artifacts, governed tools, approvals, and execution.",
-          "For organizations, that means continuity, reusable output, review points, and context close to the work.",
+          "Ethen is the Upcube AI agent marketplace. Organizations use it to find specialized agents that fit their workflows — search, write, analyze, plan, compare, create, and decide.",
+          "Agent categories make it easy to start. Specialized agents let teams go deeper.",
         ],
         bullets: [
-          "Chat with continuity: keep context across threads and sessions.",
-          "Research that stays connected with sources and grounded information.",
-          "Artifacts for real output: plans, documents, code, summaries, and structured deliverables.",
-          "Approvals for sensitive actions with clear checkpoints.",
+          "Browse by category to find the right agent for the task.",
+          "Use agents for research, drafting, summarization, and analysis.",
+          "Keep context grounded with source-connected agents.",
+          "Review agent actions before committing to important outputs.",
         ],
       },
       {
-        id: "university",
-        title: "Upcube Education — upskill teams for the AI era",
+        id: "agents-for-teams",
+        title: "Ethen agents for team workflows",
         paragraphs: [
-          "Organizations do not only need AI tools. They need AI fluency. Upcube Education is designed to support that learning direction.",
+          "Ethen is organized by agent category so teams can find the right agent for the right task without having to build a workflow from scratch.",
         ],
         bullets: [
-          "AI education for understanding concepts, safe workflows, and responsible product thinking.",
-          "Product training across the Upcube ecosystem.",
-          "Technical courses for developers and technical teams.",
-          "Guided learning paths from basics to deeper practical use.",
-        ],
-      },
-      {
-        id: "infrastructure",
-        title: "Upcube Cloud and VM Compute",
-        paragraphs: [
-          "AI products need systems behind them. Upcube Cloud is the infrastructure destination. VM Compute extends that direction into virtual machines, networking, storage, and operations.",
-        ],
-        bullets: [
-          "Compute workflows for systems that need more control and flexibility.",
-          "Developer tools for a clearer path from product idea to infrastructure decisions.",
-          "Scalable systems direction for understanding how product work connects to runtime infrastructure.",
-        ],
-      },
-      {
-        id: "commerce",
-        title: "Upcube Commerce for commerce",
-        paragraphs: [
-          "Commerce teams face a simple but difficult problem: the more products they offer, the harder discovery becomes. Upcube Commerce is built for large-scale search, rich product pages, reviews, recommendations, and catalog architecture.",
-        ],
-        bullets: [
-          "Search that keeps pace with large catalogs.",
-          "Rich product pages for better decisions before the cart step.",
-          "Recommendations with momentum to turn browsing into discovery.",
-          "Catalog architecture for large-scale product structure and taxonomy.",
+          "Search agents for research, discovery, and information gathering.",
+          "Writing agents for drafts, summaries, and structured documents.",
+          "Analysis agents for data, evidence, and decision support.",
+          "Planning agents for project structure, roadmaps, and task tracking.",
         ],
       },
       {

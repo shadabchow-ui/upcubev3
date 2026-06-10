@@ -1,20 +1,7 @@
 {
-  "name": "next-forge",
+  "name": "upcube",
   "version": "6.0.2",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vercel/next-forge.git"
-  },
-  "publishConfig": {
-    "provenance": true,
-    "access": "public"
-  },
-  "bin": {
-    "next-forge": "dist/index.js"
-  },
-  "files": [
-    "dist/index.js"
-  ],
+  "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",

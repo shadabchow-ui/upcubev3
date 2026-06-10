@@ -1118,21 +1118,21 @@ export const upcubeProducts: UpcubeProduct[] = [
   {
     slug: "research",
     name: "Upcube Research",
-    eyebrow: "Research & web intelligence",
+    eyebrow: "Company research",
     headline:
-      "Turn the open web into structured research, cited answers, and reusable intelligence.",
+      "Research and product thinking behind Ethen and the Upcube agent strategy.",
     summary:
-      "Upcube Research helps you search across the web, collect trusted sources, synthesize findings, monitor changing topics, and export research into briefs, reports, datasets, workflows, and projects.",
-    seoTitle: "Upcube Research | AI-Native Research Console",
+      "Upcube publishes research to support the thinking behind Ethen — covering agents, search, language, trust, safety, and the design of useful AI. These articles explain the company direction, not a separate research product.",
+    seoTitle: "Upcube Research | Company and Product Research",
     seoDescription:
-      "Upcube Research is an AI-native research console for searching the web, extracting sources, organizing evidence, synthesizing findings, monitoring topics, and exporting briefs, reports, and datasets across the Upcube ecosystem.",
+      "Upcube Research covers the company's thinking behind Ethen and AI agents — topics in search, language, trust, safety, responsible AI, and the design of useful agent experiences.",
     primaryAction: {
-      label: "Open Research",
-      href: "https://research.upcube.ai",
+      label: "Explore Ethen",
+      href: "/ethen",
     },
     secondaryAction: {
-      label: "Explore Upcube AI",
-      href: "/products/upcube-ai",
+      label: "Agent categories",
+      href: "/ethen/agents",
     },
     heroHighlights: [
       "Search and gather sources from across the web.",

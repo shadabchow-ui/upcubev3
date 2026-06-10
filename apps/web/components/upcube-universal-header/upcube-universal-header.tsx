@@ -49,13 +49,6 @@ export function UpcubeUniversalHeader({
         <div className="uuh-actions">
           <UpcubeAppLauncher currentAppId={currentAppId} />
           <Link
-            href="/signin"
-            className="uuh-nav-link"
-            prefetch={false}
-          >
-            Sign in
-          </Link>
-          <Link
             href="https://ethen.upcube.ai"
             className="uuh-open-chat"
             prefetch={false}
